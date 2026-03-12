@@ -68,7 +68,7 @@ export default function Home() {
           <div className="flex flex-wrap justify-center gap-14">
             {[
               { title: "DC TOOLS", image: "/1.webp" },
-              { title: "AC TOOLS", image: "/2.webjp" },
+              { title: "AC TOOLS", image: "/2.webp" },
               { title: "ACCESSORIES", image: "/3.webp" },
               { title: "HAND TOOLS", image: "/4.webp" },
             ].map((item, index) => (
@@ -99,7 +99,7 @@ export default function Home() {
           <div className="flex flex-wrap justify-center gap-14 mt-10">
             {[
               { title: "DC TOOLS", image: "/1.webp" },
-              { title: "AC TOOLS", image: "/2.webjp" },
+              { title: "AC TOOLS", image: "/2.webp" },
               { title: "ACCESSORIES", image: "/3.webp" },
               { title: "HAND TOOLS", image: "/4.webp" },
             ].map((item, index) => (
