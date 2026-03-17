@@ -26,7 +26,7 @@ export default function Home() {
       </section>
 
       {/* Action Buttons Section - Restored to 1440px Standard */}
-      <section className="bg-white pt-12 pb-0">
+      <section className="bg-white pt-4 sm:pt-6 pb-0">
         <div className="mx-auto w-full max-w-[1440px] px-10 sm:px-10 lg:px-16">
           {/* Buttons Aligned to the Center */}
           <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-2">
@@ -38,15 +38,14 @@ export default function Home() {
             </button>
           </div>
 
-          {/* Wide Horizontal Line: Span full container width, 3px height, #A7A7A7 color */}
-          <div className="mt-8 mx-auto h-[2px] sm:h-[3px] w-full bg-[#A7A7A7]" />
+          <div className="mt-2 sm:mt-4 mx-auto h-[2px] sm:h-[3px] w-full bg-[#A7A7A7]" />
         </div>
       </section>
 
       {/* About Us Section - Aligned to Navbar Width */}
-      <section className="bg-white pt-0 pb-4 sm:pt-2 sm:pb-10">
+      <section className="bg-white pt-1 sm:pt-2 pb-0">
         <div className="mx-auto w-full max-w-[1440px] px-10 sm:px-10 lg:px-16">
-          <div className="relative mt-2 sm:mt-10 w-full aspect-[16/8] sm:aspect-[16/6.3] overflow-hidden">
+          <div className="relative w-full aspect-[16/7] sm:aspect-[16/5.6] overflow-hidden">
             <Image
               src="/about.webp"
               alt="About STEVRON"
@@ -57,12 +56,12 @@ export default function Home() {
           </div>
 
           {/* Bottom Divider */}
-          <div className="mt-4 sm:mt-14 mx-auto h-[2px] sm:h-[3px] w-full bg-[#A7A7A7]" />
+          <div className="mt-1 sm:mt-2 mx-auto h-[2px] sm:h-[3px] w-full bg-[#A7A7A7]" />
         </div>
       </section>
 
       {/* Explore Our Full Range Section - Figma: 1139×305px container, same alignment as navbar */}
-      <section className="bg-white pt-10 pb-12">
+      <section className="bg-white pt-4 sm:pt-6 pb-12">
         <div className="mx-auto w-full max-w-[1440px] px-10 sm:px-10 lg:px-16 flex flex-col items-center">
           {/* Section Title Label - as per Figma */}
           <div className="mb-12 flex h-[35px] items-center justify-center rounded-[5px] bg-black px-8">
