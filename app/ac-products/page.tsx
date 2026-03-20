@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { ChevronRight, ArrowRight } from "lucide-react";
+import Footer from "@/components/Footer";
+import CTASection from "@/components/CTASection";
 
 export default function ACProducts() {
   const [activeCategory, setActiveCategory] = useState("All Products");
@@ -81,7 +83,7 @@ export default function ACProducts() {
       {/* Main Content: Sidebar + Products Grid */}
       <section className="mx-auto w-full max-w-[1440px] px-10 py-24 lg:px-16">
         <div className="flex flex-col gap-12 lg:flex-row">
-          
+
           {/* Sidebar Categories */}
           <div className="w-full shrink-0 lg:w-[260px]">
             <h2 className="mb-6 font-orbitron text-[18px] font-bold uppercase tracking-tight text-black flex items-center gap-2">
@@ -93,11 +95,10 @@ export default function ACProducts() {
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
-                  className={`flex h-[36px] items-center justify-between px-4 font-orbitron text-[13px] font-medium tracking-wide transition-all border border-black/5 rounded-[4px] ${
-                    activeCategory === cat
-                      ? "bg-black text-white"
-                      : "bg-[#171717] text-white hover:bg-black/90"
-                  }`}
+                  className={`flex h-[36px] items-center justify-between px-4 font-orbitron text-[13px] font-medium tracking-wide transition-all border border-black/5 rounded-[4px] ${activeCategory === cat
+                    ? "bg-black text-white"
+                    : "bg-[#171717] text-white hover:bg-black/90"
+                    }`}
                 >
                   {cat}
                   {activeCategory === cat && <ChevronRight size={14} className="ml-2" />}
@@ -107,10 +108,10 @@ export default function ACProducts() {
           </div>
 
           {/* Products Grid - Using Figma Measurements: Cards are 207x261px */}
-          <div className="grid flex-1 grid-cols-1 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center">
+          <div className="grid flex-1 grid-cols-1 gap-2 px-10 sm:gap-3 lg:grid-cols-3 xl:grid-cols-4 justify-items-center">
             {products.map((product) => (
-              <div 
-                key={product.id} 
+              <div
+                key={product.id}
                 className="group flex flex-col w-full max-w-[207px] h-[261px] overflow-hidden rounded-[12px] border border-[#171717] bg-white transition-all hover:shadow-xl hover:-translate-y-1"
               >
                 {/* Product Image Container - Exactly 200px (261 - 61) */}
@@ -123,16 +124,16 @@ export default function ACProducts() {
                     className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
-                
+
                 {/* Product Info (Black Section) - Exactly 61px as per Figma */}
                 <div className="flex h-[61px] w-full flex-col bg-[#171717] p-2 border-t border-black/5">
-                   <h3 className="mb-0.5 px-1 font-orbitron text-[11px] font-bold text-white tracking-wide uppercase leading-none">
+                  <h3 className="mb-0.5 px-1 font-orbitron text-[11px] font-bold text-white tracking-wide uppercase leading-none">
                     {product.id}
                   </h3>
                   <p className="px-1 font-sans text-[8px] font-light text-[#A7A7A7] tracking-tight truncate leading-tight">
                     {product.subtitle}
                   </p>
-                  
+
                   {/* View Details Button - Very tight for 61px container */}
                   <div className="mt-auto px-1">
                     <button className="flex h-[18px] items-center gap-1 rounded-[2px] bg-white px-2 font-orbitron text-[7px] font-bold text-[#171717] transition-all hover:bg-gray-100 uppercase">
@@ -147,170 +148,59 @@ export default function ACProducts() {
         </div>
       </section>
 
-      {/* Bottom Range Section */}
-      <section className="bg-white pb-24">
-        <div className="mx-auto w-full max-w-[1440px] px-10 lg:px-16 flex flex-col items-center">
-           <div className="mb-12 flex h-[35px] items-center justify-center rounded-[5px] bg-[#000000] px-8">
-            <span className="font-orbitron text-[14px] font-normal tracking-wider text-white uppercase italic">
-              Explore Our Full Range
+      {/* Bottom Dividers and CTA Alignment */}
+      <div className="mx-auto w-full max-w-[1440px] px-6 sm:px-10 lg:px-16">
+        <div className="w-full h-px bg-gray-200" />
+      </div>
+
+      {/* Explore Full Range - Smaller Cards */}
+      <div className="mt-8 mb-4">
+        <div className="mx-auto w-full max-w-[1280px] px-6 sm:px-10 lg:px-16 flex flex-col items-center">
+          {/* Title Pill */}
+          <div className="bg-black text-white px-8 py-2 rounded-[5px] mb-8 shadow-md">
+            <span className="font-orbitron text-[14px] sm:text-[16px] font-bold tracking-wider uppercase">
+              Explore Other Range
             </span>
           </div>
 
-          <div className="grid w-full grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-[1100px]">
             {[
-              { title: "AC TOOLS", image: "/8.webp" },
+              { title: "DC TOOLS", image: "/7.webp" },
               { title: "ACCESSORIES", image: "/5.webp" },
               { title: "HAND TOOLS", image: "/9.webp" },
             ].map((item, index) => (
               <div
                 key={index}
-                className="flex h-[380px] w-full flex-col overflow-hidden border border-[#A7A7A7] rounded-[12px] shadow-sm group"
+                className="bg-white rounded-[15px] shadow-lg overflow-hidden flex flex-col border border-gray-100 transition-transform hover:scale-[1.02] group"
               >
-                <div className="flex h-[42px] w-full items-center justify-center bg-white border-b border-[#A7A7A7]">
-                  <span className="font-orbitron text-[14px] font-bold tracking-wider text-black">
+                <div className="bg-white px-4 py-3 border-b border-gray-50 text-center">
+                  <span className="font-orbitron text-[14px] font-bold tracking-widest text-black uppercase">
                     {item.title}
                   </span>
                 </div>
-                <div className="relative flex-grow bg-white overflow-hidden">
+                <div className="relative h-[350px] grow overflow-hidden">
                   <Image
                     src={item.image}
                     alt={item.title}
                     fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/5" />
                 </div>
               </div>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* Bottom CTA Section */}
-      <section className="bg-white py-20 border-t border-gray-100">
-        <div className="mx-auto w-full max-w-[1440px] px-10 lg:px-16 flex flex-col items-center text-center">
-          <div className="bg-black text-white px-8 py-2 rounded-[5px] mb-8 font-orbitron text-[14px] font-bold uppercase italic tracking-widest">
-            Ready to Experience Excellence?
-          </div>
-          <p className="font-sans text-[15px] text-[#565656] mb-10 max-w-[800px] leading-relaxed">
-            Join thousands of satisfied customers who trust Stevron for their industrial equipment needs. 
-            Find your perfect tools today and elevate your professional performance.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 mb-16">
-             <button className="bg-[#94A034] text-white font-orbitron text-[13px] font-bold px-10 py-3 rounded-[5px] shadow-sm hover:opacity-90 transition-opacity uppercase tracking-wider">
-                Explore Products
-             </button>
-             <button className="bg-[#94A034] text-white font-orbitron text-[13px] font-bold px-10 py-3 rounded-[5px] shadow-sm hover:opacity-90 transition-opacity uppercase tracking-wider">
-                Become Distributor
-             </button>
-          </div>
-          <div className="w-full h-[1px] bg-gray-200" />
-        </div>
-      </section>
-
-      <Footer />
-    </div>
-  );
-}
-
-function Footer() {
-  return (
-    <footer className="bg-black text-white pt-20 pb-10">
-      <div className="mx-auto w-full max-w-[1440px] px-10 sm:px-10 lg:px-16 flex flex-col">
-        {/* Newsletter Section */}
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-10 mb-20">
-          <h2 className="font-orbitron text-[20px] font-normal leading-[33px] text-white">
-            Subscribe to Our Newsletter
-          </h2>
-
-          <div className="relative w-full max-w-[562px]">
-            <div className="flex h-[53.46px] w-full items-center bg-white rounded-full overflow-hidden p-1 shadow-lg">
-              <input
-                type="email"
-                placeholder="Your Email Address"
-                className="flex-1 px-6 outline-none text-[#A3A3A3] font-sans text-[14px]"
-              />
-              <button className="bg-[#94A034] h-full px-8 rounded-full text-white font-orbitron text-[14px] font-bold transition-opacity hover:opacity-90">
-                Get Started
-              </button>
-            </div>
-          </div>
-        </div>
-
-        {/* Horizontal Line */}
-        <div className="w-full h-[1px] bg-white/20 mb-20" />
-
-        {/* Brand and Links Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
-          {/* Logo Column */}
-          <div className="flex flex-col gap-6">
-            <Image
-              src="/Logo.webp"
-              alt="STEVRON"
-              width={220}
-              height={48}
-              className="h-auto w-[180px]"
-            />
-            <p className="font-sans text-[14px] text-gray-400 leading-relaxed max-w-[300px]">
-              Empowering professionals with premium tools and equipment. Building the future of industrial excellence through innovation and quality.
-            </p>
-            <p className="font-sans text-[12px] text-gray-500 mt-4 outline-none">
-              © 2026 Stevron. All rights reserved.
-            </p>
-          </div>
-
-          {/* Company Column */}
-          <div className="flex flex-col gap-6">
-            <h3 className="font-orbitron text-[18px] font-bold tracking-wider relative inline-block w-fit">
-              Company
-              <div className="absolute bottom-[-10px] left-0 w-1/2 h-[2px] bg-[#94A034]" />
-            </h3>
-            <ul className="flex flex-col gap-4 font-sans text-[14px] text-gray-400">
-              <li><Link href="/" className="hover:text-white transition-colors">About Us</Link></li>
-              <li><Link href="/" className="hover:text-white transition-colors">Our Story</Link></li>
-              <li><Link href="/" className="hover:text-white transition-colors">Our Values</Link></li>
-              <li><Link href="/" className="hover:text-white transition-colors">FAQ&apos;s</Link></li>
-            </ul>
-          </div>
-
-          {/* Product Column */}
-          <div className="flex flex-col gap-6">
-            <h3 className="font-orbitron text-[18px] font-bold tracking-wider relative inline-block w-fit">
-              Product
-              <div className="absolute bottom-[-10px] left-0 w-1/2 h-[2px] bg-[#94A034]" />
-            </h3>
-            <ul className="flex flex-col gap-4 font-sans text-[14px] text-gray-400">
-              <li><Link href="/ac-products" className="hover:text-white transition-colors">AC Product</Link></li>
-              <li><Link href="/dc-products" className="hover:text-white transition-colors">DC Product</Link></li>
-            </ul>
-          </div>
-
-          {/* Support Column */}
-          <div className="flex flex-col gap-6 h-full">
-            <h3 className="font-orbitron text-[18px] font-bold tracking-wider relative inline-block w-fit">
-              Support
-              <div className="absolute bottom-[-10px] left-0 w-1/2 h-[2px] bg-[#94A034]" />
-            </h3>
-            <ul className="flex flex-col gap-4 font-sans text-[14px] text-gray-400">
-              <li><Link href="/" className="hover:text-white transition-colors">Contact Us</Link></li>
-              <li><Link href="/" className="hover:text-white transition-colors">Warranty</Link></li>
-            </ul>
-
-            {/* Social Icons */}
-            <div className="flex items-center gap-6 mt-auto pt-10 justify-start">
-              <Link href="#" className="flex h-8 w-8 items-center justify-center rounded-full bg-white transition-transform hover:scale-110 shadow-sm">
-                <Image src="/msg.png" alt="Message" width={20} height={20} className="object-contain" />
-              </Link>
-              <Link href="#" className="flex h-8 w-8 items-center justify-center rounded-full bg-white transition-transform hover:scale-110 shadow-sm">
-                <Image src="/insta.png" alt="Instagram" width={20} height={20} className="object-contain" />
-              </Link>
-              <Link href="#" className="flex h-8 w-8 items-center justify-center rounded-full bg-white transition-transform hover:scale-110 shadow-sm">
-                <Image src="/face.png" alt="Facebook" width={20} height={20} className="object-contain" />
-              </Link>
-            </div>
+          {/* Line below range cards before CTA */}
+          <div className="w-full max-w-[1440px] mt-12">
+            <div className="w-full h-px bg-gray-200" />
           </div>
         </div>
       </div>
-    </footer>
+
+      {/* CTA Section */}
+      <CTASection />
+      <Footer />
+    </div>
   );
 }

@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight, ChevronDown, ArrowRight } from "lucide-react";
+import Footer from "@/components/Footer";
+import CTASection from "@/components/CTASection";
 
 export default function Home() {
   const sliderRef = useRef<HTMLDivElement>(null);
@@ -92,8 +94,8 @@ export default function Home() {
             </span>
           </div>
 
-          {/* Categories Grid - alignment same as navbar */}
-          <div className="grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-6 lg:gap-6">
+          {/* Categories Grid - alignment same as navbar, increased gapping as per user request */}
+          <div className="grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16 lg:gap-20">
             {[
               { title: "DC TOOLS", image: "/7.webp", href: "/dc-products" },
               { title: "AC TOOLS", image: "/8.webp", href: "/ac-products" },
@@ -103,7 +105,7 @@ export default function Home() {
               <Link
                 key={index}
                 href={item.href}
-                className="flex h-[320px] xs:h-[350px] sm:h-[400px] lg:h-[380px] w-full flex-col overflow-hidden border border-[#A7A7A7] rounded-[12px] shadow-sm transition-transform hover:scale-[1.02]"
+                className="flex h-[360px] w-full flex-col overflow-hidden border border-[#A7A7A7] rounded-[12px] shadow-[5px_5px_10px_0px_rgba(0,0,0,0.4)] transition-transform hover:scale-[1.02]"
               >
                 {/* Header Box - Restored: White bg, Black text */}
                 <div className="flex h-[42px] w-full items-center justify-center bg-white border-b border-[#A7A7A7]">
@@ -128,8 +130,19 @@ export default function Home() {
       </section>
 
       {/* Our Core Values Section - Box: header white + inner #565656 bar, body #171717 */}
-      <section className="bg-[#EFEFEF] py-16">
-        <div className="mx-auto w-full max-w-[1440px] px-10 sm:px-10 lg:px-16 flex flex-col items-center">
+      <section className="relative w-full overflow-hidden py-16">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/about-bgg.png"
+            alt="Background"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+
+        <div className="relative z-10 mx-auto w-full max-w-[1440px] px-10 sm:px-10 lg:px-16 flex flex-col items-center">
           {/* Logo + Section Title (navbar width) */}
           <div className="mb-10 flex flex-col items-center gap-4">
             <div className="flex h-[35px] items-center justify-center rounded-[5px] bg-[#000000] px-8">
@@ -200,14 +213,14 @@ export default function Home() {
                     {/* Subtitle with side lines (Figma style) */}
                     <div className="mb-4 flex w-full items-center gap-3">
                       <div className="h-[1px] flex-1 bg-[#FFFFFF]" />
-                      <p className="whitespace-nowrap font-orbitron text-[11px] font-bold text-[#FFFFFF]">
+                      <p className="whitespace-nowrap font-sans text-[14px] font-normal text-[#FFFFFF]">
                         {item.subtitle}
                       </p>
                       <div className="h-[1px] flex-1 bg-[#FFFFFF]" />
                     </div>
 
-                    {/* Description left-aligned (Figma: 12px, Weight 200, White, 3% tracking) */}
-                    <p className="text-left font-sans text-[12px] font-extralight tracking-[0.03em] leading-relaxed text-[#FFFFFF]">
+                    {/* Description left-aligned (Figma: 14px, Weight 400, White) */}
+                    <p className="text-left font-sans text-[14px] font-normal tracking-[0.03em] leading-relaxed text-[#FFFFFF]">
                       {item.description}
                     </p>
                   </div>
@@ -228,8 +241,7 @@ export default function Home() {
               </span>
             </div>
           </div>
-
-          {/* Product Grid with Navigation Arrows */}
+          {/* Product Grid with Navigation Arrows (Restored Slider) */}
           <div className="relative w-full">
             {/* Left Arrow */}
             <button 
@@ -246,12 +258,14 @@ export default function Home() {
               style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
             >
               {[
-                { name: "75NM", subtitle: "Taladro Percutor Compacto", image: "/6.webp" },
-                { name: "45NM", subtitle: "Taladro Percutor", image: "/6.webp" },
-                { name: "400NM", subtitle: "Llave de Impacto", image: "/6.webp" },
-                { name: "600NM", subtitle: "Llave de Impacto", image: "/6.webp" },
-                { name: "800NM", subtitle: "Taladro Inalámbrico", image: "/6.webp" },
-                { name: "1000NM", subtitle: "Taladro Profesional", image: "/6.webp" },
+                { name: "BNED650", subtitle: "650W - Impact Drill", image: "/6.webp" },
+                { name: "BNID710", subtitle: "710W - Impact Drill", image: "/6.webp" },
+                { name: "BNID850", subtitle: "850W - Impact Drill", image: "/6.webp" },
+                { name: "BNID1100", subtitle: "1100W - Industrial Hammer Drill", image: "/6.webp" },
+                { name: "BNAG750", subtitle: "750W - Angle Grinder", image: "/6.webp" },
+                { name: "BNAG950", subtitle: "950W - Professional Grinder", image: "/6.webp" },
+                { name: "BNAG2200", subtitle: "2200W - Industrial Grinder", image: "/6.webp" },
+                { name: "BNAG2400", subtitle: "2400W - Heavy Duty Grinder", image: "/6.webp" },
               ].map((product, idx) => (
                 <div key={idx} className="group flex flex-col overflow-hidden rounded-[16px] border border-[#E5E5E5] shadow-sm transition-all hover:shadow-md min-w-[280px] sm:min-w-[calc(50%-8px)] lg:min-w-[calc(25%-12px)] snap-start">
                   {/* Top: Image (White BG) */}
@@ -267,7 +281,7 @@ export default function Home() {
                   {/* Bottom: Info (Black BG) */}
                   <div className="flex flex-col flex-1 bg-[#171717] px-5 py-4">
                     <h3 className="mb-1 font-orbitron text-[16px] font-bold text-[#FFFFFF]">{product.name}</h3>
-                    <p className="mb-3 font-sans text-[12px] font-extralight text-[#A3A3A3] tracking-[0.03em]">{product.subtitle}</p>
+                    <p className="mb-3 font-orbitron text-[10px] font-normal text-[#A3A3A3] tracking-[0.03em]">{product.subtitle}</p>
                     {/* View Details Button */}
                     <button className="mt-auto flex h-[28px] w-fit items-center gap-2 rounded-full bg-[#FFFFFF] pl-4 pr-1 text-[13px] font-medium text-[#565656] font-orbitron">
                       View Details
@@ -416,147 +430,5 @@ export default function Home() {
       {/* Footer Section */}
       <Footer />
     </div>
-  );
-}
-
-function CTASection() {
-  return (
-    <section className="bg-white py-20">
-      <div className="mx-auto w-full max-w-[1440px] px-10 sm:px-10 lg:px-16 flex flex-col items-center">
-        {/* Top Divider */}
-        <div className="w-full h-[1px] bg-[#E5E5E5] mb-16" />
-
-        <div className="flex flex-col items-center gap-8 text-center max-w-[800px]">
-          {/* Title Pill */}
-          <div className="bg-black text-white px-8 py-2 rounded-[5px] shadow-lg">
-            <span className="font-orbitron text-[14px] sm:text-[16px] font-bold tracking-wider uppercase">
-              Ready to Experience Excellence?
-            </span>
-          </div>
-
-          {/* Description */}
-          <p className="font-sans text-[16px] text-[#565656] leading-relaxed">
-            Join thousands of satisfied customers who trust Stevron for their industrial equipment needs.
-          </p>
-
-          {/* Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 mt-2">
-            <button className="bg-[#94A034] text-white font-orbitron text-[14px] px-10 py-3 rounded-[5px] shadow-md transition-opacity hover:opacity-90">
-              Explore Products
-            </button>
-            <button className="bg-[#94A034] text-white font-orbitron text-[14px] px-10 py-3 rounded-[5px] shadow-md transition-opacity hover:opacity-90">
-              Become Distributor
-            </button>
-          </div>
-        </div>
-
-        {/* Bottom Divider */}
-        <div className="w-full h-[1px] bg-[#E5E5E5] mt-16" />
-      </div>
-    </section>
-  );
-}
-
-function Footer() {
-  return (
-    <footer className="bg-black text-white pt-20 pb-10">
-      <div className="mx-auto w-full max-w-[1440px] px-10 sm:px-10 lg:px-16 flex flex-col">
-        {/* Newsletter Section */}
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-10 mb-20">
-          <h2 className="font-orbitron text-[20px] font-normal leading-[33px] text-white">
-            Subscribe to Our Newsletter
-          </h2>
-
-          <div className="relative w-full max-w-[562px]">
-            <div className="flex h-[53.46px] w-full items-center bg-white rounded-full overflow-hidden p-1 shadow-lg">
-              <input
-                type="email"
-                placeholder="Your Email Address"
-                className="flex-1 px-6 outline-none text-[#A3A3A3] font-sans text-[14px]"
-              />
-              <button className="bg-[#94A034] h-full px-8 rounded-full text-white font-orbitron text-[14px] font-bold transition-opacity hover:opacity-90">
-                Get Started
-              </button>
-            </div>
-          </div>
-        </div>
-
-        {/* Horizontal Line */}
-        <div className="w-full h-[1px] bg-white/20 mb-20" />
-
-        {/* Brand and Links Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
-          {/* Logo Column */}
-          <div className="flex flex-col gap-6">
-            <Image
-              src="/Logo.webp"
-              alt="STEVRON"
-              width={220}
-              height={48}
-              className="h-auto w-[180px]"
-            />
-            <p className="font-sans text-[14px] text-gray-400 leading-relaxed max-w-[300px]">
-              Empowering professionals with premium tools and equipment. Building the future of industrial excellence through innovation and quality.
-            </p>
-            <p className="font-sans text-[12px] text-gray-500 mt-4 outline-none">
-              © 2026 Stevron. All rights reserved.
-            </p>
-          </div>
-
-          {/* Company Column */}
-          <div className="flex flex-col gap-6">
-            <h3 className="font-orbitron text-[18px] font-bold tracking-wider relative inline-block w-fit">
-              Company
-              <div className="absolute bottom-[-10px] left-0 w-1/2 h-[2px] bg-[#94A034]" />
-            </h3>
-            <ul className="flex flex-col gap-4 font-sans text-[14px] text-gray-400">
-              <li><Link href="/" className="hover:text-white transition-colors">About Us</Link></li>
-              <li><Link href="/" className="hover:text-white transition-colors">Our Story</Link></li>
-              <li><Link href="/" className="hover:text-white transition-colors">Our Values</Link></li>
-              <li><Link href="/" className="hover:text-white transition-colors">FAQ&apos;s</Link></li>
-            </ul>
-          </div>
-
-          {/* Product Column */}
-          <div className="flex flex-col gap-6">
-            <h3 className="font-orbitron text-[18px] font-bold tracking-wider relative inline-block w-fit">
-              Product
-              <div className="absolute bottom-[-10px] left-0 w-1/2 h-[2px] bg-[#94A034]" />
-            </h3>
-            <ul className="flex flex-col gap-4 font-sans text-[14px] text-gray-400">
-              <li><Link href="/" className="hover:text-white transition-colors">DC Tools</Link></li>
-              <li><Link href="/" className="hover:text-white transition-colors">AC Tools</Link></li>
-              <li><Link href="/" className="hover:text-white transition-colors">Accessories</Link></li>
-              <li><Link href="/" className="hover:text-white transition-colors">Hand Tools</Link></li>
-            </ul>
-          </div>
-
-          {/* Support Column */}
-          <div className="flex flex-col gap-6 h-full">
-            <h3 className="font-orbitron text-[18px] font-bold tracking-wider relative inline-block w-fit">
-              Support
-              <div className="absolute bottom-[-10px] left-0 w-1/2 h-[2px] bg-[#94A034]" />
-            </h3>
-            <ul className="flex flex-col gap-4 font-sans text-[14px] text-gray-400">
-              <li><Link href="/" className="hover:text-white transition-colors">Contact Us</Link></li>
-              <li><Link href="/" className="hover:text-white transition-colors">Warranty</Link></li>
-            </ul>
-
-            {/* Social Icons */}
-            <div className="flex items-center gap-6 mt-auto pt-10 justify-start">
-              <Link href="#" className="flex h-8 w-8 items-center justify-center rounded-full bg-white transition-transform hover:scale-110 shadow-sm">
-                <Image src="/msg.png" alt="Message" width={20} height={20} className="object-contain" />
-              </Link>
-              <Link href="#" className="flex h-8 w-8 items-center justify-center rounded-full bg-white transition-transform hover:scale-110 shadow-sm">
-                <Image src="/insta.png" alt="Instagram" width={20} height={20} className="object-contain" />
-              </Link>
-              <Link href="#" className="flex h-8 w-8 items-center justify-center rounded-full bg-white transition-transform hover:scale-110 shadow-sm">
-                <Image src="/face.png" alt="Facebook" width={20} height={20} className="object-contain" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
   );
 }
