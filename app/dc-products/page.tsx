@@ -78,7 +78,7 @@ export default function DCProducts() {
       </section>
 
       {/* Main Content: Sidebar + Products Grid */}
-      <section className="mx-auto w-full max-w-[1440px] px-10 py-24 lg:px-16">
+      <section className="mx-auto w-full max-w-[1440px] px-4 py-16 sm:px-6 sm:py-20 lg:px-16 lg:py-24">
         <div className="flex flex-col gap-12 lg:flex-row">
 
           {/* Sidebar Categories */}
@@ -105,7 +105,7 @@ export default function DCProducts() {
           </div>
 
           {/* Products Grid - Using Figma Measurements: Cards are 207x261px */}
-          <div className="grid flex-1 grid-cols-1 gap-3 px-10 sm:gap-4 lg:grid-cols-3 xl:grid-cols-4 justify-items-center">
+          <div className="grid flex-1 grid-cols-1 justify-items-center gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 xl:grid-cols-4">
             {products.map((product) => {
               const [spec = product.id, ...restSubtitle] = product.subtitle.split(" - ");
               const productSubtitle = restSubtitle.join(" - ") || product.subtitle;
@@ -126,19 +126,19 @@ export default function DCProducts() {
                 </div>
 
                 {/* Product Info (Black Section) - Exactly 61px as per Figma */}
-                <div className="flex h-[105px] w-full flex-col bg-[#171717] p-2 border-t border-black/5">
-                   <h3 className="mb-0.5 px-1 font-['Eurostile_Extended',sans-serif] text-[15px] font-bold leading-[100%] uppercase text-white">
+                <div className="flex h-[61px] w-full flex-col justify-center gap-0.5 border-t border-black/5 bg-[#171717] px-2 py-1.5">
+                   <h3 className="px-1 font-['Eurostile_Extended',sans-serif] text-[14px] font-bold leading-[100%] uppercase text-white">
                     {spec}
                   </h3>
-                  <p className="px-1 font-[Antenna] text-[12px] font-normal leading-[115%] text-[#A7A7A7]">
+                  <p className="px-1 font-[Antenna] text-[11px] font-normal leading-[100%] text-[#A7A7A7]">
                     {productSubtitle}
                   </p>
 
                   {/* View Details Button - Very tight for 61px container */}
-                  <div className="mt-auto px-1">
-                    <button className="flex h-[20px] items-center gap-1 rounded-[2px] bg-white px-2.5 font-orbitron text-[8px] font-normal leading-[100%] text-[#171717] transition-all hover:bg-gray-100">
+                  <div className="px-1">
+                    <button className="flex h-[14px] w-[67px] items-center justify-center gap-1 rounded-[6.5px] border border-[#D9D9D9] bg-white px-1.5 font-orbitron text-[6px] font-medium leading-none text-[#171717] transition-all hover:bg-gray-100">
                       View Details
-                      <ArrowRight size={8} className="stroke-[3]" />
+                      <ArrowRight size={7} className="stroke-[2.5]" />
                     </button>
                   </div>
                 </div>
@@ -149,13 +149,13 @@ export default function DCProducts() {
       </section>
 
       {/* Bottom Dividers and CTA Alignment */}
-      <div className="mx-auto w-full max-w-[1440px] px-6 sm:px-10 lg:px-16">
+      <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-16">
         <div className="w-full h-px bg-gray-200" />
       </div>
 
       {/* Explore Full Range - Smaller Cards */}
       <div className="mt-8 mb-4">
-        <div className="mx-auto w-full max-w-[1280px] px-6 sm:px-10 lg:px-16 flex flex-col items-center">
+        <div className="mx-auto flex w-full max-w-[1280px] flex-col items-center px-4 sm:px-6 lg:px-16">
           {/* Title Pill */}
           <div className="bg-black text-white px-8 py-2 rounded-[5px] mb-8 shadow-md">
             <span className="font-orbitron text-[14px] sm:text-[16px] font-bold tracking-wider uppercase">
@@ -163,7 +163,7 @@ export default function DCProducts() {
             </span>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 w-full max-w-[1100px]">
+          <div className="grid w-full max-w-[1100px] grid-cols-1 gap-6 md:grid-cols-3 md:gap-10">
             {[
               { title: "AC TOOLS", image: "/8.webp", href: "/ac-products" },
               { title: "ACCESSORIES", image: "/5.webp", href: "#" },

@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 z-50 flex h-[80px] w-full items-center justify-center border-b border-white/30 bg-[#050505]">
-      <div className="flex w-full max-w-[1440px] items-center px-10 sm:px-10 lg:px-16">
+      <div className="flex w-full max-w-[1440px] items-center px-4 sm:px-6 lg:px-16">
         {/* Logo */}
         <div className="flex shrink-0 items-center">
           <Link href="/">

@@ -9,6 +9,7 @@ import CTASection from "@/components/CTASection";
 
 export default function Home() {
   const sliderRef = useRef<HTMLDivElement>(null);
+  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
 
   useEffect(() => {
     const slider = sliderRef.current;
@@ -42,7 +43,7 @@ export default function Home() {
         </div>
 
         {/* Alignment Container - Restored to 1440px Standard */}
-        <div className="relative z-10 mx-auto h-full w-full max-w-[1440px] px-10 sm:px-10 lg:px-16 flex flex-col justify-center">
+        <div className="relative z-10 mx-auto flex h-full w-full max-w-[1440px] flex-col justify-center px-4 sm:px-6 lg:px-16">
           <div className="w-full">
             {/* Overlay components can go here */}
           </div>
@@ -51,7 +52,7 @@ export default function Home() {
 
       {/* Action Buttons Section - Restored to 1440px Standard */}
       <section className="bg-white pt-4 sm:pt-6 pb-0">
-        <div className="mx-auto w-full max-w-[1440px] px-10 sm:px-10 lg:px-16">
+        <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-16">
           {/* Buttons Aligned to the Center */}
           <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-2">
             <button className="flex h-[45px] sm:h-[38px] px-8 items-center justify-center rounded-[5px] bg-[#000000] font-orbitron text-[14px] font-normal text-white transition-opacity hover:opacity-90 w-full sm:w-auto">
@@ -68,7 +69,7 @@ export default function Home() {
 
       {/* About Us Section - Aligned to Navbar Width */}
       <section className="bg-white pt-1 sm:pt-2 pb-0">
-        <div className="mx-auto w-full max-w-[1752px] px-10 sm:px-10 lg:px-16">
+        <div className="mx-auto w-full max-w-[1752px] px-4 sm:px-6 lg:px-16">
           <div className="relative w-full aspect-[16/7] sm:aspect-[16/5.6] overflow-hidden">
             <Image
               src="/about.webp"
@@ -86,7 +87,7 @@ export default function Home() {
 
       {/* Explore Our Full Range Section - Figma: 1139×305px container, same alignment as navbar */}
       <section className="bg-white pt-4 sm:pt-6 pb-12">
-        <div className="mx-auto w-full max-w-[1440px] px-10 sm:px-10 lg:px-16 flex flex-col items-center">
+        <div className="mx-auto flex w-full max-w-[1440px] flex-col items-center px-4 sm:px-6 lg:px-16">
           {/* Section Title Label - as per Figma */}
           <div className="mb-12 flex h-[35px] items-center justify-center rounded-[5px] bg-black px-8">
             <span className="font-orbitron text-[14px] font-normal tracking-wider text-white">
@@ -95,7 +96,7 @@ export default function Home() {
           </div>
 
           {/* Categories Grid - alignment same as navbar, increased gapping as per user request */}
-          <div className="grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16 lg:gap-20">
+          <div className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8 lg:grid-cols-4 lg:gap-10">
             {[
               { title: "DC TOOLS", image: "/7.webp", href: "/dc-products" },
               { title: "AC TOOLS", image: "/8.webp", href: "/ac-products" },
@@ -142,7 +143,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="relative z-10 mx-auto w-full max-w-[1440px] px-10 sm:px-10 lg:px-16 flex flex-col items-center">
+        <div className="relative z-10 mx-auto flex w-full max-w-[1440px] flex-col items-center px-4 sm:px-6 lg:px-16">
           {/* Logo + Section Title (navbar width) */}
           <div className="mb-10 flex flex-col items-center gap-4">
             <div className="flex h-[35px] items-center justify-center rounded-[5px] bg-[#000000] px-8">
@@ -232,7 +233,7 @@ export default function Home() {
       </section>
       {/* Our Professional Tools Section */}
       <section className="bg-[#FFFFFF] py-20 pb-16">
-        <div className="mx-auto w-full max-w-[1440px] px-10 sm:px-10 lg:px-16 flex flex-col items-center">
+        <div className="mx-auto flex w-full max-w-[1440px] flex-col items-center px-4 sm:px-6 lg:px-16">
           {/* Section Label */}
           <div className="mb-12 flex flex-col items-center gap-4">
             <div className="flex h-[35px] items-center justify-center rounded-[5px] bg-[#000000] px-8">
@@ -316,7 +317,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="relative z-10 mx-auto w-full max-w-[1440px] px-10 sm:px-10 lg:px-16 flex flex-col items-center">
+        <div className="relative z-10 mx-auto flex w-full max-w-[1440px] flex-col items-center px-4 sm:px-6 lg:px-16">
           {/* Top Label - Figma: 373x38px, White BG, Black Text */}
           <div className="mb-12 flex h-[38px] w-full max-w-[443px] items-center justify-center rounded-[5px] bg-white shadow-lg border border-black/10">
             <span className="font-orbitron  text-[14px] font-bold tracking-widest text-black ">
@@ -354,7 +355,7 @@ export default function Home() {
                 href={brand.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex min-h-[190px] w-full flex-col items-center justify-center rounded-[12px] bg-white p-6 lg:p-8 shadow-[1px_2px_10.6px_1px_rgba(0,0,0,0.15)] border border-black/5 transition-all hover:scale-[1.03] hover:shadow-xl block"
+                className="flex min-h-[190px] w-full flex-col items-center justify-center rounded-[12px] border border-black/5 bg-white p-5 shadow-[1px_2px_10.6px_1px_rgba(0,0,0,0.15)] transition-all hover:scale-[1.03] hover:shadow-xl sm:p-6 lg:p-8"
               >
                 {/* Brand Logo/Text - Figma: Eurostile Extended 32px Bold */}
                 <h2
@@ -390,7 +391,7 @@ export default function Home() {
 
       {/* FAQ Section */}
       <section className="bg-white py-12">
-        <div className="mx-auto w-full max-w-[1440px] px-10 sm:px-10 lg:px-16 flex flex-col items-center">
+        <div className="mx-auto flex w-full max-w-[1440px] flex-col items-center px-4 sm:px-6 lg:px-16">
           {/* Section Label */}
           <div className="mb-4 flex h-[35px] items-center justify-center rounded-[5px] bg-[#000000] px-8 shadow-sm">
             <span className="font-orbitron text-[14px] font-normal tracking-wider text-[#FFFFFF]">
@@ -416,14 +417,32 @@ export default function Home() {
             ].map((question, idx) => (
               <div
                 key={idx}
-                className="flex items-center justify-between rounded-[8px] border border-[#E5E5E5] bg-[#FFFFFF] px-6 py-[16px] shadow-[0_4px_12px_-2px_rgba(0,0,0,0.06)] transition-all hover:shadow-md cursor-pointer group"
+                className="rounded-[8px] border border-[#E5E5E5] bg-[#FFFFFF] shadow-[0_4px_12px_-2px_rgba(0,0,0,0.06)] transition-all hover:shadow-md"
               >
-                <span className="font-[Antenna] text-[16px] leading-[100%] font-normal text-[#000000]">
-                  {question}
-                </span>
-                <div className="flex h-6 w-6 items-center justify-center rounded-full bg-[#94A034] shadow-sm transition-transform group-hover:scale-110">
-                  <ChevronDown size={14} className="text-white" strokeWidth={3} />
-                </div>
+                <button
+                  onClick={() => setOpenFaqIndex(openFaqIndex === idx ? null : idx)}
+                  className="group flex w-full items-center justify-between px-6 py-[16px] text-left cursor-pointer"
+                >
+                  <span className="font-[Antenna] text-[16px] leading-[100%] font-normal text-[#000000]">
+                    {question}
+                  </span>
+                  <div className="flex h-6 w-6 items-center justify-center rounded-full bg-[#94A034] shadow-sm transition-transform group-hover:scale-110">
+                    <ChevronDown
+                      size={14}
+                      className={`text-white transition-transform ${openFaqIndex === idx ? "rotate-180" : ""}`}
+                      strokeWidth={3}
+                    />
+                  </div>
+                </button>
+
+                {openFaqIndex === idx && (
+                  <div className="px-6 pb-4">
+                    <p className="font-[Antenna] text-[14px] leading-[140%] text-[#565656]">
+                      Stevron manufactures AC and DC power tools, hand tools, and heavy-duty industrial equipment.
+                      These products are designed for durability, efficiency, and reliable performance in demanding environments.
+                    </p>
+                  </div>
+                )}
               </div>
             ))}
           </div>
