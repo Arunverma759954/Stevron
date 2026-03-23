@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="mx-auto w-full max-w-[1440px] px-6 sm:px-10 lg:px-16 flex flex-col">
         {/* Newsletter Section - Narrower width as per Figma */}
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 lg:gap-12 items-center mb-12">
-          <h2 className="lg:col-span-2 font-Antenna text-[20px] font-normal leading-tight text-white lg:text-left">
+          <h2 className="lg:col-span-2 font-['Antenna',sans-serif] text-[20px] font-normal leading-tight text-white lg:text-left">
             Subscribe to Our Newsletter
           </h2>
 
@@ -18,9 +18,9 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder="Your Email Address"
-                className="flex-1 px-6 outline-none text-[#A3A3A3] font-Antenna text-[13px]"
+                className="flex-1 px-6 outline-none text-[#A3A3A3] font-['Antenna',sans-serif] text-[13px]"
               />
-              <button className="bg-[#94A034] h-full px-8 rounded-full text-white font-Antenna text-[14px] font-bold transition-opacity hover:opacity-90">
+              <button className="bg-[#94A034] h-full px-8 rounded-full text-white font-['Antenna',sans-serif] text-[14px] font-bold transition-opacity hover:opacity-90">
                 Get Started
               </button>
             </div>
@@ -41,10 +41,10 @@ export default function Footer() {
               height={40}
               className="h-auto w-[160px]"
             />
-            <p className="font-Antenna text-[13px] text-gray-400 leading-relaxed font-light max-w-[400px]">
+            <p className="font-['Antenna',sans-serif] text-[13px] text-gray-400 leading-relaxed font-light max-w-[400px]">
               Empowering professionals with premium tools and equipment. Building the future of industrial excellence through innovation and quality.
             </p>
-            <p className="font-Antenna text-[11px] text-gray-500 mt-4">
+            <p className="font-['Antenna',sans-serif] text-[11px] text-gray-500 mt-4">
               © 2026 Stevron. All rights reserved.
             </p>
           </div>
@@ -57,7 +57,7 @@ export default function Footer() {
                 Company
                 <div className="absolute bottom-[-6px] left-0 w-8 h-[2px] bg-[#94A034]" />
               </h3>
-              <ul className="flex flex-col gap-3 font-Antenna text-[14px] text-gray-400 font-light lg:text-left">
+              <ul className="flex flex-col gap-3 font-['Antenna',sans-serif] text-[14px] text-gray-400 font-light lg:text-left">
                 <li><Link href="/" className="hover:text-white transition-colors">About Us</Link></li>
                 <li><Link href="/" className="hover:text-white transition-colors">Our Story</Link></li>
                 <li><Link href="/" className="hover:text-white transition-colors">Our Values</Link></li>
