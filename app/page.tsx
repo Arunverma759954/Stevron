@@ -153,7 +153,7 @@ export default function Home() {
           </div>
 
           {/* Four boxes - Figma: integrated white header strip + body #171717 */}
-          <div className="grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid w-full justify-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
                 title: "INNOVATION",
@@ -182,41 +182,41 @@ export default function Home() {
             ].map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col overflow-hidden rounded-[16px] shadow-lg"
+                className="flex h-[305px] w-full max-w-[242px] flex-col overflow-hidden rounded-[12px] shadow-lg"
               >
                 {/* Header: Layered Design (Figma) */}
                 <div className="flex flex-col">
                   {/* Black top strip (Increased height to shift white bar down) */}
-                  <div className="h-[28px] w-full bg-[#171717]" />
+                  <div className="h-[18px] w-full bg-[#171717]" />
                   {/* White title strip (Figma: 18px Bold) */}
-                  <div className="flex h-[50px] items-center justify-center bg-[#FFFFFF]">
-                    <span className="font-orbitron text-[18px] font-bold uppercase tracking-[0.05em] text-[#565656]">
+                  <div className="flex h-[28px] items-center justify-center bg-[#FFFFFF]">
+                    <span className="font-orbitron text-[13px] font-bold uppercase tracking-[0.02em] text-[#565656]">
                       {item.title}
                     </span>
                   </div>
                 </div>
 
                 {/* Body: #171717 with icon image, line, subtitle, description */}
-                <div className="relative flex flex-1 flex-col bg-[#171717] px-6 py-8">
+                <div className="relative flex flex-1 flex-col bg-[#171717] px-3 py-3">
                   <div className="relative z-10 flex flex-col items-center">
                     {/* Icon Image centered (Figma: 34.31x40px) */}
-                    <div className="mb-4 flex h-[40px] w-[34.31px] items-center justify-center">
+                    <div className="mb-2 flex h-[30px] w-[26px] items-center justify-center">
                       <Image
                         src={item.iconPath}
                         alt=""
-                        width={35}
-                        height={40}
+                        width={26}
+                        height={30}
                         className="h-full w-full object-contain"
                       />
                     </div>
 
                     {/* Subtitle with side lines (Figma style) */}
-                    <div className="mb-4 flex w-full items-center gap-3">
-                      <div className="h-[1px] flex-1 bg-[#FFFFFF]" />
+                    <div className="mb-2 flex w-full items-center gap-2">
+                      <div className="h-px flex-1 bg-[#FFFFFF]" />
                       <p className="whitespace-nowrap font-['Antenna',sans-serif] text-[14px] font-normal leading-[100%] tracking-[0%] text-[#FFFFFF]">
                         {item.subtitle}
                       </p>
-                      <div className="h-[1px] flex-1 bg-[#FFFFFF]" />
+                      <div className="h-px flex-1 bg-[#FFFFFF]" />
                     </div>
 
                     {/* Description left-aligned (Figma: 14px, Weight 400, White) */}

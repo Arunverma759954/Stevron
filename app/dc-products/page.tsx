@@ -112,10 +112,10 @@ export default function DCProducts() {
               return (
               <div
                 key={product.id}
-                className="group flex flex-col w-full max-w-[207px] h-[261px] overflow-hidden rounded-[12px] border border-[#171717] bg-white transition-all hover:shadow-xl hover:-translate-y-1"
+                className="group flex flex-col w-full max-w-[207px] h-[300px] overflow-hidden rounded-[12px] border border-[#171717] bg-white transition-all hover:shadow-xl hover:-translate-y-1"
               >
                 {/* Product Image Container - Exactly 200px (261 - 61) */}
-                <div className="flex h-[200px] w-full shrink-0 items-center justify-center p-4 bg-white">
+                <div className="flex h-[205px] w-full shrink-0 items-center justify-center p-4 bg-white">
                   <Image
                     src={product.image}
                     alt={product.id}
@@ -126,17 +126,17 @@ export default function DCProducts() {
                 </div>
 
                 {/* Product Info (Black Section) - Exactly 61px as per Figma */}
-                <div className="flex h-[61px] w-full flex-col bg-[#171717] p-2 border-t border-black/5">
+                <div className="flex h-[95px] w-full flex-col bg-[#171717] p-2 border-t border-black/5">
                    <h3 className="mb-0.5 px-1 font-['Eurostile_Extended',sans-serif] text-[14px] font-bold leading-[100%] uppercase text-white">
                     {spec}
                   </h3>
-                  <p className="px-1 font-[Antenna] text-[12px] font-extralight leading-[100%] text-[#A7A7A7] truncate">
+                  <p className="px-1 font-[Antenna] text-[11px] font-extralight leading-[115%] text-[#A7A7A7]">
                     {productSubtitle}
                   </p>
 
                   {/* View Details Button - Very tight for 61px container */}
                   <div className="mt-auto px-1">
-                    <button className="flex h-[18px] items-center gap-1 rounded-[2px] bg-white px-2 font-orbitron text-[5px] font-normal leading-[100%] text-[#171717] transition-all hover:bg-gray-100">
+                    <button className="flex h-[18px] items-center gap-1 rounded-[2px] bg-white px-2 font-orbitron text-[6px] font-normal leading-[100%] text-[#171717] transition-all hover:bg-gray-100">
                       View Details
                       <ArrowRight size={8} className="stroke-[3]" />
                     </button>
