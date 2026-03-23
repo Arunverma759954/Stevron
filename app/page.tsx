@@ -213,14 +213,14 @@ export default function Home() {
                     {/* Subtitle with side lines (Figma style) */}
                     <div className="mb-4 flex w-full items-center gap-3">
                       <div className="h-[1px] flex-1 bg-[#FFFFFF]" />
-                      <p className="whitespace-nowrap font-sans text-[14px] font-normal text-[#FFFFFF]">
+                      <p className="whitespace-nowrap font-['Antenna',_sans-serif] text-[14px] font-normal text-[#FFFFFF]">
                         {item.subtitle}
                       </p>
                       <div className="h-[1px] flex-1 bg-[#FFFFFF]" />
                     </div>
 
                     {/* Description left-aligned (Figma: 14px, Weight 400, White) */}
-                    <p className="text-left font-sans text-[14px] font-normal tracking-[0.03em] leading-relaxed text-[#FFFFFF]">
+                    <p className="text-left font-['Antenna',_sans-serif] text-[14px] font-normal tracking-[0.03em] leading-relaxed text-[#FFFFFF]">
                       {item.description}
                     </p>
                   </div>
@@ -244,14 +244,14 @@ export default function Home() {
           {/* Product Grid with Navigation Arrows (Restored Slider) */}
           <div className="relative w-full">
             {/* Left Arrow */}
-            <button 
+            <button
               onClick={() => sliderRef.current?.scrollBy({ left: -300, behavior: 'smooth' })}
               className="absolute left-[-40px] top-1/2 hidden z-10 h-8 w-8 -translate-y-1/2 items-center justify-center text-[#000000]/50 hover:text-[#000000] sm:flex lg:left-[-60px]"
             >
               <ChevronLeft size={32} strokeWidth={1.5} />
             </button>
 
-            <div 
+            <div
               ref={sliderRef}
               id="professional-tools-slider"
               className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 sm:pb-0 [&::-webkit-scrollbar]:hidden"
@@ -279,13 +279,13 @@ export default function Home() {
                     />
                   </div>
                   {/* Bottom: Info (Black BG) */}
-                  <div className="flex flex-col flex-1 bg-[#171717] px-5 py-4">
-                    <h3 className="mb-1 font-orbitron text-[16px] font-bold text-[#FFFFFF]">{product.name}</h3>
-                    <p className="mb-3 font-orbitron text-[10px] font-normal text-[#A3A3A3] tracking-[0.03em]">{product.subtitle}</p>
+                  <div className="flex flex-col flex-1 bg-[#171717] px-5 py-4 justify-center">
+                    <h3 className="mb-1 font-sans text-[14px] font-bold text-[#FFFFFF] tracking-wide uppercase">{product.name}</h3>
+                    <p className="mb-3 font-sans text-[12px] font-extralight text-[#A3A3A3] tracking-[0.03em] leading-tight">{product.subtitle}</p>
                     {/* View Details Button */}
-                    <button className="mt-auto flex h-[28px] w-fit items-center gap-2 rounded-full bg-[#FFFFFF] pl-4 pr-1 text-[13px] font-medium text-[#565656] font-orbitron">
+                    <button className="mt-auto flex h-[28px] w-fit items-center gap-2 rounded-full bg-[#FFFFFF] pl-4 pr-1 text-[12px] font-bold text-[#171717] font-sans transition-all hover:bg-gray-100 uppercase">
                       View Details
-                      <ArrowRight size={16} strokeWidth={2} className="text-[#565656]" />
+                      <ArrowRight size={16} strokeWidth={2} className="text-[#171717]" />
                     </button>
                   </div>
                 </div>
@@ -293,7 +293,7 @@ export default function Home() {
             </div>
 
             {/* Right Arrow */}
-            <button 
+            <button
               onClick={() => sliderRef.current?.scrollBy({ left: 300, behavior: 'smooth' })}
               className="absolute right-[-40px] top-1/2 hidden z-10 h-8 w-8 -translate-y-1/2 items-center justify-center text-[#000000]/50 hover:text-[#000000] sm:flex lg:right-[-60px]"
             >
@@ -318,8 +318,8 @@ export default function Home() {
 
         <div className="relative z-10 mx-auto w-full max-w-[1440px] px-10 sm:px-10 lg:px-16 flex flex-col items-center">
           {/* Top Label - Figma: 373x38px, White BG, Black Text */}
-          <div className="mb-12 flex h-[38px] w-full max-w-[373px] items-center justify-center rounded-[5px] bg-white shadow-lg">
-            <span className="font-orbitron text-[12px] sm:text-[14px] font-bold tracking-widest text-black">
+          <div className="mb-12 flex h-[38px] w-full max-w-[443px] items-center justify-center rounded-[5px] bg-white shadow-lg border border-black/10">
+            <span className="font-orbitron  text-[14px] font-bold tracking-widest text-black ">
               POWERING AGRICULTURE & FORESTRY
             </span>
           </div>
@@ -331,28 +331,34 @@ export default function Home() {
                 name: "BONHOEFFER",
                 subtitle: "Heavy Duty for Professional Use",
                 website: "www.bonhoeffermachines.com",
+                url: "https://bonhoeffermachines.com",
                 color: "#94A034", // Olive/Green
               },
               {
                 name: "STRONWELL",
                 subtitle: "Mid Duty for Regular Use",
                 website: "www.stronwell.com",
+                url: "https://www.stronwell.com",
                 color: "#FF6E00", // Orange
               },
               {
                 name: "MECHNOVA",
                 subtitle: "Light Duty for Home Use",
                 website: "www.mechnovamachines.com",
+                url: "https://www.mechnovamachines.com",
                 color: "#00A3FF", // Blue
               }
             ].map((brand, idx) => (
-              <div
+              <a
                 key={idx}
-                className="flex min-h-[190px] w-full flex-col items-center justify-center rounded-[12px] bg-white p-6 lg:p-8 shadow-[1px_2px_10.6px_1px_rgba(0,0,0,0.15)] border border-black/5 transition-all hover:scale-[1.03] hover:shadow-xl"
+                href={brand.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex min-h-[190px] w-full flex-col items-center justify-center rounded-[12px] bg-white p-6 lg:p-8 shadow-[1px_2px_10.6px_1px_rgba(0,0,0,0.15)] border border-black/5 transition-all hover:scale-[1.03] hover:shadow-xl block"
               >
-                {/* Brand Logo/Text - Figma: Antenna 36px Black/Bold */}
+                {/* Brand Logo/Text - Figma: Eurostile Extended 32px Bold */}
                 <h2
-                  className="mb-1 font-orbitron text-[28px] lg:text-[34px] xl:text-[36px] font-black tracking-tighter w-full text-center"
+                  className="mb-1 font-['Eurostile_Extended',_sans-serif] text-[28px] lg:text-[32px] xl:text-[34px] font-bold tracking-tighter w-full text-center"
                   style={{ color: brand.color }}
                 >
                   {brand.name}
@@ -368,7 +374,7 @@ export default function Home() {
                 </div>
 
                 {/* Website Link Pill */}
-                <div className="mt-auto flex h-[32px] lg:h-[36px] w-full max-w-[280px] items-center justify-center rounded-full bg-black px-4">
+                <div className="mt-auto flex h-[32px] lg:h-[36px] w-full max-w-[280px] items-center justify-center rounded-full bg-black px-4 transition-colors hover:bg-gray-800">
                   <span
                     className="font-sans text-[12px] lg:text-[14px] font-extralight tracking-tight whitespace-nowrap"
                     style={{ color: brand.color }}
@@ -376,7 +382,7 @@ export default function Home() {
                     {brand.website}
                   </span>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
@@ -391,9 +397,9 @@ export default function Home() {
               Frequently Asked Questions
             </span>
           </div>
-          
+
           {/* Subtitle */}
-          <p className="mb-6 max-w-[750px] text-center font-sans text-[14px] leading-relaxed text-[#565656]">
+          <p className="mb-6 max-w-[631px] text-center font-[Antenna] text-[16px] leading-[100%] font-extralight text-[#565656]">
             Find answers to common questions about our products, services, and partnerships.<br className="hidden sm:block" />
             Can&apos;t find what you&apos;re looking for? Contact our support team.
           </p>
@@ -408,11 +414,11 @@ export default function Home() {
               "How do I find the right product for my specific needs?",
               "What kind of technical support and training do you provide?",
             ].map((question, idx) => (
-              <div 
-                key={idx} 
+              <div
+                key={idx}
                 className="flex items-center justify-between rounded-[8px] border border-[#E5E5E5] bg-[#FFFFFF] px-6 py-[16px] shadow-[0_4px_12px_-2px_rgba(0,0,0,0.06)] transition-all hover:shadow-md cursor-pointer group"
               >
-                <span className="font-sans text-[15px] font-medium text-[#1A1A1A]">
+                <span className="font-[Antenna] text-[16px] leading-[100%] font-normal text-[#000000]">
                   {question}
                 </span>
                 <div className="flex h-6 w-6 items-center justify-center rounded-full bg-[#94A034] shadow-sm transition-transform group-hover:scale-110">

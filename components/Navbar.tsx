@@ -34,24 +34,32 @@ export default function Navbar() {
           >
             Home
           </Link>
-          <Link
-            href="/products"
-            className="font-orbitron text-[15px] lg:text-[17.37px] font-normal tracking-wide text-white transition-opacity hover:opacity-80"
-          >
-            Products
-          </Link>
-          <Link
-            href="/ac-products"
-            className="font-orbitron text-[15px] lg:text-[17.37px] font-normal tracking-wide text-white transition-opacity hover:opacity-80"
-          >
-            AC Product
-          </Link>
-          <Link
-            href="/dc-products"
-            className="font-orbitron text-[15px] lg:text-[17.37px] font-normal tracking-wide text-white transition-opacity hover:opacity-80"
-          >
-            DC Product
-          </Link>
+          {/* Products Dropdown */}
+          <div className="relative group flex items-center h-[80px]">
+            <Link
+              href="/products"
+              className="font-orbitron text-[15px] lg:text-[17.37px] font-normal tracking-wide text-white transition-opacity hover:opacity-80 flex items-center gap-1"
+            >
+              Products
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-0.5"><path d="m6 9 6 6 6-6"/></svg>
+            </Link>
+            
+            {/* Dropdown Menu */}
+            <div className="absolute top-[80px] left-[-20px] hidden w-[220px] flex-col rounded-b-[5px] border-t-[3px] border-[#94A034] bg-[#050505] shadow-2xl group-hover:flex">
+              <Link
+                href="/ac-products"
+                className="px-6 py-4 font-orbitron text-[15px] font-normal tracking-wide text-white transition-colors hover:bg-[#1a1a1a]"
+              >
+                AC Product
+              </Link>
+              <Link
+                href="/dc-products"
+                className="px-6 py-4 font-orbitron text-[15px] font-normal tracking-wide text-white transition-colors hover:bg-[#1a1a1a]"
+              >
+                DC Product
+              </Link>
+            </div>
+          </div>
           <Link
             href="/about"
             className="font-orbitron text-[15px] lg:text-[17.37px] font-normal tracking-wide text-white transition-opacity hover:opacity-80"
@@ -110,27 +118,33 @@ export default function Navbar() {
           >
             Home
           </Link>
-          <Link
-            href="/products"
-            onClick={toggleMenu}
-            className="py-4 font-orbitron text-[18px] text-white transition-opacity hover:opacity-80"
-          >
-            Products
-          </Link>
-          <Link
-            href="/ac-products"
-            onClick={toggleMenu}
-            className="py-4 font-orbitron text-[18px] text-white transition-opacity hover:opacity-80"
-          >
-            AC Product
-          </Link>
-          <Link
-            href="/dc-products"
-            onClick={toggleMenu}
-            className="py-4 font-orbitron text-[18px] text-white transition-opacity hover:opacity-80"
-          >
-            DC Product
-          </Link>
+          <div className="flex flex-col border-b border-white/5 pb-2 mb-2">
+            <Link
+              href="/products"
+              onClick={toggleMenu}
+              className="py-4 font-orbitron text-[18px] text-white transition-opacity hover:opacity-80"
+            >
+              Products
+            </Link>
+            <div className="pl-6 flex flex-col">
+              <Link
+                href="/ac-products"
+                onClick={toggleMenu}
+                className="py-3 font-orbitron text-[16px] text-gray-300 transition-opacity hover:text-white flex items-center gap-2"
+              >
+                <div className="w-1.5 h-1.5 rounded-full bg-[#94A034]" />
+                AC Product
+              </Link>
+              <Link
+                href="/dc-products"
+                onClick={toggleMenu}
+                className="py-3 font-orbitron text-[16px] text-gray-300 transition-opacity hover:text-white flex items-center gap-2"
+              >
+                <div className="w-1.5 h-1.5 rounded-full bg-[#94A034]" />
+                DC Product
+              </Link>
+            </div>
+          </div>
           <Link
             href="/about"
             onClick={toggleMenu}

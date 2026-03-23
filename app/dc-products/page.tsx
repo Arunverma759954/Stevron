@@ -106,7 +106,10 @@ export default function DCProducts() {
 
           {/* Products Grid - Using Figma Measurements: Cards are 207x261px */}
           <div className="grid flex-1 grid-cols-1 gap-3 px-10 sm:gap-4 lg:grid-cols-3 xl:grid-cols-4 justify-items-center">
-            {products.map((product) => (
+            {products.map((product) => {
+              const [spec = product.id, ...restSubtitle] = product.subtitle.split(" - ");
+              const productSubtitle = restSubtitle.join(" - ") || product.subtitle;
+              return (
               <div
                 key={product.id}
                 className="group flex flex-col w-full max-w-[207px] h-[261px] overflow-hidden rounded-[12px] border border-[#171717] bg-white transition-all hover:shadow-xl hover:-translate-y-1"
@@ -124,23 +127,23 @@ export default function DCProducts() {
 
                 {/* Product Info (Black Section) - Exactly 61px as per Figma */}
                 <div className="flex h-[61px] w-full flex-col bg-[#171717] p-2 border-t border-black/5">
-                  <h3 className="mb-0.5 px-1 font-orbitron text-[11px] font-bold text-white tracking-wide uppercase leading-none">
-                    {product.id}
+                   <h3 className="mb-0.5 px-1 font-['Eurostile_Extended',sans-serif] text-[14px] font-bold leading-[100%] uppercase text-white">
+                    {spec}
                   </h3>
-                  <p className="px-1 font-sans text-[8px] font-light text-[#A7A7A7] tracking-tight truncate leading-tight">
-                    {product.subtitle}
+                  <p className="px-1 font-[Antenna] text-[12px] font-extralight leading-[100%] text-[#A7A7A7] truncate">
+                    {productSubtitle}
                   </p>
 
                   {/* View Details Button - Very tight for 61px container */}
                   <div className="mt-auto px-1">
-                    <button className="flex h-[18px] items-center gap-1 rounded-[2px] bg-white px-2 font-orbitron text-[7px] font-bold text-[#171717] transition-all hover:bg-gray-100 uppercase">
+                    <button className="flex h-[18px] items-center gap-1 rounded-[2px] bg-white px-2 font-orbitron text-[5px] font-normal leading-[100%] text-[#171717] transition-all hover:bg-gray-100">
                       View Details
                       <ArrowRight size={8} className="stroke-[3]" />
                     </button>
                   </div>
                 </div>
               </div>
-            ))}
+            )})}
           </div>
         </div>
       </section>
@@ -162,12 +165,13 @@ export default function DCProducts() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-16 w-full max-w-[1100px]">
             {[
-              { title: "AC TOOLS", image: "/8.webp" },
-              { title: "ACCESSORIES", image: "/5.webp" },
-              { title: "HAND TOOLS", image: "/9.webp" },
+              { title: "AC TOOLS", image: "/8.webp", href: "/ac-products" },
+              { title: "ACCESSORIES", image: "/5.webp", href: "#" },
+              { title: "HAND TOOLS", image: "/9.webp", href: "#" },
             ].map((item, index) => (
-              <div
+              <Link
                 key={index}
+                href={item.href}
                 className="bg-white rounded-[15px] shadow-lg overflow-hidden flex flex-col border border-gray-100 transition-transform hover:scale-[1.02] group"
               >
                 <div className="bg-white px-4 py-3 border-b border-gray-50 text-center">
@@ -184,7 +188,7 @@ export default function DCProducts() {
                   />
                   <div className="absolute inset-0 bg-black/5" />
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
           

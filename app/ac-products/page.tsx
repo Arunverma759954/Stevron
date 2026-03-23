@@ -62,11 +62,11 @@ export default function ACProducts() {
       <section className="relative -mt-[40px] z-30 flex justify-center px-6">
         <div className="w-full max-w-[805px] min-h-[196px] rounded-[2px] bg-white p-6 shadow-[0_8px_30px_rgba(0,0,0,0.12)] border border-[#000000] text-center flex flex-col items-center justify-center sm:p-10">
           <div className="mb-4 flex h-[35px] w-fit items-center justify-center rounded-[20px] bg-[#171717] px-10">
-            <span className="font-orbitron text-[15px] font-bold tracking-[0.2em] text-white uppercase italic">
+            <span className="font-sans text-[15px] font-bold tracking-[0.2em] text-white uppercase italic">
               1NE PLATFORM
             </span>
           </div>
-          <p className="mb-4 font-orbitron text-[12px] font-bold tracking-[0.1em] text-[#000000] uppercase">
+          <p className="mb-4 font-sans text-[12px] font-bold tracking-[0.1em] text-[#000000] uppercase">
             ONE BATTERY, ENDLESS POSSIBILITIES
           </p>
           <p className="font-sans text-[13px] font-normal leading-relaxed text-[#171717] max-w-[700px] opacity-90">
@@ -86,7 +86,7 @@ export default function ACProducts() {
 
           {/* Sidebar Categories */}
           <div className="w-full shrink-0 lg:w-[260px]">
-            <h2 className="mb-6 font-orbitron text-[18px] font-bold uppercase tracking-tight text-black flex items-center gap-2">
+            <h2 className="mb-6 font-sans text-[18px] font-bold uppercase tracking-tight text-black flex items-center gap-2">
               <span className="h-[2px] w-4 bg-black" />
               Product Category
             </h2>
@@ -95,7 +95,7 @@ export default function ACProducts() {
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
-                  className={`flex h-[36px] items-center justify-between px-4 font-orbitron text-[13px] font-medium tracking-wide transition-all border border-black/5 rounded-[4px] ${activeCategory === cat
+                  className={`flex h-[36px] items-center justify-between px-4 font-sans text-[13px] font-medium tracking-wide transition-all border border-black/5 rounded-[4px] ${activeCategory === cat
                     ? "bg-black text-white"
                     : "bg-[#171717] text-white hover:bg-black/90"
                     }`}
@@ -109,7 +109,10 @@ export default function ACProducts() {
 
           {/* Products Grid - Using Figma Measurements: Cards are 207x261px */}
           <div className="grid flex-1 grid-cols-1 gap-2 px-10 sm:gap-3 lg:grid-cols-3 xl:grid-cols-4 justify-items-center">
-            {products.map((product) => (
+            {products.map((product) => {
+              const [spec = product.id, ...restSubtitle] = product.subtitle.split(" - ");
+              const productSubtitle = restSubtitle.join(" - ") || product.subtitle;
+              return (
               <div
                 key={product.id}
                 className="group flex flex-col w-full max-w-[207px] h-[261px] overflow-hidden rounded-[12px] border border-[#171717] bg-white transition-all hover:shadow-xl hover:-translate-y-1"
@@ -126,24 +129,24 @@ export default function ACProducts() {
                 </div>
 
                 {/* Product Info (Black Section) - Exactly 61px as per Figma */}
-                <div className="flex h-[61px] w-full flex-col bg-[#171717] p-2 border-t border-black/5">
-                  <h3 className="mb-0.5 px-1 font-orbitron text-[11px] font-bold text-white tracking-wide uppercase leading-none">
-                    {product.id}
+                <div className="flex h-[61px] w-full flex-col bg-[#171717] p-2 border-t border-black/5 justify-center">
+                  <h3 className="px-1 font-['Eurostile_Extended',sans-serif] text-[14px] font-bold leading-[100%] uppercase text-white">
+                    {spec}
                   </h3>
-                  <p className="px-1 font-sans text-[8px] font-light text-[#A7A7A7] tracking-tight truncate leading-tight">
-                    {product.subtitle}
+                  <p className="mt-1 truncate px-1 font-[Antenna] text-[12px] font-extralight leading-[100%] text-[#A7A7A7]">
+                    {productSubtitle}
                   </p>
 
-                  {/* View Details Button - Very tight for 61px container */}
-                  <div className="mt-auto px-1">
-                    <button className="flex h-[18px] items-center gap-1 rounded-[2px] bg-white px-2 font-orbitron text-[7px] font-bold text-[#171717] transition-all hover:bg-gray-100 uppercase">
+                  {/* View Details Button */}
+                  <div className="mt-1 px-1">
+                    <button className="flex h-[18px] items-center gap-1 rounded-[2px] bg-white px-2 font-orbitron text-[5px] font-normal leading-[100%] text-[#171717] transition-all hover:bg-gray-100">
                       View Details
                       <ArrowRight size={8} className="stroke-[3]" />
                     </button>
                   </div>
                 </div>
               </div>
-            ))}
+            )})}
           </div>
         </div>
       </section>
@@ -165,12 +168,13 @@ export default function ACProducts() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-16 w-full max-w-[1100px]">
             {[
-              { title: "DC TOOLS", image: "/7.webp" },
-              { title: "ACCESSORIES", image: "/5.webp" },
-              { title: "HAND TOOLS", image: "/9.webp" },
+              { title: "DC TOOLS", image: "/7.webp", href: "/dc-products" },
+              { title: "ACCESSORIES", image: "/5.webp", href: "#" },
+              { title: "HAND TOOLS", image: "/9.webp", href: "#" },
             ].map((item, index) => (
-              <div
+              <Link
                 key={index}
+                href={item.href}
                 className="bg-white rounded-[15px] shadow-lg overflow-hidden flex flex-col border border-gray-100 transition-transform hover:scale-[1.02] group"
               >
                 <div className="bg-white px-4 py-3 border-b border-gray-50 text-center">
@@ -187,7 +191,7 @@ export default function ACProducts() {
                   />
                   <div className="absolute inset-0 bg-black/5" />
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
 
@@ -204,3 +208,4 @@ export default function ACProducts() {
     </div>
   );
 }
+
