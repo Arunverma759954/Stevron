@@ -213,14 +213,14 @@ export default function Home() {
                     {/* Subtitle with side lines (Figma style) */}
                     <div className="mb-4 flex w-full items-center gap-3">
                       <div className="h-[1px] flex-1 bg-[#FFFFFF]" />
-                      <p className="whitespace-nowrap font-['Antenna',_sans-serif] text-[14px] font-normal text-[#FFFFFF]">
+                      <p className="whitespace-nowrap font-['Antenna',sans-serif] text-[14px] font-normal leading-[100%] tracking-[0%] text-[#FFFFFF]">
                         {item.subtitle}
                       </p>
                       <div className="h-[1px] flex-1 bg-[#FFFFFF]" />
                     </div>
 
                     {/* Description left-aligned (Figma: 14px, Weight 400, White) */}
-                    <p className="text-left font-['Antenna',_sans-serif] text-[14px] font-normal tracking-[0.03em] leading-relaxed text-[#FFFFFF]">
+                    <p className="text-left font-['Antenna',sans-serif] text-[12px] font-extralight leading-[100%] tracking-[3%] text-[#FFFFFF]">
                       {item.description}
                     </p>
                   </div>
