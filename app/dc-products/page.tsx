@@ -78,7 +78,7 @@ export default function DCProducts() {
       </section>
 
       {/* Main Content: Sidebar + Products Grid */}
-      <section className="mx-auto w-full max-w-[1440px] px-4 py-16 sm:px-6 sm:py-20 lg:px-16 lg:py-24">
+      <section className="mx-auto w-full max-w-[1440px] px-4 py-14 sm:px-6 sm:py-20 lg:px-16 lg:py-24">
         <div className="flex flex-col gap-12 lg:flex-row">
 
           {/* Sidebar Categories */}
@@ -105,7 +105,7 @@ export default function DCProducts() {
           </div>
 
           {/* Products Grid - Using Figma Measurements: Cards are 207x261px */}
-          <div className="grid flex-1 grid-cols-1 justify-items-center gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="grid flex-1 grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 xl:grid-cols-4 justify-items-center">
             {products.map((product) => {
               const [spec = product.id, ...restSubtitle] = product.subtitle.split(" - ");
               const productSubtitle = restSubtitle.join(" - ") || product.subtitle;
@@ -115,7 +115,7 @@ export default function DCProducts() {
                 className="group flex flex-col w-full max-w-[207px] h-[300px] overflow-hidden rounded-[12px] border border-[#171717] bg-white transition-all hover:shadow-xl hover:-translate-y-1"
               >
                 {/* Product Image Container - Exactly 200px (261 - 61) */}
-                <div className="flex h-[195px] w-full shrink-0 items-center justify-center p-4 bg-white">
+                <div className="flex h-[222px] w-full shrink-0 items-center justify-center p-4 bg-white">
                   <Image
                     src={product.image}
                     alt={product.id}
@@ -135,7 +135,7 @@ export default function DCProducts() {
                   </p>
 
                   {/* View Details Button - Very tight for 61px container */}
-                  <div className="px-1">
+                  <div className="px-1 mt-1">
                     <button className="flex h-[14px] w-[67px] items-center justify-center gap-1 rounded-[6.5px] border border-[#D9D9D9] bg-white px-1.5 font-orbitron text-[6px] font-medium leading-none text-[#171717] transition-all hover:bg-gray-100">
                       View Details
                       <ArrowRight size={7} className="stroke-[2.5]" />
@@ -149,13 +149,13 @@ export default function DCProducts() {
       </section>
 
       {/* Bottom Dividers and CTA Alignment */}
-      <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-16">
+      <div className="mx-auto w-full max-w-[1440px] px-6 sm:px-10 lg:px-16">
         <div className="w-full h-px bg-gray-200" />
       </div>
 
       {/* Explore Full Range - Smaller Cards */}
       <div className="mt-8 mb-4">
-        <div className="mx-auto flex w-full max-w-[1280px] flex-col items-center px-4 sm:px-6 lg:px-16">
+        <div className="mx-auto w-full max-w-[1280px] px-6 sm:px-10 lg:px-16 flex flex-col items-center">
           {/* Title Pill */}
           <div className="bg-black text-white px-8 py-2 rounded-[5px] mb-8 shadow-md">
             <span className="font-orbitron text-[14px] sm:text-[16px] font-bold tracking-wider uppercase">
@@ -163,7 +163,7 @@ export default function DCProducts() {
             </span>
           </div>
 
-          <div className="grid w-full max-w-[1100px] grid-cols-1 gap-6 md:grid-cols-3 md:gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 w-full max-w-[1100px]">
             {[
               { title: "AC TOOLS", image: "/8.webp", href: "/ac-products" },
               { title: "ACCESSORIES", image: "/5.webp", href: "#" },

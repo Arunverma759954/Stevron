@@ -62,7 +62,7 @@ export default function ACProducts() {
       <section className="relative -mt-[40px] z-30 flex justify-center px-6">
         <div className="w-full max-w-[805px] min-h-[196px] rounded-[2px] bg-white p-6 shadow-[0_8px_30px_rgba(0,0,0,0.12)] border border-[#000000] text-center flex flex-col items-center justify-center sm:p-10">
           <div className="mb-4 flex h-[35px] w-fit items-center justify-center rounded-[20px] bg-[#171717] px-10">
-            <span className="font-orbitron text-[15px] font-bold tracking-[0.2em] text-white uppercase">
+            <span className="font-Eurostile Extended text-[15px] font-bold tracking-[0.2em] text-white uppercase">
               1NE PLATFORM
             </span>
           </div>
@@ -81,7 +81,7 @@ export default function ACProducts() {
       </section>
 
       {/* Main Content: Sidebar + Products Grid */}
-      <section className="mx-auto w-full max-w-[1440px] px-4 py-16 sm:px-6 sm:py-20 lg:px-16 lg:py-24">
+      <section className="mx-auto w-full max-w-[1440px] px-4 py-14 sm:px-6 sm:py-20 lg:px-16 lg:py-24">
         <div className="flex flex-col gap-12 lg:flex-row">
 
           {/* Sidebar Categories */}
@@ -108,7 +108,7 @@ export default function ACProducts() {
           </div>
 
           {/* Products Grid - Using Figma Measurements: Cards are 207x261px */}
-          <div className="grid flex-1 grid-cols-1 justify-items-center gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="grid flex-1 grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 xl:grid-cols-4 justify-items-center">
             {products.map((product) => {
               const [spec = product.id, ...restSubtitle] = product.subtitle.split(" - ");
               const productSubtitle = restSubtitle.join(" - ") || product.subtitle;
@@ -138,7 +138,7 @@ export default function ACProducts() {
                   </p>
 
                   {/* View Details Button */}
-                  <div className="mt-1 px-1">
+                  <div className="px-1 mt-1">
                     <button className="flex h-[14px] w-[67px] items-center justify-center gap-1 rounded-[6.5px] border border-[#D9D9D9] bg-white px-1.5 font-orbitron text-[6px] font-medium leading-none text-[#171717] transition-all hover:bg-gray-100">
                       View Details
                       <ArrowRight size={7} className="stroke-[2.5]" />
@@ -158,7 +158,7 @@ export default function ACProducts() {
 
       {/* Explore Full Range - Smaller Cards */}
       <div className="mt-8 mb-4">
-        <div className="mx-auto flex w-full max-w-[1280px] flex-col items-center px-4 sm:px-6 lg:px-16">
+        <div className="mx-auto w-full max-w-[1280px] px-6 sm:px-10 lg:px-16 flex flex-col items-center">
           {/* Title Pill */}
           <div className="bg-black text-white px-8 py-2 rounded-[5px] mb-8 shadow-md">
             <span className="font-orbitron text-[14px] sm:text-[16px] font-bold tracking-wider uppercase">
@@ -166,7 +166,7 @@ export default function ACProducts() {
             </span>
           </div>
 
-          <div className="grid w-full max-w-[1100px] grid-cols-1 gap-6 md:grid-cols-3 md:gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 w-full max-w-[1100px]">
             {[
               { title: "DC TOOLS", image: "/7.webp", href: "/dc-products" },
               { title: "ACCESSORIES", image: "/5.webp", href: "#" },

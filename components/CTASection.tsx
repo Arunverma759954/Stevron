@@ -3,7 +3,7 @@
 export default function CTASection() {
   return (
     <section className="bg-white py-8">
-      <div className="mx-auto flex w-full max-w-[1440px] flex-col items-center px-4 sm:px-6 lg:px-16">
+      <div className="mx-auto w-full max-w-[1440px] px-6 sm:px-10 lg:px-16 flex flex-col items-center">
 
         <div className="flex flex-col items-center gap-6 sm:gap-8 text-center max-w-[800px]">
           {/* Title Pill - "Ready to Experience Excellence?" */}

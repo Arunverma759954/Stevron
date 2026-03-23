@@ -6,14 +6,14 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-black text-white pt-16 pb-10">
-      <div className="mx-auto flex w-full max-w-[1440px] flex-col px-4 sm:px-6 lg:px-16">
+      <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-16 flex flex-col">
         {/* Newsletter Section - Narrower width as per Figma */}
-        <div className="mb-12 grid grid-cols-1 items-center gap-6 lg:grid-cols-4 lg:gap-12">
-          <h2 className="font-orbitron text-[16px] font-normal leading-tight text-white sm:text-[20px] lg:col-span-2 lg:text-left">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 lg:gap-12 items-center mb-12">
+          <h2 className="lg:col-span-2 font-orbitron text-[20px] font-normal leading-tight text-white lg:text-left">
             Subscribe to Our Newsletter
           </h2>
 
-          <div className="relative w-full lg:col-span-2">
+          <div className="lg:col-span-2 relative w-full">
             <div className="flex h-[48px] w-full items-center bg-white rounded-full overflow-hidden p-1 shadow-lg border-2 border-white">
               <input
                 type="email"
@@ -28,10 +28,10 @@ export default function Footer() {
         </div>
 
         {/* Continuous Horizontal Line */}
-        <div className="w-full h-[1px] bg-white/30 mb-12" />
+        <div className="w-full h-px bg-white/30 mb-12" />
 
         {/* Brand and Links Section */}
-        <div className="mb-12 grid grid-cols-1 gap-10 lg:grid-cols-4 lg:gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-12 mb-12">
           {/* Logo and Description Section - Spans first 2 columns */}
           <div className="lg:col-span-2 flex flex-col gap-6">
             <Image
@@ -50,7 +50,7 @@ export default function Footer() {
           </div>
 
           {/* Links Section - Spans last 2 columns to match Newsletter Input above */}
-          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3 lg:col-span-2 lg:gap-12">
+          <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-3 gap-12 sm:gap-16">
             {/* Company Column */}
             <div className="flex flex-col gap-6 lg:items-start">
               <h3 className="font-orbitron text-[18px] font-bold tracking-wider relative inline-block w-fit">

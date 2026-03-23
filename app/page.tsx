@@ -43,7 +43,7 @@ export default function Home() {
         </div>
 
         {/* Alignment Container - Restored to 1440px Standard */}
-        <div className="relative z-10 mx-auto flex h-full w-full max-w-[1440px] flex-col justify-center px-4 sm:px-6 lg:px-16">
+        <div className="relative z-10 mx-auto h-full w-full max-w-[1440px] px-4 sm:px-6 lg:px-16 flex flex-col justify-center">
           <div className="w-full">
             {/* Overlay components can go here */}
           </div>
@@ -87,7 +87,7 @@ export default function Home() {
 
       {/* Explore Our Full Range Section - Figma: 1139×305px container, same alignment as navbar */}
       <section className="bg-white pt-4 sm:pt-6 pb-12">
-        <div className="mx-auto flex w-full max-w-[1440px] flex-col items-center px-4 sm:px-6 lg:px-16">
+        <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-16 flex flex-col items-center">
           {/* Section Title Label - as per Figma */}
           <div className="mb-12 flex h-[35px] items-center justify-center rounded-[5px] bg-black px-8">
             <span className="font-orbitron text-[14px] font-normal tracking-wider text-white">
@@ -96,7 +96,7 @@ export default function Home() {
           </div>
 
           {/* Categories Grid - alignment same as navbar, increased gapping as per user request */}
-          <div className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8 lg:grid-cols-4 lg:gap-10">
+          <div className="grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-20">
             {[
               { title: "DC TOOLS", image: "/7.webp", href: "/dc-products" },
               { title: "AC TOOLS", image: "/8.webp", href: "/ac-products" },
@@ -143,7 +143,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="relative z-10 mx-auto flex w-full max-w-[1440px] flex-col items-center px-4 sm:px-6 lg:px-16">
+        <div className="relative z-10 mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-16 flex flex-col items-center">
           {/* Logo + Section Title (navbar width) */}
           <div className="mb-10 flex flex-col items-center gap-4">
             <div className="flex h-[35px] items-center justify-center rounded-[5px] bg-[#000000] px-8">
@@ -233,7 +233,7 @@ export default function Home() {
       </section>
       {/* Our Professional Tools Section */}
       <section className="bg-[#FFFFFF] py-20 pb-16">
-        <div className="mx-auto flex w-full max-w-[1440px] flex-col items-center px-4 sm:px-6 lg:px-16">
+        <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-16 flex flex-col items-center">
           {/* Section Label */}
           <div className="mb-12 flex flex-col items-center gap-4">
             <div className="flex h-[35px] items-center justify-center rounded-[5px] bg-[#000000] px-8">
@@ -317,7 +317,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="relative z-10 mx-auto flex w-full max-w-[1440px] flex-col items-center px-4 sm:px-6 lg:px-16">
+        <div className="relative z-10 mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-16 flex flex-col items-center">
           {/* Top Label - Figma: 373x38px, White BG, Black Text */}
           <div className="mb-12 flex h-[38px] w-full max-w-[443px] items-center justify-center rounded-[5px] bg-white shadow-lg border border-black/10">
             <span className="font-orbitron  text-[14px] font-bold tracking-widest text-black ">
@@ -355,7 +355,7 @@ export default function Home() {
                 href={brand.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex min-h-[190px] w-full flex-col items-center justify-center rounded-[12px] border border-black/5 bg-white p-5 shadow-[1px_2px_10.6px_1px_rgba(0,0,0,0.15)] transition-all hover:scale-[1.03] hover:shadow-xl sm:p-6 lg:p-8"
+                className="flex min-h-[190px] w-full flex-col items-center justify-center rounded-[12px] bg-white p-6 lg:p-8 shadow-[1px_2px_10.6px_1px_rgba(0,0,0,0.15)] border border-black/5 transition-all hover:scale-[1.03] hover:shadow-xl block"
               >
                 {/* Brand Logo/Text - Figma: Eurostile Extended 32px Bold */}
                 <h2
@@ -391,7 +391,7 @@ export default function Home() {
 
       {/* FAQ Section */}
       <section className="bg-white py-12">
-        <div className="mx-auto flex w-full max-w-[1440px] flex-col items-center px-4 sm:px-6 lg:px-16">
+        <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-16 flex flex-col items-center">
           {/* Section Label */}
           <div className="mb-4 flex h-[35px] items-center justify-center rounded-[5px] bg-[#000000] px-8 shadow-sm">
             <span className="font-orbitron text-[14px] font-normal tracking-wider text-[#FFFFFF]">
