@@ -47,7 +47,7 @@ export default function DCProducts() {
       <section className="relative w-full overflow-hidden bg-[#050505] h-[400px] sm:h-[550px] lg:h-[700px]">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/28.png"
+            src="/banner/ac-banner.webp"
             alt="STEVRON DC Product Hero"
             fill
             priority
