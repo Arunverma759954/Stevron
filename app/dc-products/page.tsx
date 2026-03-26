@@ -23,7 +23,7 @@ export default function DCProducts() {
   ];
 
   const products = [
-    { id: "BNEDR500", subtitle: "500 W - Taladro Eléctrico", image: "/ac/BNEDR500.webp" },
+    { id: "BNEDR500", subtitle: "500 W - Taladro Eléctrico", image: "/BNEDR500.webp" },
     { id: "BNIMD750", subtitle: "750 W - Taladro Percutor", image: "/ac/BNIMD750.webp" },
     { id: "BNIMD850", subtitle: "850 W - Taladro Percutor", image: "/ac/BNIMD850.webp" },
     { id: "BNIMD1100", subtitle: "1100 W - Taladro Percutor", image: "/ac/BNIMD1100.webp" },
@@ -44,7 +44,7 @@ export default function DCProducts() {
   return (
     <div className="flex flex-col bg-white">
       {/* Hero Section - Using 28.png as requested */}
-      <section className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] xl:h-[650px] overflow-hidden bg-[#050505]">
+      <section className="relative w-full aspect-[16/5] lg:aspect-[16/5]  overflow-hidden bg-[#050505]">
         <div className="absolute inset-0 z-0">
           <Image
             src="/banner/ac-banner.webp"
@@ -57,7 +57,7 @@ export default function DCProducts() {
       </section>
 
       {/* Product Detail White Box - Customized for Corded Theme */}
-      <section className="relative -mt-[40px] z-30 flex justify-center px-6">
+      <section className="relative -mt-[20px] lg:-mt-[40px] z-30 flex justify-center px-4 sm:px-6">
         <div className="w-full max-w-[805px] min-h-[196px] rounded-[2px] bg-white p-6 shadow-[0_8px_30px_rgba(0,0,0,0.12)] border border-[#000000] text-center flex flex-col items-center justify-center sm:p-10">
           <div className="mb-4 flex h-[35px] w-fit items-center justify-center rounded-[20px] bg-[#171717] px-10">
             <span className="font-orbitron text-[15px] font-bold tracking-[0.2em] text-white uppercase italic">
@@ -82,19 +82,19 @@ export default function DCProducts() {
         <div className="flex flex-col gap-12 lg:flex-row">
 
           {/* Sidebar Categories */}
-          <div className="w-full shrink-0 lg:w-[260px]">
-            <div className="w-[200px] mb-6">
-              <h2 className="font-orbitron text-[16px] font-bold uppercase tracking-tight text-black text-left">
+          <div className="w-full shrink-0 lg:w-[260px] flex flex-col items-center sm:items-start">
+            <div className="w-full sm:w-[200px] mb-4 lg:mb-6">
+              <h2 className="font-orbitron text-[14px] lg:text-[16px] font-bold uppercase tracking-tight text-black text-center sm:text-left">
                 Product Category
               </h2>
               <div className="h-[1px] w-full bg-black mt-1" />
             </div>
-            <div className="flex flex-col gap-1.5 pt-2">
+            <div className="flex flex-row lg:flex-col gap-2 overflow-x-auto pb-4 lg:pb-0 scrollbar-hide flex-nowrap w-full pl-2 sm:pl-0">
               {categories.map((cat) => (
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
-                  className="flex h-[22px] w-[200px] items-center justify-start px-3 font-orbitron text-[11px] font-bold tracking-tight transition-all rounded-[2px] cursor-pointer bg-[#282828] text-white hover:bg-black/90"
+                  className="flex shrink-0 h-[28px] lg:h-[22px] min-w-max lg:w-[200px] items-center justify-center lg:justify-start px-4 lg:px-3 font-orbitron text-[10px] lg:text-[11px] font-bold tracking-tight transition-all rounded-[14px] lg:rounded-[2px] cursor-pointer bg-[#282828] text-white hover:bg-black/90"
                 >
                   {cat}
                 </button>
@@ -106,9 +106,10 @@ export default function DCProducts() {
           <div className="grid flex-1 grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 xl:grid-cols-4 justify-items-center">
             {products.map((product) => {
               return (
-                <div
+                <Link
+                  href={`/product/${product.id}`}
                   key={product.id}
-                  className="group flex flex-col w-full max-w-[207px] h-[300px] overflow-hidden rounded-[12px] border border-[#171717] bg-white transition-all hover:shadow-xl hover:-translate-y-1"
+                  className="group flex flex-col w-full max-w-[400px] sm:max-w-[207px] h-[300px] overflow-hidden rounded-[12px] border border-[#171717] bg-white transition-all hover:shadow-xl hover:-translate-y-1"
                 >
                   {/* Product Image Container - Exactly 200px (261 - 61) */}
                   <div className="flex h-[222px] w-full shrink-0 items-center justify-center p-4 bg-white">
@@ -138,7 +139,7 @@ export default function DCProducts() {
                       </button>
                     </div>
                   </div>
-                </div>
+                </Link>
               )
             })}
           </div>

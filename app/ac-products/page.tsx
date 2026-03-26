@@ -23,8 +23,8 @@ export default function ACProducts() {
   ];
 
   const products = [
-    { id: "BNDR45", subtitle: "45N.M - Taladro Percutor", image: "/dc/BNDR45.webp" },
-    { id: "BNDR75", subtitle: "75N.M - Taladro Percutor Compacto", image: "/dc/BNDR75.webp" },
+    { id: "BNDR45", subtitle: "45N.M - Taladro Percutor", image: "/dc/BNID452B2.webp" },
+    { id: "BNDR75", subtitle: "75N.M - Taladro Percutor Compacto", image: "/dc/BNCID75K.webp" },
     { id: "BNIW4002B2", subtitle: "400N.M - Llave de Impacto", image: "/dc/BNIW4002B2.webp" },
     { id: "BNIW6004B2", subtitle: "600N.M - Llave de Impacto", image: "/dc/BNIW6004B2.webp" },
     { id: "BNIW8004B2", subtitle: "800N.M - Llave de Impacto", image: "/dc/BNIW8004B2.webp" },
@@ -46,20 +46,20 @@ export default function ACProducts() {
     <div className="flex flex-col bg-white">
       {/* Hero Section - Height 700px. Showing ONLY 41.png as requested. */}
       {/* Added object-top to ensure the "INTRODUCING" text isn't cut off at the top */}
-      <section className="relative w-full aspect-[16/9] sm:aspect-[16/7] md:aspect-[16/6] lg:aspect-[16/5.3] xl:aspect-[16/5] overflow-hidden bg-[#050505]">
+      <section className="relative w-full aspect-[16/6] lg:aspect-[16/5.5]  overflow-hidden bg-[#050505]">
         <div className="absolute inset-0 z-0">
           <Image
             src="/41.png"
             alt="STEVRON Hero Banner"
             fill
             priority
-            className="object-cover"
+            className="object-cover object-top"
           />
         </div>
       </section>
 
       {/* 1NE PLATFORM White Box - Precise Figma Measurement 805x196, Overlapping Hero by ~40px */}
-      <section className="relative -mt-[40px] z-30 flex justify-center px-6">
+      <section className="relative -mt-[20px] lg:-mt-[40px] z-30 flex justify-center px-4 sm:px-6">
         <div className="w-full max-w-[805px] min-h-[196px] rounded-[2px] bg-white p-6 shadow-[0_8px_30px_rgba(0,0,0,0.12)] border border-[#000000] text-center flex flex-col items-center justify-center sm:p-10">
           <div className="mb-4 flex h-[35px] w-fit items-center justify-center rounded-[20px] bg-[#171717] px-10">
             <span className="font-Eurostile Extended text-[15px] font-bold tracking-[0.2em] text-white uppercase">
@@ -85,19 +85,19 @@ export default function ACProducts() {
         <div className="flex flex-col gap-12 lg:flex-row">
 
           {/* Sidebar Categories */}
-          <div className="w-full shrink-0 lg:w-[260px]">
-            <div className="w-[200px] mb-6">
-              <h2 className="font-orbitron text-[16px] font-bold uppercase tracking-tight text-black text-left">
+          <div className="w-full shrink-0 lg:w-[260px] flex flex-col items-center sm:items-start">
+            <div className="w-full sm:w-[200px] mb-4 lg:mb-6">
+              <h2 className="font-orbitron text-[14px] lg:text-[16px] font-bold uppercase tracking-tight text-black text-center sm:text-left">
                 Product Category
               </h2>
               <div className="h-[1px] w-full bg-black mt-1" />
             </div>
-            <div className="flex flex-col gap-1.5 pt-2">
+            <div className="flex flex-row lg:flex-col gap-2 overflow-x-auto pb-4 lg:pb-0 scrollbar-hide flex-nowrap w-full pl-2 sm:pl-0">
               {categories.map((cat) => (
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
-                  className="flex h-[22px] w-[200px] items-center justify-start px-3 font-orbitron text-[11px] font-bold tracking-tight transition-all rounded-[2px] cursor-pointer bg-[#282828] text-white hover:bg-black/90"
+                  className="flex shrink-0 h-[28px] lg:h-[22px] min-w-max lg:w-[200px] items-center justify-center lg:justify-start px-4 lg:px-3 font-orbitron text-[10px] lg:text-[11px] font-bold tracking-tight transition-all rounded-[14px] lg:rounded-[2px] cursor-pointer bg-[#282828] text-white hover:bg-black/90"
                 >
                   {cat}
                 </button>
@@ -109,9 +109,10 @@ export default function ACProducts() {
           <div className="grid flex-1 grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 xl:grid-cols-4 justify-items-center">
             {products.map((product) => {
               return (
-                <div
+                <Link
+                  href={`/product/${product.id}`}
                   key={product.id}
-                  className="group flex flex-col w-full max-w-[207px] h-[300px] overflow-hidden rounded-[12px] border border-[#171717] bg-white transition-all hover:shadow-xl hover:-translate-y-1"
+                  className="group flex flex-col w-full max-w-[400px] sm:max-w-[207px] h-[300px] overflow-hidden rounded-[12px] border border-[#171717] bg-white transition-all hover:shadow-xl hover:-translate-y-1"
                 >
                   {/* Product Image Container - Exactly 200px (261 - 61) */}
                   <div className="flex h-[222px] w-full shrink-0 items-center justify-center p-4 bg-white">
@@ -141,7 +142,7 @@ export default function ACProducts() {
                       </button>
                     </div>
                   </div>
-                </div>
+                </Link>
               )
             })}
           </div>
