@@ -34,7 +34,7 @@ export default function Home() {
         {/* Background Image: using object-contain on mobile to ensure 'Full Image' is visible */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/home.webp"
+            src="/banner/ac-banner.webp"
             alt="STEVRON Hero"
             fill
             priority
