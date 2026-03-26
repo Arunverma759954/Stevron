@@ -11,6 +11,17 @@ export default function Home() {
   const sliderRef = useRef<HTMLDivElement>(null);
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
 
+  // Hero Slider State
+  const [currentHeroIndex, setCurrentHeroIndex] = useState(0);
+  const heroImages = ["/banner.webp", "/banner1.webp", "/banner.webp", "/banner1.webp"];
+
+  useEffect(() => {
+    const heroInterval = setInterval(() => {
+      setCurrentHeroIndex((prev) => (prev + 1) % heroImages.length);
+    }, 4500); // Change image every 4.5 seconds
+    return () => clearInterval(heroInterval);
+  }, []);
+
   useEffect(() => {
     const slider = sliderRef.current;
     if (!slider) return;
@@ -29,21 +40,44 @@ export default function Home() {
 
   return (
     <div className="flex flex-col">
-      {/* Hero Section - Tightened aspect ratio on mobile to reduce vertical gaps */}
-      <section className="relative h-auto aspect-[16/6.1] xs:aspect-[16/6] sm:h-[500px] lg:h-[740px] w-full overflow-hidden bg-[#050505]">
-        {/* Background Image: using object-contain on mobile to ensure 'Full Image' is visible */}
+      {/* Hero Section - Professional Slider with Crossfade Effect */}
+      <section className="relative w-full aspect-[16/9] sm:aspect-[16/7] md:aspect-[16/6] lg:aspect-[16/5.3] xl:aspect-[16/5] overflow-hidden bg-[#050505]">
+        {/* Background Images Slider */}
         <div className="absolute inset-0 z-0">
-          <Image
-            src="/banner/ac-banner.webp"
-            alt="STEVRON Hero"
-            fill
-            priority
-            className="object-contain md:object-cover object-left"
-          />
+          {heroImages.map((src, index) => (
+            <div
+              key={index}
+              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                index === currentHeroIndex ? "opacity-100 z-10" : "opacity-0 z-0"
+              }`}
+            >
+              <Image
+                src={src}
+                alt={`STEVRON Hero ${index + 1}`}
+                fill
+                priority={index === 0}
+                className="object-cover"
+              />
+            </div>
+          ))}
+        </div>
+
+        {/* Navigation Dots (Professional indicators) */}
+        <div className="absolute bottom-4 sm:bottom-6 lg:bottom-10 left-0 right-0 z-20 flex justify-center gap-2">
+          {heroImages.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentHeroIndex(index)}
+              className={`h-1.5 w-8 sm:h-2 sm:w-12 rounded-full transition-all duration-300 ${
+                index === currentHeroIndex ? "bg-white" : "bg-white/30 hover:bg-white/60"
+              }`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
         </div>
 
         {/* Alignment Container - Restored to 1440px Standard */}
-        <div className="relative z-10 mx-auto h-full w-full max-w-[1440px] px-4 sm:px-6 lg:px-16 flex flex-col justify-center">
+        <div className="relative z-10 mx-auto h-full w-full max-w-[1440px] px-4 sm:px-6 lg:px-16 flex flex-col justify-center pointer-events-none">
           <div className="w-full">
             {/* Overlay components can go here */}
           </div>

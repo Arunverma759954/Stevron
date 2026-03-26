@@ -46,14 +46,14 @@ export default function ACProducts() {
     <div className="flex flex-col bg-white">
       {/* Hero Section - Height 700px. Showing ONLY 41.png as requested. */}
       {/* Added object-top to ensure the "INTRODUCING" text isn't cut off at the top */}
-      <section className="relative w-full overflow-hidden bg-[#050505] h-[350px] sm:h-[500px] lg:h-[700px]">
+      <section className="relative w-full aspect-[16/9] sm:aspect-[16/7] md:aspect-[16/6] lg:aspect-[16/5.3] xl:aspect-[16/5] overflow-hidden bg-[#050505]">
         <div className="absolute inset-0 z-0">
           <Image
             src="/41.png"
             alt="STEVRON Hero Banner"
             fill
             priority
-            className="object-cover object-top"
+            className="object-cover"
           />
         </div>
       </section>
