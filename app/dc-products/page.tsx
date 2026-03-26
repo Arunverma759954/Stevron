@@ -23,22 +23,22 @@ export default function DCProducts() {
   ];
 
   const products = [
-    { id: "BNEDR500", subtitle: "650W - Impact Drill", image: "/BNEDR500.webp" },
-    { id: "BNIMD750", subtitle: "710W - Impact Drill", image: "/BNIMD750.webp" },
-    { id: "BNIMD850", subtitle: "850W - Impact Drill", image: "/BNIMD850 .webp" },
-    { id: "BNIMD1100", subtitle: "1100W - Industrial Hammer Drill", image: "/BNIMD1100_NEW.webp" },
-    { id: "BNANG750", subtitle: "750W - Angle Grinder", image: "/BNANG750.webp" },
-    { id: "BNANG950", subtitle: "950W - Professional Grinder", image: "/BNANG950.webp" },
-    { id: "BNANG2200", subtitle: "2200W - Industrial Grinder", image: "/BNANG2200.webp" },
-    { id: "BNANG2400", subtitle: "2400W - Heavy Duty Grinder", image: "/BNANG2400.webp" },
-    { id: "BNPOL1400", subtitle: "1400W - Sander Polisher", image: "/BNPOL1400.webp" },
-    { id: "BNJSA600", subtitle: "600W - Jig Saw Professional", image: "/BNJSA600.webp" },
-    { id: "BNPLS240", subtitle: "240W - Orbital Sander", image: "/BNPLS240.webp" },
-    { id: "BNCSA1400", subtitle: "1100W - Circular Saw", image: "/BNCSA1400.webp" },
-    { id: "BNCOS2400", subtitle: "2400W - Cut-off Machine", image: "/BNCOS2400.webp" },
-    { id: "BNROU1600", subtitle: "1600W - Router Professional", image: "/BNROU1600.webp" },
-    { id: "BNRHM800SDS", subtitle: "20J - Rotary Hammer Heavy", image: "/BNRHM800SDS.webp" },
-    { id: "BNRHM1500SDS", subtitle: "26J - Rotary Hammer Industrial", image: "/BNRHM1500SDS.webp" },
+    { id: "BNEDR500", subtitle: "500 W - Taladro Eléctrico", image: "/ac/BNEDR500.webp" },
+    { id: "BNIMD750", subtitle: "750 W - Taladro Percutor", image: "/ac/BNIMD750.webp" },
+    { id: "BNIMD850", subtitle: "850 W - Taladro Percutor", image: "/ac/BNIMD850.webp" },
+    { id: "BNIMD1100", subtitle: "1100 W - Taladro Percutor", image: "/ac/BNIMD1100.webp" },
+    { id: "BNANG750", subtitle: "750 W - Amoladora Angular", image: "/ac/BNANG750.webp" },
+    { id: "BNANG950", subtitle: "950 W - Amoladora Angular", image: "/ac/BNANG950.webp" },
+    { id: "BNANG2200", subtitle: "2200 W - Amoladora Angular", image: "/ac/BNANG2200.webp" },
+    { id: "BNANG2400", subtitle: "2400 W - Amoladora Angular", image: "/ac/BNANG2400.webp" },
+    { id: "BNPOL1400", subtitle: "1400 W - Pulidora", image: "/ac/BNPOL1400.webp" },
+    { id: "BNJSA600", subtitle: "600 W - Sierra de calar", image: "/ac/BNJSA600.webp" },
+    { id: "BNPLS240", subtitle: "240 W - Lijadora de Palma", image: "/ac/BNPLS240.webp" },
+    { id: "BNCSA1400", subtitle: "1400 W - Sierra Circular", image: "/ac/BNCSA1400.webp" },
+    { id: "BNCOS2400", subtitle: "2400 W - Sierra sensitiva para metal", image: "/ac/BNCOS2400.webp" },
+    { id: "BNROU1600", subtitle: "16000 W - Router", image: "/ac/BNROU1600.webp" },
+    { id: "BNRHM800SDS", subtitle: "3,0J - Martillo Perforador", image: "/ac/BNRHM800SDS.webp" },
+    { id: "BNRHM1500SDS", subtitle: "5,5J - Martillo Perforador", image: "/ac/BNRHM1500SDS.webp" },
   ];
 
   return (
