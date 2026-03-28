@@ -87,8 +87,9 @@ export default function Footer() {
                   <div className="absolute bottom-[-6px] left-0 w-8 h-[2px] bg-[#94A034]" />
                 </h3>
                 <ul className="flex flex-col gap-3 font-sans text-[14px] text-gray-400 font-light lg:text-left mb-6">
-                  <li><Link href="/" className="hover:text-white transition-colors">Contact Us</Link></li>
-                  <li><Link href="/" className="hover:text-white transition-colors">Warranty</Link></li>
+                  <li><Link href="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
+                  <li><Link href="/warranty-registration" className="hover:text-white transition-colors">Warranty</Link></li>
+                  <li><Link href="/become-a-dealer" className="hover:text-white transition-colors">Become a Dealer</Link></li>
                 </ul>
               </div>
 
