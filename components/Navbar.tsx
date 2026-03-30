@@ -196,20 +196,8 @@ export default function Navbar() {
             >
               Contact Us
             </Link>
-            <Link
-              href="/warranty-registration"
-              onClick={toggleMenu}
-              className="font-orbitron text-[18px] text-white py-2"
-            >
-              Warranty
-            </Link>
-            <Link
-              href="/become-a-dealer"
-              onClick={toggleMenu}
-              className="font-orbitron text-[18px] text-[#94A034] py-2"
-            >
-              Become a Dealer
-            </Link>
+      
+          
           </div>
 
           <div className="mt-auto flex items-center justify-between pt-6 border-t border-white/10">
