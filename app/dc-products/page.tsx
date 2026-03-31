@@ -58,26 +58,50 @@ export default function DCProducts() {
       </section>
 
       {/* 1NE PLATFORM White Box */}
-      <section className="relative -mt-[20px] lg:-mt-[40px] z-30 flex justify-center px-4 sm:px-6">
-        <div className="w-full max-w-[805px] min-h-[196px] rounded-[2px] bg-white p-6 shadow-[0_8px_30px_rgba(0,0,0,0.12)] border border-[#000000] text-center flex flex-col items-center justify-center sm:p-10">
-          <div className="mb-4 flex h-[35px] w-fit items-center justify-center rounded-[20px] bg-[#171717] px-10">
-            <span className="font-orbitron text-[15px] font-bold tracking-[0.2em] text-white uppercase italic">
+      <section className="relative -mt-[30px] lg:-mt-[50px] z-30 flex justify-center px-4 sm:px-6">
+        <div className="w-full max-w-[805px] min-h-[220px] rounded-[4px] bg-white p-6 shadow-[0_15px_40px_rgba(0,0,0,0.08)] border border-[#000000] text-center flex flex-col items-center justify-center sm:p-10">
+
+          {/* Pill Header */}
+          <div
+            className="mb-4 flex items-center justify-center bg-[#282828] px-2 sm:px-0"
+            style={{
+              width: '100%',
+              maxWidth: '315px',
+              height: '33px',
+              borderRadius: '16.5px'
+            }}
+          >
+            <span
+              className="font-['Eurostile_Extended',sans-serif] text-[18px] sm:text-[22px] font-bold tracking-normal text-white uppercase leading-none whitespace-nowrap overflow-hidden text-ellipsis"
+            >
               1NE PLATFORM
             </span>
           </div>
-          <p className="mb-4 font-orbitron text-[12px] font-bold tracking-[0.1em] text-[#000000] uppercase">
+
+          {/* Subtitle */}
+          <p
+            className="mb-4 font-['Antenna',sans-serif] text-[10px] sm:text-[12px] font-normal tracking-[0.05em] text-black uppercase whitespace-nowrap overflow-hidden text-ellipsis w-full"
+            style={{ maxWidth: '350px' }}
+          >
             ONE BATTERY, ENDLESS POSSIBILITIES
           </p>
-          <p className="font-sans text-[13px] font-normal leading-relaxed text-[#171717] max-w-[700px] opacity-90">
+
+          {/* Description */}
+          <p
+            className="font-['Antenna',sans-serif] text-[12px] sm:text-[13px] font-light leading-[1.6] text-black text-center w-full"
+            style={{ maxWidth: '676px' }}
+          >
             Experience true cordless freedom with STEVRON&apos;S 1NE platform, designed around one battery for all your tools.
-            Our DC power tools deliver consistent performance, flexibility and convenience across multiple applications.
+            Our DC power tools deliver consistent performance, flexibility, and convenience across multiple applications.
             With a single battery system, you can switch between tools effortlessly and keep your work moving without
-            interruptions. Engineered for efficiency and reliability, STEVRON DC tools combine advanced battery technology
-            with durable design. Whether its precision work or demanding tasks, the 1NE platform ensures you get the power,
-            control, and confidence to do more with less.
+            interruption. Engineered for efficiency and reliability, STEVRON DC tools combine advanced battery technology
+            with ergonomic design. Whether it&apos;s precision work or demanding tasks, the 1NE platform ensures you get the
+            power you need with the confidence to do more with less.
           </p>
         </div>
       </section>
+
+
 
       {/* Main Content: Sidebar + Products Grid */}
       <section className="mx-auto w-full max-w-[1440px] px-4 py-14 sm:px-6 sm:py-20 lg:px-16 lg:py-24">

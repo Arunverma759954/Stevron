@@ -57,25 +57,49 @@ export default function ACProducts() {
       </section>
 
       {/* Product Detail White Box */}
-      <section className="relative -mt-[20px] lg:-mt-[40px] z-30 flex justify-center px-4 sm:px-6">
-        <div className="w-full max-w-[805px] min-h-[196px] rounded-[2px] bg-white p-6 shadow-[0_8px_30px_rgba(0,0,0,0.12)] border border-[#000000] text-center flex flex-col items-center justify-center sm:p-10">
-          <div className="mb-4 flex h-[35px] w-fit items-center justify-center rounded-[20px] bg-[#171717] px-10">
-            <span className="font-orbitron text-[15px] font-bold tracking-[0.2em] text-white uppercase italic">
-              CORDED POWER TOOLS
+      <section className="relative -mt-[30px] lg:-mt-[50px] z-30 flex justify-center px-4 sm:px-6">
+        <div className="w-full max-w-[805px] min-h-[220px] rounded-[4px] bg-white p-6 shadow-[0_15px_40px_rgba(0,0,0,0.08)] border border-[#000000] text-center flex flex-col items-center justify-center sm:p-10">
+
+          {/* Pill Header */}
+          <div
+            className="mb-4 flex items-center justify-center bg-[#282828] px-2 sm:px-0"
+            style={{
+              width: '100%',
+              maxWidth: '380px',
+              height: '33px',
+              borderRadius: '16.5px'
+            }}
+          >
+            <span
+              className="font-['Eurostile_Extended',sans-serif] text-[18px] sm:text-[22px] font-bold tracking-normal text-white uppercase leading-none whitespace-nowrap overflow-hidden text-ellipsis"
+            >
+              UNSTOPPABLE POWER
             </span>
           </div>
-          <p className="mb-4 font-orbitron text-[12px] font-bold tracking-[0.1em] text-[#000000] uppercase">
-            UNSTOPPABLE POWER, CONTINUOUS PERFORMANCE
+
+          {/* Subtitle */}
+          <p
+            className="mb-4 font-['Antenna',sans-serif] text-[10px] sm:text-[12px] font-normal tracking-[0.05em] text-black uppercase whitespace-nowrap overflow-hidden text-ellipsis w-full"
+            style={{ maxWidth: '325px' }}
+          >
+            CONTINUOUS POWER, UNMATCHED PERFORMANCE
           </p>
-          <p className="font-sans text-[13px] font-normal leading-relaxed text-[#171717] max-w-[700px] opacity-90">
-            Experience heavy-duty tools with STEVRON&apos;S 220V platform, designed for professionals who demand
-            consistent power for hours. Our corded power tools deliver high performance, extreme torque, and
-            industrial-grade durability. Engineered for the most demanding applications, these tools ensure
-            maximum productivity without worrying about battery life. Perfectly optimized for construction,
-            manufacturing, and workshops.
+
+          {/* Description */}
+          <p
+            className="font-['Antenna',sans-serif] text-[12px] sm:text-[13px] font-light leading-[1.6] text-black text-center w-full"
+            style={{ maxWidth: '676px', minHeight: '83px' }}
+          >
+            TEVRON AC power tools are built to deliver consistent high-performance with a reliable 220V–60Hz power supply.
+            Designed for demanding applications, these tools provide uninterrupted power, making them ideal for continuous
+            and heavy-duty work environments. With robust construction and precision engineering, our corded tools ensure
+            stability, durability, and efficient output in every task. Whether on-site or in the workshop, STEVRON AC tools offer
+            the strength and control professionals need to get the job done right.
           </p>
         </div>
       </section>
+
+
 
       {/* Main Content: Sidebar + Products Grid */}
       <section className="mx-auto w-full max-w-[1440px] px-4 py-14 sm:px-6 sm:py-20 lg:px-16 lg:py-24">

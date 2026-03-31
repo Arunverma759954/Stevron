@@ -47,9 +47,8 @@ export default function Home() {
           {heroImages.map((src, index) => (
             <div
               key={index}
-              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-                index === currentHeroIndex ? "opacity-100 z-10" : "opacity-0 z-0"
-              }`}
+              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === currentHeroIndex ? "opacity-100 z-10" : "opacity-0 z-0"
+                }`}
             >
               <Image
                 src={src}
@@ -68,9 +67,8 @@ export default function Home() {
             <button
               key={index}
               onClick={() => setCurrentHeroIndex(index)}
-              className={`h-1.5 w-8 sm:h-2 sm:w-12 rounded-full transition-all duration-300 ${
-                index === currentHeroIndex ? "bg-white" : "bg-white/30 hover:bg-white/60"
-              }`}
+              className={`h-1.5 w-8 sm:h-2 sm:w-12 rounded-full transition-all duration-300 ${index === currentHeroIndex ? "bg-white" : "bg-white/30 hover:bg-white/60"
+                }`}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
@@ -92,9 +90,7 @@ export default function Home() {
             <button className="flex h-[45px] sm:h-[38px] px-8 items-center justify-center rounded-[5px] bg-[#000000] font-orbitron text-[14px] font-normal text-white transition-opacity hover:opacity-90 w-full sm:w-auto">
               Explore Products
             </button>
-            <button className="flex h-[45px] sm:h-[38px] px-8 items-center justify-center rounded-[5px] bg-[#000000] font-orbitron text-[14px] font-normal text-white transition-opacity hover:opacity-90 w-full sm:w-auto">
-              Become Distributor
-            </button>
+
           </div>
 
           <div className="mt-2 sm:mt-4 mx-auto h-[2px] sm:h-[3px] w-full bg-[#A7A7A7]" />

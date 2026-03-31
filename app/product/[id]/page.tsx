@@ -562,7 +562,7 @@ export default function ProductDetail() {
         <div className="flex flex-col lg:flex-row gap-8 xl:gap-16">
 
           {/* Left Side: Product Image Container */}
-          <div className="w-full lg:w-1/2 flex items-center justify-center p-8 lg:p-12 border border-black bg-white rounded-[4px] aspect-square relative">
+          <div className="w-full lg:w-1/2 flex items-center justify-center p-8 lg:p-12 bg-white rounded-[4px] aspect-square relative">
             <Image
               src={product.image}
               alt={product.id}
@@ -591,7 +591,7 @@ export default function ProductDetail() {
             </ul>
 
             {/* Accordions */}
-            <div className="flex flex-col gap-1 w-full max-w-[600px] mt-auto">
+            <div className="flex flex-col gap-[2px] w-full max-w-[600px] mt-8 mb-auto">
 
               {/* Technical Specs */}
               <div className="flex flex-col bg-white">

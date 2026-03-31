@@ -24,9 +24,7 @@ export default function CTASection() {
             <button className="bg-[#94A034] text-white font-orbitron text-[13px] sm:text-[14px] font-bold px-8 sm:px-10 py-3 rounded-[5px] shadow-md transition-opacity hover:opacity-90 uppercase tracking-wider">
               Explore Products
             </button>
-            <button className="bg-[#94A034] text-white font-orbitron text-[13px] sm:text-[14px] font-bold px-8 sm:px-10 py-3 rounded-[5px] shadow-md transition-opacity hover:opacity-90 uppercase tracking-wider">
-              Become Distributor
-            </button>
+
           </div>
         </div>
 
