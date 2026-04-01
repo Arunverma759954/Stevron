@@ -118,9 +118,9 @@ export default function ACProducts() {
                   <button
                     key={cat}
                     onClick={() => setActiveCategory(cat)}
-                    className="flex shrink-0 h-[34px] lg:h-[30px] min-w-max lg:w-[250px] items-center justify-center lg:justify-start px-5 lg:px-4 font-orbitron text-[11px] lg:text-[13px] font-bold tracking-tight transition-all rounded-[17px] lg:rounded-[2px] cursor-pointer bg-[#282828] text-white hover:bg-black/90 shadow-sm uppercase"
+                    className="flex shrink-0 h-[38px] lg:h-[32px] w-[200px] lg:w-[250px] items-center justify-center lg:justify-start px-4 font-orbitron text-[10px] lg:text-[12px] font-bold tracking-tight transition-all rounded-[2px] cursor-pointer bg-[#282828] text-white hover:bg-black/90 shadow-sm uppercase text-center lg:text-left break-words"
                   >
-                    {cat}
+                    <span className="w-full">{cat}</span>
                   </button>
               ))}
             </div>
