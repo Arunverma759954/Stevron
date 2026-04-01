@@ -22,7 +22,7 @@ export default function WarrantyRegistration() {
   return (
     <div className="flex flex-col min-h-screen bg-white text-white">
       {/* Hero Banner — offset for fixed navbar */}
-      <section className="relative w-full mt-[70px] lg:mt-[80px] aspect-[16/7] sm:aspect-[16/6] lg:aspect-[16/4.5] overflow-hidden">
+      <section className="relative w-full aspect-[16/5.5] sm:aspect-[16/6] lg:aspect-[16/4.5] overflow-hidden">
         <Image
           src="/banner.webp"
           alt="Warranty Registration"
@@ -108,11 +108,10 @@ export default function WarrantyRegistration() {
                   Purchase Proof / Invoice
                 </label>
                 <div
-                  className={`w-full h-[100px] sm:h-[120px] border border-dashed rounded-[3px] flex flex-col items-center justify-center transition-colors cursor-pointer px-4 ${
-                    dragActive
-                      ? "border-[#94A034] bg-[#94A034]/5"
-                      : "border-white/25 hover:border-white/50"
-                  }`}
+                  className={`w-full h-[100px] sm:h-[120px] border border-dashed rounded-[3px] flex flex-col items-center justify-center transition-colors cursor-pointer px-4 ${dragActive
+                    ? "border-[#94A034] bg-[#94A034]/5"
+                    : "border-white/25 hover:border-white/50"
+                    }`}
                   onDragEnter={handleDrag}
                   onDragOver={handleDrag}
                   onDragLeave={handleDrag}
