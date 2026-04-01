@@ -268,7 +268,7 @@ export default function Home() {
           <div className="mb-12 flex flex-col items-center gap-4">
             <div className="flex h-[40px] items-center justify-center rounded-[5px] bg-[#000000] px-8">
               <span className="font-orbitron text-[16px] sm:text-[18px] font-normal tracking-wider text-[#FFFFFF]">
-               Nuestras herramientas profesionales
+                Nuestras herramientas profesionales
               </span>
             </div>
           </div>

@@ -574,7 +574,7 @@ export default function ProductDetail() {
           {/* Right Side: Product Details */}
           <div className="w-full lg:w-1/2 flex flex-col pt-2 lg:pt-0">
             {/* Title */}
-            <h1 className="font-orbitron text-[17px] sm:text-[21px] lg:text-[24px] font-bold uppercase text-black mb-6 leading-none tracking-normal whitespace-nowrap overflow-visible pr-6">
+            <h1 className="font-orbitron text-[17px] sm:text-[21px] lg:text-[28px] font-bold uppercase text-black mb-6 leading-[1.2] tracking-tight max-w-full break-words">
               {product.id}<span className="text-[#94A034]"> - {product.subtitle.split(' - ')[1] || product.subtitle}</span>
             </h1>
             {/* Bullets */}
