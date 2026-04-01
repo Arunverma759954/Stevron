@@ -187,27 +187,27 @@ export default function Home() {
           <div className="grid w-full justify-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                title: "INNOVATION",
-                subtitle: "Engineering the Future",
-                description: "At STEVRON, innovation drives everything we create. We combine advanced engineering with practical design to develop tools that deliver power, precision, and reliability. By continuously improving our technology, we ensure every product meets the evolving needs of professionals.",
+                title: "INNOVACIÓN",
+                subtitle: "Diseñando el futuro",
+                description: "En STEVRON, la innovación es el motor de todo lo que creamos. Combinamos ingeniería avanzada con un diseño práctico para desarrollar herramientas que ofrecen potencia, precisión y confiabilidad. Al mejorar continuamente nuestra tecnología, nos aseguramos de que cada producto satisfaga las necesidades cambiantes de los profesionales.",
                 iconPath: "/innovation.png"
               },
               {
-                title: "QUALITY",
-                subtitle: "Built to Last",
-                description: "From carefully selected materials to precision manufacturing, every detail is engineered for durability and consistent performance. Through strict quality control and testing, we ensure tools professionals can rely on every day.",
+                title: "CALIDAD",
+                subtitle: "Hecho para durar",
+                description: "Desde los materiales cuidadosamente seleccionados hasta la fabricación de precisión, cada detalle está diseñado para garantizar la durabilidad y un rendimiento constante. Gracias a estrictos controles de calidad y pruebas, nos aseguramos de ofrecer herramientas en las que los profesionales puedan confiar cada día.",
                 iconPath: "/Group.png"
               },
               {
-                title: "RELIABILITY",
-                subtitle: "Performance You Can Trust",
-                description: "Delivering tools that perform consistently in real working conditions. Every product is designed with durable components and tested for dependable operation. Our focus on precision engineering ensures professionals can rely on STEVRON tools day after day.",
+                title: "FIABILIDAD",
+                subtitle: "Rendimiento en el que puedes confiar",
+                description: "Ofrecemos herramientas que rinden de manera constante en condiciones reales de trabajo. Cada producto está diseñado con componentes duraderos y se somete a pruebas para garantizar un funcionamiento confiable. Nuestro enfoque en la ingeniería de precisión asegura que los profesionales puedan confiar en las herramientas STEVRON día tras día.",
                 iconPath: "/Group (1).png"
               },
               {
-                title: "SUSTAINABILITY",
-                subtitle: "Building a Greener Future",
-                description: "Developing products with environmental responsibility in mind. Through smarter design, efficient production, and durable performance, we work towards reducing our footprint while delivering reliable solutions for the future.",
+                title: "SOSTENIBILIDAD",
+                subtitle: "Construyendo un futuro más verde",
+                description: "Desarrollamos productos teniendo en cuenta la responsabilidad medioambiental. Mediante un diseño más inteligente, una producción eficiente y un rendimiento duradero, trabajamos para reducir nuestra huella ecológica al tiempo que ofrecemos soluciones fiables para el futuro.",
                 iconPath: "/innovation.png"
               },
             ].map((item, index) => (
@@ -268,7 +268,7 @@ export default function Home() {
           <div className="mb-12 flex flex-col items-center gap-4">
             <div className="flex h-[40px] items-center justify-center rounded-[5px] bg-[#000000] px-8">
               <span className="font-orbitron text-[16px] sm:text-[18px] font-normal tracking-wider text-[#FFFFFF]">
-                Our Professional Tools
+               Nuestras herramientas profesionales
               </span>
             </div>
           </div>
@@ -315,7 +315,7 @@ export default function Home() {
                     <p className="mb-3 font-sans text-[15px] font-extralight text-[#ffffff] tracking-[0.03em] leading-tight">{product.subtitle}</p>
                     {/* View Details Button */}
                     <button className="mt-auto flex h-[32px] w-fit items-center gap-2 rounded-full bg-[#FFFFFF] pl-4 pr-1 text-[13px] font-bold text-[#171717] font-sans transition-all hover:bg-gray-100 uppercase">
-                      View Details
+                      Ver detalles
                       <ArrowRight size={16} strokeWidth={2} className="text-[#171717]" />
                     </button>
                   </div>
@@ -468,8 +468,7 @@ export default function Home() {
                 {openFaqIndex === idx && (
                   <div className="px-6 pb-4">
                     <p className="font-[Antenna] text-[16px] sm:text-[17px] leading-[150%] text-[#565656]">
-                      Stevron manufactures AC and DC power tools, hand tools, and heavy-duty industrial equipment.
-                      These products are designed for durability, efficiency, and reliable performance in demanding environments.
+                      Stevron fabrica herramientas eléctricas de CA y CC, herramientas manuales y equipos industriales de alta resistencia. Estos productos están diseñados para ofrecer durabilidad, eficiencia y un rendimiento fiable en entornos exigentes.
                     </p>
                   </div>
                 )}
