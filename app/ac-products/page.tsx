@@ -153,7 +153,7 @@ export default function ACProducts() {
 
                     <div className="px-1 mt-2">
                       <button className="flex h-[24px] w-auto min-w-[100px] items-center justify-center gap-1.5 rounded-full bg-white px-3.5 font-orbitron text-[10px] font-bold uppercase leading-none text-[#444444] transition-all hover:bg-gray-200 shadow-sm cursor-pointer whitespace-nowrap">
-                        VIEW DETAILS
+                         VER DETALLES
                         <ArrowRight size={11} className="stroke-[2.5] text-[#444444]" />
                       </button>
                     </div>
@@ -174,7 +174,7 @@ export default function ACProducts() {
         <div className="mx-auto w-full max-w-[1280px] px-6 sm:px-10 lg:px-16 flex flex-col items-center">
           <div className="bg-black text-white px-8 py-2 rounded-[5px] mb-8 shadow-md">
             <span className="font-orbitron text-[14px] sm:text-[16px] font-bold tracking-wider uppercase">
-              Explore Other Range
+              Explora otras gamas
             </span>
           </div>
 
