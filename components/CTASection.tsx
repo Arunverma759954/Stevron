@@ -11,13 +11,13 @@ export default function CTASection() {
           {/* Title Pill - "Ready to Experience Excellence?" */}
           <div className="bg-black text-white px-6 sm:px-8 py-2 rounded-[5px] shadow-lg">
             <span className="font-orbitron text-[14px] sm:text-[16px] font-bold tracking-wider uppercase">
-              Ready to Experience Excellence?
+              ¿Estás listo para vivir una experiencia excepcional?
             </span>
           </div>
 
           {/* Description */}
           <p className="font-Antenna text-[15px] sm:text-[16px] text-[#565656] leading-relaxed">
-            Join thousands of satisfied customers who trust Stevron for their industrial equipment needs.
+            Únete a los miles de clientes satisfechos que confían en Stevron para satisfacer sus necesidades de equipamiento industrial.
           </p>
 
           {/* Buttons */}
@@ -25,7 +25,7 @@ export default function CTASection() {
             {/* The single Explore Products button that links to Contact Us */}
             <Link href="/contact">
               <button className="bg-[#94A034] text-white font-orbitron cursor-pointer text-[13px] sm:text-[14px] font-bold px-8 sm:px-12 py-4 rounded-[5px] shadow-md transition-opacity hover:opacity-90 uppercase tracking-wider">
-                Explore Products
+               Descubre nuestros productos
               </button>
             </Link>
           </div>
