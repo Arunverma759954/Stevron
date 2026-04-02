@@ -23,22 +23,22 @@ export default function ACProducts() {
   ];
 
   const products = [
-    { id: "BNEDR500", subtitle: "500 W - Taladro Eléctrico", image: "/BNEDR500.webp" },
-    { id: "BNIMD750", subtitle: "750 W - Taladro Percutor", image: "/ac/BNIMD750.webp" },
-    { id: "BNIMD850", subtitle: "850 W - Taladro Percutor", image: "/ac/BNIMD850.webp" },
-    { id: "BNIMD1100", subtitle: "1100 W - Taladro Percutor", image: "/ac/BNIMD1100.webp" },
-    { id: "BNANG750", subtitle: "750 W - Amoladora Angular", image: "/ac/BNANG750.webp" },
-    { id: "BNANG950", subtitle: "950 W - Amoladora Angular", image: "/ac/BNANG950.webp" },
-    { id: "BNANG2200", subtitle: "2200 W - Amoladora Angular", image: "/ac/BNANG2200.webp" },
-    { id: "BNANG2400", subtitle: "2400 W - Amoladora Angular", image: "/ac/BNANG2400.webp" },
-    { id: "BNPOL1400", subtitle: "1400 W - Pulidora", image: "/ac/BNPOL1400.webp" },
-    { id: "BNJSA600", subtitle: "600 W - Sierra de calar", image: "/ac/BNJSA600.webp" },
-    { id: "BNPLS240", subtitle: "240 W - Lijadora de Palma", image: "/ac/BNPLS240.webp" },
-    { id: "BNCSA1400", subtitle: "1400 W - Sierra Circular", image: "/ac/BNCSA1400.webp" },
-    { id: "BNCOS2400", subtitle: "2400 W - Sierra sensitiva para metal", image: "/ac/BNCOS2400.webp" },
-    { id: "BNROU1600", subtitle: "16000 W - Router", image: "/ac/BNROU1600.webp" },
-    { id: "BNRHM800SDS", subtitle: "3,0J - Martillo Perforador", image: "/ac/BNRHM800SDS.webp" },
-    { id: "BNRHM1500SDS", subtitle: "5,5J - Martillo Perforador", image: "/ac/BNRHM1500SDS.webp" },
+    { id: "500W", subtitle: "Taladro eléctrico", image: "/BNEDR500.webp" },
+    { id: "750W", subtitle: "Taladro percutor", image: "/ac/BNIMD750.webp" },
+    { id: "850W", subtitle: "Taladro percutor", image: "/ac/BNIMD850.webp" },
+    { id: "1100W", subtitle: "Taladro percutor", image: "/ac/BNIMD1100.webp" },
+    { id: "750W", subtitle: "Amoladora angular", image: "/ac/BNANG750.webp" },
+    { id: "950W", subtitle: "Amoladora angular", image: "/ac/BNANG950.webp" },
+    { id: "2200W", subtitle: "Amoladora angular", image: "/ac/BNANG2200.webp" },
+    { id: "2400W", subtitle: "Amoladora angular", image: "/ac/BNANG2400.webp" },
+    { id: "1400W", subtitle: "Pulidora", image: "/ac/BNPOL1400.webp" },
+    { id: "600W", subtitle: "Sierra De Calar", image: "/ac/BNJSA600.webp" },
+    { id: "240W", subtitle: "Lijadora de palma", image: "/ac/BNPLS240.webp" },
+    { id: "1400W", subtitle: "Sierra Circular", image: "/ac/BNCSA1400.webp" },
+    { id: "2400W", subtitle: "Sierra De Mesa", image: "/ac/BNCOS2400.webp" },
+    { id: "1600W", subtitle: "Router", image: "/ac/BNROU1600.webp" },
+    { id: "800W (SDS)", subtitle: "Rotomartillo", image: "/ac/BNRHM800SDS.webp" },
+    { id: "1500W (SDS)", subtitle: "Rotomartillo", image: "/ac/BNRHM1500SDS.webp" },
   ];
 
   return (
