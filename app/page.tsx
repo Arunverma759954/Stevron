@@ -121,17 +121,17 @@ export default function Home() {
           {/* Section Title Label - as per Figma */}
           <div className="mb-12 flex h-[40px] items-center justify-center rounded-[5px] bg-black px-8">
             <span className="font-orbitron text-[16px] sm:text-[18px] font-normal tracking-wider text-white">
-              Explore Our Full Range
+              Descubre toda nuestra gama
             </span>
           </div>
 
           {/* Categories Grid - alignment same as navbar, increased gapping as per user request */}
           <div className="grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-20">
             {[
-              { title: "DC TOOLS", image: "/7.webp", href: "/dc-products" },
-              { title: "AC TOOLS", image: "/8.webp", href: "/ac-products" },
-              { title: "ACCESSORIES", image: "/5.webp", href: "#" },
-              { title: "HAND TOOLS", image: "/9.webp", href: "#" },
+              { title: "Herramientas DC", image: "/7.webp", href: "/dc-products" },
+              { title: "Herramientas AC", image: "/8.webp", href: "/ac-products" },
+              { title: "Accesorios", image: "/5.webp", href: "#" },
+              { title: "Herramientas manuales", image: "/9.webp", href: "#" },
             ].map((item, index) => (
               <Link
                 key={index}
@@ -425,14 +425,13 @@ export default function Home() {
           {/* Section Label */}
           <div className="mb-6 flex h-[40px] sm:h-[45px] items-center justify-center rounded-[5px] bg-[#000000] px-8 shadow-sm">
             <span className="font-orbitron text-[16px] sm:text-[18px] font-normal tracking-wider text-[#FFFFFF]">
-              Frequently Asked Questions
+              Preguntas frecuentes
             </span>
           </div>
 
           {/* Subtitle */}
           <p className="mb-8 max-w-[760px] text-center font-[Antenna] text-[18px] sm:text-[20px] leading-[140%] font-extralight text-[#565656]">
             Encuentra respuestas a preguntas frecuentes sobre nuestros productos, servicios y colaboraciones.
-             <br className="hidden sm:block" />
             ¿No encuentras lo que buscas? Ponte en contacto con nuestro equipo de soporte.
                      </p>
 
