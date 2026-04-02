@@ -154,7 +154,7 @@ Diseñadas para alto rendimiento y durabilidad, combinan tecnología avanzada de
 
                     <div className="px-1 mt-2">
                       <button className="flex h-[24px] w-auto min-w-[100px] items-center justify-center gap-1.5 rounded-full bg-white px-3.5 font-orbitron text-[10px] font-bold uppercase leading-none text-[#444444] transition-all hover:bg-gray-200 shadow-sm cursor-pointer whitespace-nowrap">
-                        VIEW DETAILS
+                       VER DETALLES
                         <ArrowRight size={11} className="stroke-[2.5] text-[#444444]" />
                       </button>
                     </div>
@@ -175,15 +175,15 @@ Diseñadas para alto rendimiento y durabilidad, combinan tecnología avanzada de
         <div className="mx-auto w-full max-w-[1280px] px-6 sm:px-10 lg:px-16 flex flex-col items-center">
           <div className="bg-black text-white px-8 py-2 rounded-[5px] mb-8 shadow-md">
             <span className="font-orbitron text-[14px] sm:text-[16px] font-bold tracking-wider uppercase">
-              Explore Other Range
+              Explora otras gamas
             </span>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-16 w-full max-w-[1100px]">
             {[
-              { title: "AC TOOLS", image: "/8.webp", href: "/ac-products" },
-              { title: "ACCESSORIES", image: "/5.webp", href: "#" },
-              { title: "HAND TOOLS", image: "/9.webp", href: "#" },
+              { title: "Herramientas AC", image: "/8.webp", href: "/ac-products" },
+              { title: "Accesorios", image: "/5.webp", href: "#" },
+              { title: "Herramientas manuales", image: "/9.webp", href: "#" },
             ].map((item, index) => (
               <Link
                 key={index}
