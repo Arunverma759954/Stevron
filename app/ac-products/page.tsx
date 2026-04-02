@@ -15,11 +15,12 @@ export default function ACProducts() {
     "Taladro",
     "Amoladora angular",
     "Pulidora",
-    "Sierra de calar",
-    "Sierra circular",
-    "Sierra de mesa",
-    "Tupí",
-    "Martillo perforador",
+    "Sierra De Calar",
+    "Lijadora de palma",
+    "Sierra Circular",
+    "Sierra De Mesa",
+    "Router",
+     "Rotomartillo",
   ];
 
   const products = [
