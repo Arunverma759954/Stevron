@@ -39,9 +39,9 @@ export default function ACProductDetail() {
         {/* Back Button & Breadcrumb Row */}
         <div className="flex flex-col sm:flex-row sm:items-center mt-5 justify-between gap-4 mb-8">
           <div className="flex items-center text-[12px] font-[Antenna] uppercase text-[#565656] gap-2">
-            <Link href="/" className="hover:text-black transition-colors">Home</Link>
+            <Link href="/" className="hover:text-black transition-colors">Inicio</Link>
             <ChevronRight size={12} />
-            <Link href="/ac-products" className="hover:text-black transition-colors font-bold text-black border-b-2 border-[#94A034] px-1 rounded-sm">AC Products</Link>
+            <Link href="/ac-products" className="hover:text-black transition-colors font-bold text-black border-b-2 border-[#94A034] px-1 rounded-sm">Productos AC</Link>
             <ChevronRight size={12} />
             <span className="text-[#94A034] font-bold">{product.id}</span>
           </div>
@@ -51,7 +51,7 @@ export default function ACProductDetail() {
             className="flex items-center gap-2 px-4 py-2 bg-black text-white rounded-[4px] font-[Antenna] text-[12px] font-bold uppercase hover:bg-[#94A034] transition-all w-fit shadow-md group"
           >
             <ArrowLeft size={14} className="group-hover:-translate-x-1 transition-transform" />
-            Back
+            Atrás
           </button>
         </div>
 
@@ -104,7 +104,7 @@ export default function ACProductDetail() {
                   onClick={() => toggleSection('specifications')}
                   className="w-full bg-[#E5E5E5] uppercase font-orbitron text-[14px] font-medium leading-[121%] text-black py-3 px-4 flex justify-between items-center transition-colors hover:bg-gray-300"
                 >
-                  TECHNICAL SPECIFICATIONS
+                  ESPECIFICACIONES TÉCNICAS
                   <ChevronDown size={16} className={`transition-transform duration-300 ${openSections.specifications ? "rotate-180" : ""}`} />
                 </button>
                 <div className={`overflow-hidden transition-all duration-300 ${openSections.specifications ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}`}>
@@ -144,7 +144,7 @@ export default function ACProductDetail() {
                   onClick={() => toggleSection('features')}
                   className="w-full bg-black uppercase font-orbitron text-[14px] font-medium leading-[121%] text-white py-3 px-4 flex justify-between items-center transition-colors hover:bg-gray-900"
                 >
-                  FEATURES
+                  CARACTERÍSTICAS
                   <ChevronDown size={16} className={`transition-transform duration-300 ${openSections.features ? "rotate-180" : ""}`} />
                 </button>
                 <div className={`overflow-hidden transition-all duration-300 ${openSections.features ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}`}>
@@ -162,7 +162,7 @@ export default function ACProductDetail() {
                   onClick={() => toggleSection('warranty')}
                   className="w-full bg-black uppercase font-orbitron text-[14px] font-medium leading-[121%] text-white py-3 px-4 flex justify-between items-center transition-colors hover:bg-gray-900"
                 >
-                  WARRANTY
+                  GARANTÍA
                   <ChevronDown size={16} className={`transition-transform duration-300 ${openSections.warranty ? "rotate-180" : ""}`} />
                 </button>
                 <div className={`overflow-hidden transition-all duration-300 ${openSections.warranty ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}`}>
@@ -194,7 +194,7 @@ export default function ACProductDetail() {
         <div className="mx-auto w-full max-w-[1280px] px-6 sm:px-10 lg:px-16 flex flex-col items-center">
           <div className="bg-black text-white px-8 py-2 rounded-[5px] mb-8 shadow-md">
             <span className="font-orbitron text-[14px] sm:text-[16px] font-bold tracking-wider uppercase">
-              Explore Other Range
+              Explorar Otras Gamas
             </span>
           </div>
 

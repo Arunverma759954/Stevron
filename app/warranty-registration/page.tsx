@@ -43,7 +43,7 @@ export default function WarrantyRegistration() {
             {/* Title box — white rounded pill */}
             <div className="w-full bg-white rounded-[8px] flex items-center justify-center mb-6 sm:mb-8" style={{ minHeight: "46px", padding: "10px 12px" }}>
               <h2 className="font-orbitron text-black font-bold text-[10px] sm:text-[13px] md:text-[15px] tracking-[0.10em] sm:tracking-[0.15em] uppercase text-center leading-tight">
-                PRODUCT WARRANTY REGISTRATION FORM
+                FORMULARIO DE REGISTRO DE GARANTÍA DEL PRODUCTO
               </h2>
             </div>
 
@@ -52,11 +52,11 @@ export default function WarrantyRegistration() {
               {/* Customer Name */}
               <div className="flex flex-col gap-1.5">
                 <label className="font-inter text-[12px] sm:text-[13px] text-white font-normal">
-                  Customer Name
+                  Nombre del cliente
                 </label>
                 <input
                   type="text"
-                  placeholder="Enter your full name"
+                  placeholder="Ingrese su nombre completo"
                   className="w-full h-[34px] bg-white text-black text-[12px] px-3 rounded-[3px] outline-none font-inter placeholder:text-[#999]"
                 />
               </div>
@@ -64,7 +64,7 @@ export default function WarrantyRegistration() {
               {/* Contact Number */}
               <div className="flex flex-col gap-1.5">
                 <label className="font-inter text-[12px] sm:text-[13px] text-white font-normal">
-                  Contact Number
+                  Número de contacto
                 </label>
                 <div className="flex gap-2">
                   <div className="flex items-center justify-center w-[44px] h-[34px] bg-white text-black text-[12px] rounded-[3px] font-inter font-normal flex-shrink-0">
@@ -72,7 +72,7 @@ export default function WarrantyRegistration() {
                   </div>
                   <input
                     type="tel"
-                    placeholder="Enter Your Contact Number"
+                    placeholder="Ingrese su número de contacto"
                     className="flex-1 h-[34px] bg-white text-black text-[12px] px-3 rounded-[3px] outline-none font-inter placeholder:text-[#999]"
                   />
                 </div>
@@ -81,11 +81,11 @@ export default function WarrantyRegistration() {
               {/* Product Code */}
               <div className="flex flex-col gap-1.5">
                 <label className="font-inter text-[12px] sm:text-[13px] text-white font-normal">
-                  Product Code
+                  Código del producto
                 </label>
                 <input
                   type="text"
-                  placeholder="Select Product Code"
+                  placeholder="Seleccionar código del producto"
                   className="w-full h-[34px] bg-white text-black text-[12px] px-3 rounded-[3px] outline-none font-inter placeholder:text-[#999]"
                 />
               </div>
@@ -93,11 +93,11 @@ export default function WarrantyRegistration() {
               {/* Product Serial Number */}
               <div className="flex flex-col gap-1.5">
                 <label className="font-inter text-[12px] sm:text-[13px] text-white font-normal">
-                  Product Serial Number
+                  Número de serie del producto
                 </label>
                 <input
                   type="text"
-                  placeholder="Select Product Serial Number"
+                  placeholder="Seleccionar número de serie del producto"
                   className="w-full h-[34px] bg-white text-black text-[12px] px-3 rounded-[3px] outline-none font-inter placeholder:text-[#999]"
                 />
               </div>
@@ -105,7 +105,7 @@ export default function WarrantyRegistration() {
               {/* Purchase Proof Upload */}
               <div className="flex flex-col gap-1.5">
                 <label className="font-inter text-[12px] sm:text-[13px] text-white font-normal">
-                  Purchase Proof / Invoice
+                  Comprobante de compra / Factura
                 </label>
                 <div
                   className={`w-full h-[100px] sm:h-[120px] border border-dashed rounded-[3px] flex flex-col items-center justify-center transition-colors cursor-pointer px-4 ${dragActive
@@ -117,10 +117,10 @@ export default function WarrantyRegistration() {
                   onDragLeave={handleDrag}
                 >
                   <p className="font-inter text-[12px] sm:text-[13px] text-white/80 text-center">
-                    Drop your file here or click to browse
+                    Suelte su archivo aquí o haga clic para buscar
                   </p>
                   <p className="font-inter text-[10px] sm:text-[11px] text-white/40 mt-1 text-center">
-                    JPEG, PNG, WEBP, PDF (max 5MB)
+                    JPEG, PNG, WEBP, PDF (máx. 5MB)
                   </p>
                 </div>
               </div>
@@ -139,9 +139,9 @@ export default function WarrantyRegistration() {
                   />
                 </div>
                 <label htmlFor="terms" className="font-inter text-[10px] sm:text-[11px] text-white leading-snug cursor-pointer">
-                  I agree to the{" "}
+                  Acepto los{" "}
                   <Link href="#" className="underline hover:text-[#94A034] transition-colors">
-                    Terms and Conditions
+                    Términos y condiciones
                   </Link>
                   *
                 </label>
@@ -152,7 +152,7 @@ export default function WarrantyRegistration() {
                 type="submit"
                 className="mt-2 w-full h-[46px] bg-[#94A034] text-white font-orbitron font-bold text-[12px] sm:text-[15px] tracking-[0.15em] sm:tracking-[0.2em] rounded-[4px] uppercase transition-all hover:bg-[#7d8a2c]"
               >
-                SUBMIT REGISTRATION
+                ENVIAR REGISTRO
               </button>
             </form>
           </div>

@@ -108,7 +108,7 @@ export default function DCProducts() {
           <div className="w-full shrink-0 lg:w-[260px] flex flex-col items-center sm:items-start">
             <div className="w-full sm:w-[250px] mb-4 lg:mb-6">
               <h2 className="font-orbitron text-[16px] lg:text-[18px] font-bold uppercase tracking-tight text-black text-center sm:text-left">
-                Product Category
+                Categoría de Producto
               </h2>
               <div className="h-[1px] w-full bg-black mt-1" />
             </div>

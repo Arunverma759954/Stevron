@@ -38,23 +38,21 @@ export default function BecomeADealer() {
               style={{ borderRadius: "8px", minHeight: "46px", padding: "10px 12px" }}
             >
               <h2 className="font-orbitron text-black font-bold text-[11px] sm:text-[13px] md:text-[15px] tracking-[0.10em] sm:tracking-[0.12em] uppercase text-center leading-tight">
-                BECOME AN AUTHORISED DEALER
+                CONVIÉRTASE EN UN DISTRIBUIDOR AUTORIZADO
               </h2>
             </div>
 
             {/* Subtitle */}
-            <p className="font-inter text-[#FFFFFF] text-[12px] sm:text-[13px] font-normal text-center mb-8 sm:mb-10 leading-snug px-2">
-              Stevron products are only sold via authorised dealer
+              Los productos Stevron solo se venden a través de tiendas de distribuidores autorizados
               <br className="hidden sm:block" />
-              {" "}shops that are carefully selected by us.
-            </p>
+              {" "}cuidadosamente seleccionados por nosotros.
 
             <form className="flex flex-col gap-4 sm:gap-5">
 
               {/* Company name */}
               <div className="flex flex-col gap-1.5">
                 <label className="font-inter text-[12px] sm:text-[13px] text-white font-normal">
-                  Company name
+                  Nombre de la empresa
                 </label>
                 <input
                   type="text"
@@ -68,7 +66,7 @@ export default function BecomeADealer() {
               {/* Contact Number */}
               <div className="flex flex-col gap-1.5">
                 <label className="font-inter text-[12px] sm:text-[13px] text-white font-normal">
-                  Contact Number
+                  Número de contacto
                 </label>
                 <div className="flex gap-2">
                   <div
@@ -90,7 +88,7 @@ export default function BecomeADealer() {
               {/* E-mail */}
               <div className="flex flex-col gap-1.5">
                 <label className="font-inter text-[12px] sm:text-[13px] text-white font-normal">
-                  E-mail
+                  Correo electrónico
                 </label>
                 <input
                   type="email"
@@ -104,7 +102,7 @@ export default function BecomeADealer() {
               {/* Address */}
               <div className="flex flex-col gap-1.5">
                 <label className="font-inter text-[12px] sm:text-[13px] text-white font-normal">
-                  Address
+                  Dirección
                 </label>
                 <input
                   type="text"
@@ -119,7 +117,7 @@ export default function BecomeADealer() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                 <div className="flex flex-col gap-1.5">
                   <label className="font-inter text-[12px] sm:text-[13px] text-white font-normal">
-                    Postal code
+                    Código postal
                   </label>
                   <input
                     type="text"
@@ -131,7 +129,7 @@ export default function BecomeADealer() {
                 </div>
                 <div className="flex flex-col gap-1.5">
                   <label className="font-inter text-[12px] sm:text-[13px] text-white font-normal">
-                    City
+                    Ciudad
                   </label>
                   <input
                     type="text"
@@ -146,7 +144,7 @@ export default function BecomeADealer() {
               {/* Country */}
               <div className="flex flex-col gap-1.5">
                 <label className="font-inter text-[12px] sm:text-[13px] text-white font-normal">
-                  Country
+                  País
                 </label>
                 <input
                   type="text"
@@ -160,7 +158,7 @@ export default function BecomeADealer() {
               {/* Current brands */}
               <div className="flex flex-col gap-1.5">
                 <label className="font-inter text-[12px] sm:text-[13px] text-white font-normal">
-                  Current brands
+                  Marcas actuales
                 </label>
                 <input
                   type="text"
@@ -194,7 +192,7 @@ export default function BecomeADealer() {
                   className="font-inter text-[10px] sm:text-[11px] text-white leading-relaxed cursor-pointer select-none"
                   style={{ fontWeight: 300 }}
                 >
-                  You understand that when you click on submit, Stevron Tools AB (publ.) and its affiliate companies will use your personal data to respond to you. We will always use your personal data in accordance with our Privacy Notice. You will find more information about how we process your data, who we may share it with, what rights you have and further contact details to us in the Privacy Notice. You can withdraw your consent to our newsletter at any time by clicking the unsubscribe button in any communication you receive from us or by contacting us as set out in the Privacy Notice.
+                  Usted comprende que cuando hace clic en enviar, Stevron Tools AB (publ.) y sus empresas afiliadas utilizarán sus datos personales para responderle. Siempre utilizaremos sus datos personales de acuerdo con nuestro Aviso de privacidad. Encontrará más información sobre cómo procesamos sus datos, con quién podemos compartirlos, qué derechos tiene y más detalles de contacto con nosotros en el Aviso de privacidad. Puede retirar su consentimiento a nuestro boletín en cualquier momento haciendo clic en el botón de cancelar suscripción en cualquier comunicación que reciba de nosotros o poniéndose en contacto con nosotros como se establece en el Aviso de privacidad.
                 </label>
               </div>
 
@@ -204,7 +202,7 @@ export default function BecomeADealer() {
                 className="w-full bg-[#94A034] text-white font-orbitron font-bold tracking-[0.15em] sm:tracking-[0.2em] uppercase transition-all hover:bg-[#7d8a2c] mt-2"
                 style={{ height: "46px", borderRadius: "4px", fontSize: "13px" }}
               >
-                SUBMIT
+                ENVIAR
               </button>
             </form>
           </div>

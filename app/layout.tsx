@@ -26,8 +26,8 @@ const geistMono = Geist_Mono({
 import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "STEVRON - Industrial Power Tools",
-  description: "High-performance industrial power tools for professionals.",
+  title: "STEVRON - Herramientas Eléctricas Industriales",
+  description: "Herramientas eléctricas industriales de alto rendimiento para profesionales.",
 };
 
 export default function RootLayout({
@@ -36,7 +36,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <head>
         <link rel="icon" href="/Logo.webp" />
       </head>
