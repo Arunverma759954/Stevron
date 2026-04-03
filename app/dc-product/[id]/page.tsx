@@ -59,12 +59,12 @@ export default function DCProductDetail() {
         <div className="flex flex-col lg:flex-row gap-8 xl:gap-16">
 
           {/* Left Side: Product Image Container */}
-          <div className="w-full lg:w-1/2 flex items-center justify-center p-8 lg:p-12 bg-white rounded-[4px] aspect-square relative">
+          <div className="w-full lg:w-1/2 flex items-center justify-center p-8 lg:p-12 xl:p-16 bg-white rounded-[4px] aspect-square relative overflow-hidden">
             <Image
               src={product.image}
               alt={product.id}
               fill
-              className="object-contain p-8 transition-transform duration-700 hover:scale-105"
+              className="object-contain transition-transform duration-700 hover:scale-105"
             />
           </div>
 
