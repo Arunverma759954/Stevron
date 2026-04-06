@@ -92,7 +92,7 @@ export default function Navbar() {
               href="/about"
               className="font-orbitron text-[15px] lg:text-[17.37px] font-normal tracking-wide text-white transition-opacity hover:opacity-80"
             >
-              About
+              About Us
             </Link>
             <Link
               href="/warranty-registration"
@@ -104,7 +104,7 @@ export default function Navbar() {
               href="/contact"
               className="font-orbitron text-[15px] lg:text-[17.37px] font-normal tracking-wide text-white transition-opacity hover:opacity-80"
             >
-              Contact
+              Contact Us
             </Link>
             {/* Globe Icon */}
             <button className="ml-2 text-white hover:opacity-80">

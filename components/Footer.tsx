@@ -41,10 +41,10 @@ export default function Footer() {
               height={40}
               className="h-auto w-[160px]"
             />
-            <p className="font-['Antenna',sans-serif] text-[13px] text-gray-400 leading-relaxed font-light max-w-[400px]">
+            <p className="font-['Antenna',sans-serif] text-[14.5px] text-gray-400 leading-relaxed font-light max-w-[400px]">
               Empowering professionals with top-quality tools and equipment. Building the future of industrial excellence through innovation and quality.
             </p>
-            <p className="font-['Antenna',sans-serif] text-[11px] text-gray-500 mt-4">
+            <p className="font-['Antenna',sans-serif] text-[13px] text-gray-500 mt-4">
               © 2026 Stevron. All rights reserved.
             </p>
           </div>
