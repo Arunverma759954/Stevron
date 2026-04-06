@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section - Professional Slider with Crossfade Effect */}
-      <section className="relative w-full aspect-[16/8] lg:aspect-[16/5] overflow-hidden bg-[#050505]">
+      <section className="relative w-full aspect-[4/1.3] sm:aspect-[16/8] lg:aspect-[16/5] overflow-hidden bg-[#050505]">
         {/* Background Images Slider */}
         <div className="absolute inset-0 z-0">
           {heroImages.map((src, index) => (
@@ -88,7 +88,7 @@ export default function Home() {
           {/* Buttons Aligned to the Center */}
           <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-2">
             <button className="flex h-[45px] sm:h-[38px] px-8 items-center justify-center rounded-[5px] bg-[#000000] font-orbitron text-[14px] font-normal text-white transition-opacity hover:opacity-90 w-full sm:w-auto">
-             Explora Nuestro Catálogo
+              Explore Our Catalog
             </button>
 
           </div>
@@ -121,17 +121,17 @@ export default function Home() {
           {/* Section Title Label - as per Figma */}
           <div className="mb-12 flex h-[40px] items-center justify-center rounded-[5px] bg-black px-8">
             <span className="font-orbitron text-[16px] sm:text-[18px] font-normal tracking-wider text-white">
-              Explora Toda Nuestra Gama
+              Explore Our Full Range
             </span>
           </div>
 
           {/* Categories Grid - alignment same as navbar, increased gapping as per user request */}
           <div className="grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-20">
             {[
-              { title: "HERRAMIENTAS DC", image: "/7.webp", href: "/dc-products" },
-              { title: "HERRAMIENTAS AC", image: "/8.webp", href: "/ac-products" },
-              { title: "ACCESORIOS", image: "/5.webp", href: "#" },
-              { title: "HERRAMIENTAS MANUALES", image: "/9.webp", href: "#" },
+              { title: "DC TOOLS", image: "/7.webp", href: "/dc-products" },
+              { title: "AC TOOLS", image: "/8.webp", href: "/ac-products" },
+              { title: "ACCESSORIES", image: "/5.webp", href: "#" },
+              { title: "HAND TOOLS", image: "/9.webp", href: "#" },
             ].map((item, index) => (
               <Link
                 key={index}
@@ -177,8 +177,8 @@ export default function Home() {
           {/* Logo + Section Title (navbar width) */}
           <div className="mb-10 flex flex-col items-center gap-4">
             <div className="flex h-[40px] items-center justify-center rounded-[5px] bg-[#000000] px-8">
-              <span className="font-orbitron text-[16px] sm:text-[18px] font-normal tracking-wider text-[#FFFFFF]">
-               Nuestros Valores Fundamentales
+              <span className="font-orbitron text-[16px] sm:text-[18px] font-normal tracking-wider text-[#FFFFFF] text-center">
+                Our Core Values
               </span>
             </div>
           </div>
@@ -186,28 +186,28 @@ export default function Home() {
           {/* Four boxes - Figma: integrated white header strip + body #171717 */}
           <div className="grid w-full justify-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-               {
-                title: "INNOVACIÓN",
-                subtitle: "Diseñando el futuro",
-                description: "En STEVRON, la innovación impulsa todo lo que creamos. Combinamos ingeniería avanzada con un diseño práctico para desarrollar herramientas potentes, precisas y confiables adaptadas a las necesidades cambiantes de los profesionales modernos.",
+              {
+                title: "INNOVATION",
+                subtitle: "Designing the future",
+                description: "At STEVRON, innovation drives everything we create. We combine advanced engineering with practical design to develop powerful, precise, and reliable tools tailored to the evolving needs of modern professionals.",
                 iconPath: "/innovation.png"
               },
               {
-                title: "CALIDAD",
-                subtitle: "Construido para durar",
-                description: "Desde materiales cuidadosamente seleccionados hasta una fabricación de precisión, cada detalle garantiza durabilidad y un rendimiento constante. Estrictos controles y pruebas aseguran herramientas confiables para el uso diario.",
+                title: "QUALITY",
+                subtitle: "Built to last",
+                description: "From carefully selected materials to precision manufacturing, every detail ensures durability and consistent performance. Strict controls and testing ensure reliable tools for everyday use.",
                 iconPath: "/Group.png"
               },
               {
-                title: "CONFIABILIDAD",
-                subtitle: "Confianza en el rendimiento",
-                description: "Ofrecemos herramientas con un rendimiento constante en condiciones reales. Cada producto cuenta con componentes duraderos y pruebas rigurosas, garantizando un funcionamiento confiable y precisión en cada tarea.",
+                title: "RELIABILITY",
+                subtitle: "Trust in Performance",
+                description: "We deliver tools with consistent performance in real-world conditions. Every product features durable components and undergoes rigorous testing, ensuring reliable operation and precision in every task.",
                 iconPath: "/Group (1).png"
               },
               {
-                title: "SOSTENIBILIDAD",
-                subtitle: "Un futuro más verde",
-                description: "Desarrollamos productos con responsabilidad ambiental. A través de un diseño inteligente, una producción eficiente y un rendimiento duradero, reducimos nuestra huella ecológica ofreciendo soluciones sostenibles.",
+                title: "SUSTAINABILITY",
+                subtitle: "A Greener Future",
+                description: "We develop products with environmental responsibility. Through intelligent design, efficient production, and long-lasting performance, we reduce our ecological footprint by offering sustainable solutions.",
                 iconPath: "/innovation.png"
               },
             ].map((item, index) => (
@@ -244,7 +244,7 @@ export default function Home() {
                     {/* Subtitle with side lines (Figma style) */}
                     <div className="mb-3 flex w-full items-center gap-2">
                       <div className="h-px flex-1 bg-[#FFFFFF]" />
-                      <p className="whitespace-nowrap font-['Antenna',sans-serif] text-[16px] sm:text-[18px] font-normal leading-[100%] tracking-[0%] text-[#FFFFFF]">
+                      <p className="font-['Antenna',sans-serif] text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[100%] tracking-[0%] text-[#FFFFFF] text-center">
                         {item.subtitle}
                       </p>
                       <div className="h-px flex-1 bg-[#FFFFFF]" />
@@ -267,8 +267,8 @@ export default function Home() {
           {/* Section Label */}
           <div className="mb-12 flex flex-col items-center gap-4">
             <div className="flex h-[40px] items-center justify-center rounded-[5px] bg-[#000000] px-8">
-              <span className="font-orbitron text-[16px] sm:text-[18px] font-normal tracking-wider text-[#FFFFFF]">
-                Nuestras Herramientas Profesionales
+              <span className="font-orbitron text-[16px] sm:text-[18px] font-normal tracking-wider text-[#FFFFFF] text-center">
+                Our Professional Tools
               </span>
             </div>
           </div>
@@ -289,18 +289,18 @@ export default function Home() {
               style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
             >
               {[
-                { id: "BNID452B2", type: "dc", name: "45NM", subtitle: "Taladro percutor", image: "/dc/BNID452B2.webp" },
-                { id: "BNDR75", type: "dc", name: "75NM", subtitle: "Taladro Percutor Compacto", image: "/dc/BNCID75K.webp" },
-                { id: "BNIW4002B2", type: "dc", name: "400NM", subtitle: "Llave de Impacto batería", image: "/dc/BNIW4002B2.webp" },
-                { id: "BNIW8004B2", type: "dc", name: "800NM", subtitle: "Llave de Impacto batería", image: "/dc/BNIW8004B2.webp" },
-                { id: "BNIMD750", type: "ac", name: "750W", subtitle: "Taladro percutor", image: "/ac/BNIMD750.webp" },
-                { id: "BNIMD1100", type: "ac", name: "1100W", subtitle: "Taladro percutor", image: "/ac/BNIMD1100.webp" },
-                { id: "BNANG750", type: "ac", name: "750W", subtitle: "Amoladora angular", image: "/ac/BNANG750.webp" },
-                { id: "BNANG2200", type: "ac", name: "2200W", subtitle: "Amoladora angular", image: "/ac/BNANG2200.webp" },
+                { id: "BNID452B2", type: "dc", name: "45NM", subtitle: "Hammer drill", image: "/dc/BNID452B2.webp" },
+                { id: "BNDR75", type: "dc", name: "75NM", subtitle: "Compact Hammer Drill", image: "/dc/BNCID75K.webp" },
+                { id: "BNIW4002B2", type: "dc", name: "400NM", subtitle: "Impact Wrench battery", image: "/dc/BNIW4002B2.webp" },
+                { id: "BNIW8004B2", type: "dc", name: "800NM", subtitle: "Impact Wrench battery", image: "/dc/BNIW8004B2.webp" },
+                { id: "BNIMD750", type: "ac", name: "750W", subtitle: "Hammer drill", image: "/ac/BNIMD750.webp" },
+                { id: "BNIMD1100", type: "ac", name: "1100W", subtitle: "Hammer drill", image: "/ac/BNIMD1100.webp" },
+                { id: "BNANG750", type: "ac", name: "750W", subtitle: "Angle grinder", image: "/ac/BNANG750.webp" },
+                { id: "BNANG2200", type: "ac", name: "2200W", subtitle: "Angle grinder", image: "/ac/BNANG2200.webp" },
               ].map((product, idx) => (
-                <Link 
+                <Link
                   href={`/${product.type}-product/${product.id}`}
-                  key={idx} 
+                  key={idx}
                   className="group flex flex-col overflow-hidden rounded-[16px] border border-[#E5E5E5] shadow-sm transition-all hover:shadow-md min-w-[280px] sm:min-w-[calc(50%-8px)] lg:min-w-[calc(25%-12px)] snap-start"
                 >
                   {/* Top: Image (White BG) */}
@@ -319,7 +319,7 @@ export default function Home() {
                     <p className="mb-3 font-sans text-[15px] font-extralight text-[#ffffff] tracking-[0.03em] leading-tight">{product.subtitle}</p>
                     {/* View Details Button */}
                     <div className="mt-auto flex h-[32px] w-fit items-center gap-2 rounded-full bg-[#FFFFFF] pl-4 pr-1 text-[13px] font-bold text-[#171717] font-sans transition-all hover:bg-gray-100 uppercase">
-                      Ver Detalles
+                      View Details
                       <ArrowRight size={16} strokeWidth={2} className="text-[#171717]" />
                     </div>
                   </div>
@@ -353,32 +353,32 @@ export default function Home() {
 
         <div className="relative z-10 mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-16 flex flex-col items-center">
           {/* Top Label - Figma: 373x38px, White BG, Black Text */}
-          <div className="mb-14 flex h-[50px] w-full max-w-[520px] items-center justify-center rounded-[5px] bg-white shadow-lg border border-black/10">
-            <span className="font-orbitron text-[18px] sm:text-[20px] font-bold tracking-[0.1em] text-black">
-              Parte de un Grupo Industrial Global
+          <div className="mb-14 flex min-h-[50px] w-full max-w-[550px] items-center justify-center rounded-[5px] bg-white shadow-lg border border-black/10 px-4 py-2">
+            <span className="font-orbitron text-[16px] sm:text-[18px] lg:text-[20px] font-bold tracking-[0.1em] text-black text-center">
+              Part of a Global Industrial Group
             </span>
           </div>
 
           {/* Cards Grid - 3 cards, full width to align with other sections */}
           <div className="grid w-full grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
             {[
-               {
+              {
                 name: "BONHOEFFER",
-                subtitle: "Uso rudo para profesionales",
+                subtitle: "Heavy duty for professionals",
                 website: "www.bonhoeffermachines.com",
                 url: "https://bonhoeffermachines.com",
                 color: "#94A034", // Olive/Green
               },
               {
                 name: "STRONWELL",
-                subtitle: "Uso medio para uso regular",
+                subtitle: "Medium duty for regular use",
                 website: "www.stronwell.com",
                 url: "https://www.stronwell.com",
                 color: "#FF6E00", // Orange
               },
               {
                 name: "MECHNOVA",
-                subtitle: "Uso ligero para el hogar",
+                subtitle: "Light duty for home use",
                 website: "www.mechnovamachines.com",
                 url: "https://www.mechnovamachines.com",
                 color: "#00A3FF", // Blue
@@ -427,21 +427,21 @@ export default function Home() {
       <section className="bg-white py-12">
         <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-16 flex flex-col items-center">
           {/* Section Label */}
-          <div className="mb-6 flex h-[40px] sm:h-[45px] items-center justify-center rounded-[5px] bg-[#000000] px-8 shadow-sm">
-            <span className="font-orbitron text-[16px] sm:text-[18px] font-normal tracking-wider text-[#FFFFFF]">
-              Preguntas Frecuentes
+          <div className="mb-6 flex min-h-[40px] sm:min-h-[45px] items-center justify-center rounded-[5px] bg-[#000000] px-8 py-2 shadow-sm">
+            <span className="font-orbitron text-[16px] sm:text-[18px] font-normal tracking-wider text-[#FFFFFF] text-center">
+              Frequently Asked Questions
             </span>
           </div>
 
           {/* Subtitle */}
-          <p className="mb-8 max-w-[760px] text-center font-[Antenna] text-[18px] sm:text-[20px] leading-[140%] font-extralight text-[#565656]">
-            Encuentre respuestas a las preguntas más comunes sobre nuestros productos, servicios y asociaciones. ¿No encuentra lo que busca? Póngase en contacto con nuestro equipo de soporte.
+          <p className="mb-8 max-w-[760px] text-center font-[Antenna] text-[16px] sm:text-[18px] lg:text-[20px] leading-[140%] font-extralight text-[#565656]">
+            Find answers to common questions about our products, services, and partnerships. Can&apos;t find what you&apos;re looking for? Reach out to our support team.
           </p>
 
           {/* FAQ list */}
           <div className="flex w-full max-w-[920px] flex-col gap-2.5">
             {[
-               {
+              {
                 question: "¿Qué tipos de equipos industriales fabrica Stevron?",
                 answer: "Stevron se especializa en una amplia gama de equipos industriales, incluyendo maquinaria agrícola, herramientas eléctricas, equipos de jardinería, motores marinos, sistemas de limpieza, generadores y herramientas de construcción. Nuestra cartera de productos incluye más de 500 modelos diferentes diseñados para uso profesional y comercial."
               },
@@ -462,8 +462,8 @@ export default function Home() {
                 answer: "Nuestro equipo de expertos puede ayudarlo a elegir el equipo ideal para sus necesidades. Puede explorar nuestras categorías de productos en línea, utilizar nuestra herramienta de selección de productos o ponerse en contacto con nuestros consultores técnicos, quienes evaluarán sus necesidades y le recomendarán las soluciones más adecuadas. También ofrecemos demostraciones de productos y programas de prueba para clientes calificados."
               },
               {
-                question: "¿Qué tipo de soporte técnico y capacitación ofrecen?",
-                answer: "Brindamos soporte técnico integral, que incluye orientación para la instalación, capacitación operativa, talleres de mantenimiento y asistencia para la resolución de problemas. Nuestros técnicos certificados brindan capacitación en el sitio, tutoriales en video, manuales detallados y soporte telefónico las 24 horas, los 7 días de la semana para garantizar que su equipo funcione de manera óptima."
+                question: "What kind of technical support and training do you offer?",
+                answer: "We provide comprehensive technical support, including installation guidance, operational training, maintenance workshops, and troubleshooting assistance. Our certified technicians provide on-site training, video tutorials, detailed manuals, and 24/7 phone support to ensure your equipment operates optimally."
               }
             ].map((faq, idx) => (
               <div
