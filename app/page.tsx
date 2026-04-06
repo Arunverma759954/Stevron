@@ -139,8 +139,8 @@ export default function Home() {
                 className="flex h-[360px] w-full flex-col overflow-hidden border border-[#A7A7A7] rounded-[12px] shadow-[5px_5px_10px_0px_rgba(0,0,0,0.4)] transition-transform hover:scale-[1.02]"
               >
                 {/* Header Box - Restored: White bg, Black text */}
-                <div className="flex h-[46px] w-full items-center justify-center bg-white border-b border-[#A7A7A7]">
-                  <span className="font-orbitron text-[15px] sm:text-[16px] font-bold tracking-wider text-black">
+                <div className="flex h-[46px] w-full items-center justify-center bg-white border-b border-[#A7A7A7] px-2">
+                  <span className="font-orbitron text-[13px] sm:text-[14px] lg:text-[15px] font-bold tracking-wider text-black whitespace-nowrap">
                     {item.title}
                   </span>
                 </div>

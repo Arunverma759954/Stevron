@@ -190,8 +190,8 @@ export default function DCProducts() {
                 href={item.href}
                 className="bg-white rounded-[15px] shadow-lg overflow-hidden flex flex-col border border-gray-100 transition-transform hover:scale-[1.02] group"
               >
-                <div className="bg-white px-4 py-3 border-b border-gray-50 text-center">
-                  <span className="font-orbitron text-[19px] font-bold tracking-widest text-black uppercase">
+                <div className="bg-white px-4 py-3 border-b border-gray-50 text-center flex items-center justify-center">
+                  <span className="font-orbitron text-[16px] font-bold tracking-widest text-black uppercase whitespace-nowrap">
                     {item.title}
                   </span>
                 </div>
