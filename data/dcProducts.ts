@@ -25,14 +25,18 @@ export const dcProducts = [
     ]
   },
   {
-    id: "BNDR75",
+    id: "BNCID75K",
     subtitle: "75N.M - Taladro Percutor Compacto",
     image: "/dc/BNCID75K.webp",
     specs: {
-      "Tensión": "20V",
-      "Velocidad en vacío": "0-500 / 0-2000 RPM",
-      "Velocidad máxima de impacto": "0-8000 / 0-32000 BPM",
-      "Par máx": "75 Nm"
+       "Tensión": "20V",
+      "Velocidad en vacío": "0-500/0-2000RPM",
+      "Velocidad máxima de impacto": "0-8000 BPM / 0-32000BPM",
+      "Par máx": "75Nm",
+      "Portabrocas": "Metálico",
+      "Capacidad del portabrocas": "1,5–13 mm",
+      "Ajustes de par": "20+3",
+      "Engranaje de velocidad mecánico": "2"
     },
     included: {
       "Batería Ion-Litio": "2 x 2.0Ah",
@@ -53,7 +57,7 @@ export const dcProducts = [
   },
   {
     id: "BNIW4002B2",
-    subtitle: "Llave de Impacto batería 400Nm (2 Bat 2.0Ah y 1 ch.)",
+    subtitle: "Llave de Impacto batería",
     image: "/dc/BNIW4002B2.webp",
     specs: {
       "Tensión": "20V",
@@ -80,7 +84,7 @@ export const dcProducts = [
   },
   {
     id: "BNIW6004B2",
-    subtitle: "Llave de Impacto batería 600Nm (2 Bat 4.0Ah y 1 ch.)",
+    subtitle: "Llave de Impacto batería",
     image: "/dc/BNIW6004B2.webp",
     specs: {
       "Tensión": "20V",
@@ -107,7 +111,7 @@ export const dcProducts = [
   },
   {
     id: "BNIW8004B2",
-    subtitle: "Llave de Impacto batería 850Nm (2 Bat 4.0Ah y 1 ch.)",
+    subtitle: "Llave de Impacto batería",
     image: "/dc/BNIW8004B2.webp",
     specs: {
       "Tensión": "20V",
@@ -134,7 +138,7 @@ export const dcProducts = [
   },
   {
     id: "BNCAG8504B1",
-    subtitle: "Amoladora Angular batería 850W (1 Bat 4.0Ah y 1 ch.)",
+    subtitle: "Amoladora Angular",
     image: "/dc/BNCAG8504B1.webp",
     specs: {
       "Tensión": "20V",
@@ -158,13 +162,13 @@ export const dcProducts = [
     ]
   },
   {
-    id: "BNCRH20J4B",
+    id: "BNRH20J4B1",
     subtitle: "2.0J - Rotomartillo Inalámbrico",
-    image: "/dc/BNCRH20J4B.webp",
+    image: "/dc/BNRH20J4B1.webp",
     specs: {
       "Tensión": "20V",
       "Energía de impacto": "2.0J",
-      "Velocidad en vacío": "0-1100 RPM",
+      "Velocidad en vacío": "0-1420RPM",
       "Tasa de impacto": "0-4500 BPM",
       "Sistema de mandril": "SDS Plus"
     },
@@ -182,9 +186,9 @@ export const dcProducts = [
     ]
   },
   {
-    id: "BNCRH25J4B2",
+    id: "BNRH25J4B2",
     subtitle: "2.6J - Rotomartillo Inalámbrico",
-    image: "/dc/BNCRH25J4B2.webp",
+    image: "/dc/BNRH25J4B2.webp",
     specs: {
       "Tensión": "20V",
       "Energía de impacto": "2.6J",
@@ -206,9 +210,9 @@ export const dcProducts = [
     ]
   },
   {
-    id: "BNCRH45J",
-    subtitle: "4.5J - Rotomartillo Inalámbrico",
-    image: "/dc/BNCRH45J.webp",
+    id: "BNRH45JSDS",
+    subtitle: "Rotomartillo Inalámbrico",
+    image: "/dc/BNRH45JSDS.webp",
     specs: {
       "Tensión": "20V",
       "Energía de impacto": "4.5J",
@@ -226,9 +230,9 @@ export const dcProducts = [
     ]
   },
   {
-    id: "BNCCS190",
-    subtitle: "185MM - Sierra circular",
-    image: "/dc/BNCCS190.webp",
+    id: "BNCS190",
+    subtitle: "Sierra circular",
+    image: "/dc/BNCS190.webp",
     specs: {
       "Tensión": "20V",
       "Velocidad en vacío": "3800 RPM",
@@ -246,7 +250,7 @@ export const dcProducts = [
   },
   {
     id: "BNCSS",
-    subtitle: "Lijadora Orbital Aleatoria",
+    subtitle: "Lijadora de Hoja",
     image: "/dc/BNCSS.webp",
     specs: {
       "Tensión": "20V",
@@ -264,9 +268,9 @@ export const dcProducts = [
     ]
   },
   {
-    id: "BNCBL2B1",
-    subtitle: "Soplador y Aspiradora",
-    image: "/dc/BNCBL2B1.webp",
+    id: "BNBL2B1",
+    subtitle: "Soplador",
+    image: "/dc/BNBL2B1.webp",
     specs: {
       "Tensión": "20V",
       "Velocidad sin carga": "0-6000 / 0-12000 / 0-18000 RPM",
@@ -284,7 +288,7 @@ export const dcProducts = [
   },
   {
     id: "BNLB20",
-    subtitle: "Batería de Litio 2.0Ah",
+    subtitle: "Batería de Litio",
     image: "/dc/BNLB20.webp",
     specs: {
       "Tipo de batería": "Ion-Litio",
@@ -301,7 +305,7 @@ export const dcProducts = [
   },
   {
     id: "BNLB40",
-    subtitle: "Batería de Litio 4.0Ah",
+    subtitle: "Batería de Litio",
     image: "/dc/BNLB40.webp",
     specs: {
       "Tipo de batería": "Ion-Litio",
@@ -318,7 +322,7 @@ export const dcProducts = [
   },
   {
     id: "BNLB50",
-    subtitle: "Batería de Litio 5.0Ah",
+    subtitle: "Batería de Litio",
     image: "/dc/BNLB50.webp",
     specs: {
       "Tipo de batería": "Ion-Litio",
@@ -335,12 +339,12 @@ export const dcProducts = [
   },
   {
     id: "BNBC35A",
-    subtitle: "Cargador de Batería 3.5A",
+    subtitle: "Cargador de Batería",
     image: "/dc/BNBC35A.webp",
     specs: {
       "Voltaje de entrada": "110-120 V ~ 50/60 Hz",
       "Voltaje de salida": "21V",
-      "Corriente de salida": "3A",
+      "Corriente de salida": "3,5A",
       "Tipo de enchufe": "VDE"
     },
     included: {
@@ -353,7 +357,7 @@ export const dcProducts = [
   },
   {
     id: "BNDBC3A",
-    subtitle: "Cargador de Batería Doble Puerto 3A",
+    subtitle: "Cargador de Batería Doble Puerto",
     image: "/dc/BNDBC3A.webp",
     specs: {
       "Voltaje de entrada": "110-120 V ~ 50/60 Hz",

@@ -25,17 +25,17 @@ export default function DCProducts() {
 
   const products = [
     { id: "BNID452B2", Highlight: "45Nm", subtitle: "Taladro percutor", image: "/dc/BNID452B2.webp" },
-    { id: "BNDR75", Highlight: "75Nm", subtitle: "Taladro Percutor Compacto", image: "/dc/BNCID75K.webp" },
+    { id: "BNCID75K", Highlight: "75Nm", subtitle: "Taladro Percutor Compacto", image: "/dc/BNCID75K.webp" },
     { id: "BNIW4002B2", Highlight: "400Nm", subtitle: "Llave de Impacto batería", image: "/dc/BNIW4002B2.webp" },
     { id: "BNIW6004B2", Highlight: "600Nm", subtitle: "Llave de Impacto batería", image: "/dc/BNIW6004B2.webp" },
     { id: "BNIW8004B2", Highlight: "800Nm", subtitle: "Llave de Impacto batería ", image: "/dc/BNIW8004B2.webp" },
     { id: "BNCAG8504B1", Highlight: "4-1/2”(115mm)", subtitle: "Amoladora angular", image: "/dc/BNCAG8504B1.webp" },
-    { id: "BNCRH20J4B", Highlight: "2,0J", subtitle: "Rotomartillo Inalámbrico", image: "/dc/BNRH20J4B1.webp" },
-    { id: "BNCRH25J4B2", Highlight: "2,5J", subtitle: "Rotomartillo Inalámbrico", image: "/dc/BNRH25J4B2.webp" },
-    { id: "BNCRH45J", Highlight: "4,5J", subtitle: "Rotomartillo Inalámbrico", image: "/dc/BNRH45JSDS.webp" },
-    { id: "BNCCS190", Highlight: "1800W", subtitle: "Sierra Circular", image: "/dc/BNCS190.webp" },
+    { id: "BNRH20J4B1", Highlight: "2,0J", subtitle: "Rotomartillo Inalámbrico", image: "/dc/BNRH20J4B1.webp" },
+    { id: "BNRH25J4B2", Highlight: "2,5J", subtitle: "Rotomartillo Inalámbrico", image: "/dc/BNRH25J4B2.webp" },
+    { id: "BNRH45JSDS", Highlight: "4,5J", subtitle: "Rotomartillo Inalámbrico", image: "/dc/BNRH45JSDS.webp" },
+    { id: "BNCS190", Highlight: "1800W", subtitle: "Sierra Circular", image: "/dc/BNCS190.webp" },
     { id: "BNCSS", Highlight: "125MM", subtitle: "Lijadora de Hoja", image: "/dc/BNCSS.webp" },
-    { id: "BNCBL2B1", Highlight: "0-18000", subtitle: "Soplador", image: "/dc/BNBL2B1.webp" },
+    { id: "BNBL2B1", Highlight: "0-18000", subtitle: "Soplador", image: "/dc/BNBL2B1.webp" },
     { id: "BNLB20", Highlight: "2,0AH", subtitle: "Batería de Litio", image: "/dc/BNLB20.webp" },
     { id: "BNLB40", Highlight: "4,0AH", subtitle: "Batería de Litio", image: "/dc/BNLB40.webp" },
     { id: "BNLB50", Highlight: "5,0AH", subtitle: "Batería de Litio", image: "/dc/BNLB50.webp" },
@@ -106,8 +106,8 @@ export default function DCProducts() {
 
           {/* Sidebar Categories */}
           <div className="w-full shrink-0 lg:w-[260px] flex flex-col items-center sm:items-start">
-            <div className="w-full sm:w-[250px] mb-4 lg:mb-6">
-              <h2 className="font-orbitron text-[16px] lg:text-[18px] font-bold uppercase tracking-tight text-black text-center sm:text-left">
+            <div className="w-full  sm:w-[250px] mb-4 lg:mb-6">
+              <h2 className="font-orbitron text-[15px] lg:text-[16px] font-bold uppercase tracking-tight text-black text-center sm:text-left">
                 Categoría de Producto
               </h2>
               <div className="h-[1px] w-full bg-black mt-1" />
