@@ -29,10 +29,14 @@ export const dcProducts = [
     subtitle: "75N.M - Taladro Percutor Compacto",
     image: "/dc/BNCID75K.webp",
     specs: {
-      "Tensión": "20V",
-      "Velocidad en vacío": "0-500 / 0-2000 RPM",
-      "Velocidad máxima de impacto": "0-8000 / 0-32000 BPM",
-      "Par máx": "75 Nm"
+       "Tensión": "20V",
+      "Velocidad en vacío": "0-500/0-2000RPM",
+      "Velocidad máxima de impacto": "0-8000 BPM / 0-32000BPM",
+      "Par máx": "75Nm",
+      "Portabrocas": "Metálico",
+      "Capacidad del portabrocas": "1,5–13 mm",
+      "Ajustes de par": "20+3",
+      "Engranaje de velocidad mecánico": "2"
     },
     included: {
       "Batería Ion-Litio": "2 x 2.0Ah",
