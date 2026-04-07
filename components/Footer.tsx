@@ -89,7 +89,7 @@ export default function Footer() {
                 <ul className="flex flex-col gap-3 font-sans text-[14px] text-gray-400 font-light lg:text-left mb-6">
                   <li><Link href="/contact" className="hover:text-white transition-colors">Contáctenos</Link></li>
                   <li><Link href="/warranty-registration" className="hover:text-white transition-colors">Garantía</Link></li>
-                  <li><Link href="/become-a-dealer" className="hover:text-white transition-colors">Conviértase en Distribuidor</Link></li>
+                  
                 </ul>
               </div>
 
