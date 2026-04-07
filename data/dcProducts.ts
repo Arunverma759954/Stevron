@@ -227,6 +227,10 @@ export const dcProducts = [
     topBullets: [
       "Sistema de mandril SDS plus",
       "Luz de trabajo LED"
+    ],
+    features: [
+      "Sistema de mandril SDS plus",
+      "Luz de trabajo LED"
     ]
   },
   {
