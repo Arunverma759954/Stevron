@@ -9,7 +9,7 @@ export default function BecomeADealer() {
   return (
     <div className="flex flex-col min-h-screen bg-white text-white">
       {/* Hero Section — offset for fixed navbar */}
-      <section className="relative w-full mt-[70px] lg:mt-[80px] aspect-[16/7] sm:aspect-[16/6] lg:aspect-[16/4.5] overflow-hidden">
+      <section className="relative w-full aspect-[16/5] sm:aspect-[16/6] lg:aspect-[16/4.5] overflow-hidden">
         <Image
           src="/banner1.webp"
           alt="Become a Dealer"
@@ -43,9 +43,9 @@ export default function BecomeADealer() {
             </div>
 
             {/* Subtitle */}
-              Los productos Stevron solo se venden a través de tiendas de distribuidores autorizados
-              <br className="hidden sm:block" />
-              {" "}cuidadosamente seleccionados por nosotros.
+            Los productos Stevron solo se venden a través de tiendas de distribuidores autorizados
+            <br className="hidden sm:block" />
+            {" "}cuidadosamente seleccionados por nosotros.
 
             <form className="flex flex-col gap-4 sm:gap-5">
 
