@@ -315,8 +315,8 @@ export default function Home() {
                   </div>
                   {/* Bottom: Info (Black BG) */}
                   <div className="flex flex-col flex-1 bg-[#171717] px-5 py-4 justify-center">
-                    <h3 className="mb-1 font-sans text-[18px] sm:text-[20px] font-bold text-[#FFFFFF] tracking-wide uppercase">{product.name}</h3>
-                    <p className="mb-3 font-sans text-[15px] font-extralight text-[#ffffff] tracking-[0.03em] leading-tight">{product.subtitle}</p>
+                    <h3 className="mb-1 font-['Eurostile_Extended',sans-serif] font-sans text-[18px] sm:text-[20px] font-bold text-[#FFFFFF] tracking-wide uppercase">{product.name}</h3>
+                    <p className="mb-3 font-[Antenna] font-sans text-[15px] font-extralight text-[#ffffff] tracking-[0.03em] leading-tight">{product.subtitle}</p>
                     {/* View Details Button */}
                     <div className="mt-auto flex h-[32px] w-fit items-center gap-2 rounded-full bg-[#FFFFFF] pl-4 pr-1 text-[13px] font-bold text-[#171717] font-sans transition-all hover:bg-gray-100 uppercase">
                       Ver Detalles
