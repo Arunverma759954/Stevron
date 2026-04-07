@@ -167,10 +167,10 @@ export const dcProducts = [
     image: "/dc/BNRH20J4B1.webp",
     specs: {
       "Tensión": "20V",
-      "Energía de impacto": "2.0J",
-      "Velocidad en vacío": "0-1420RPM",
-      "Tasa de impacto": "0-4500 BPM",
-      "Sistema de mandril": "SDS Plus"
+      "Energía de impacto": "2,0 J",
+      "Velocidad en vacío": "0-1420 RPM",
+      "Velocidad de impacto": "0-4500 BPM",
+      "Capacidad máxima de perforación": "Hormigón: 22MM, Acero: 13MM, Madera: 28MM"
     },
     included: {
       "Batería Ion-Litio": "1 x 4.0Ah",
