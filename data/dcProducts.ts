@@ -1,7 +1,7 @@
 export const dcProducts = [
   {
     id: "BNID452B2",
-    subtitle: "Taladro Percutor Inalámbrico 45Nm",
+    subtitle: "Taladro percutor",
     image: "/dc/BNID452B2.webp",
     specs: {
       "Tensión": "20V",
@@ -26,7 +26,7 @@ export const dcProducts = [
   },
   {
     id: "BNCID75K",
-    subtitle: "75N.M - Taladro Percutor Compacto",
+    subtitle: "Taladro Percutor Compacto",
     image: "/dc/BNCID75K.webp",
     specs: {
        "Tensión": "20V",
