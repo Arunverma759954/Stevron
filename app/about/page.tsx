@@ -89,7 +89,7 @@ export default function AboutPage() {
                   Stevron was created with a simple idea: professional tools should be powerful, reliable, and easy to work with. No unnecessary complexity. No inflated pricing. Just tools designed for real work.
                 </p>
                 <p>
-                  Our approach is straightforward: create tools professionals trust, partners build business with, and markets recognize for consistency. Step by step. Market by market. Building a brand known for dependable performance.
+                 Every Stevron product is built around four principles: performance, safety, simplicity, and momentum. Tools that deliver real output, protect the user, stay intuitive to use, and keep work moving forward.
                 </p>
               </div>
               <div className="flex items-center gap-4 mt-4">
@@ -156,18 +156,21 @@ export default function AboutPage() {
                   Stevron is more than a product range. It is a growing network of distributors, professionals, and partners building something strong together. We don’t aim to be everywhere. We focus on building meaningful presence with the right partners in each market.
                 </p>
                 <p>
+                 Our approach is straightforward: create tools professionals trust, partners build business with , and markets recognize for consistency. Step by step. Market by market. Building a brand known for dependable performance.
+                </p>
+                <p>
                   Stevron is built for movement. For professionals who want tools that simply work. For partners who want a brand that grows with them. And for markets ready for something stronger, cleaner, and more focused.
                 </p>
               </div>
               
               <div className="grid grid-cols-2 gap-8 pt-8">
                 <div>
-                   <h4 className="font-orbitron text-3xl font-bold text-black border-b-2 border-[#94A034] w-fit mb-2">50+</h4>
+                   <h4 className="font-orbitron text-3xl font-bold text-black border-b-2 border-[#94A034] w-fit mb-2">22+</h4>
                    <p className="text-sm text-gray-500 uppercase tracking-wider font-bold">Countries</p>
                 </div>
                 <div>
-                   <h4 className="font-orbitron text-3xl font-bold text-black border-b-2 border-[#94A034] w-fit mb-2">500+</h4>
-                   <p className="text-sm text-gray-500 uppercase tracking-wider font-bold">Retailers</p>
+                   <h4 className="font-orbitron text-3xl font-bold text-black border-b-2 border-[#94A034] w-fit mb-2">5743+</h4>
+                   <p className="text-sm text-gray-500 uppercase tracking-wider font-bold">Distributors</p>
                 </div>
               </div>
             </div>
