@@ -221,7 +221,7 @@ export default function Home() {
                   <div className="h-[18px] w-full bg-[#171717]" />
                   {/* White title strip (Figma: 18px Bold) */}
                   <div className="flex h-[32px] items-center justify-center bg-[#FFFFFF]">
-                    <span className="font-orbitron text-[16px] sm:text-[18px] font-bold uppercase tracking-[0.02em] text-[#565656]">
+                    <span className="font-['Antenna',sans-serif] text-[16px] sm:text-[18px] font-bold uppercase tracking-[0.02em] text-[#565656]">
                       {item.title}
                     </span>
                   </div>
@@ -251,7 +251,7 @@ export default function Home() {
                     </div>
 
                     {/* Description left-aligned (Figma: 12px, Weight 200, White) */}
-                    <p className="text-left font-inter text-[14px] sm:text-[15px] font-extralight leading-[1.6] tracking-[0.03em] text-[#FFFFFF]">
+                    <p className="text-left font-['Antenna',sans-serif] text-[14px] sm:text-[15px] font-light leading-[1.6] tracking-[0.03em] text-[#FFFFFF]">
                       {item.description}
                     </p>
                   </div>

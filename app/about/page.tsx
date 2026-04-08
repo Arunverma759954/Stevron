@@ -53,21 +53,21 @@ export default function AboutPage() {
           <h1 className="font-orbitron text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 uppercase tracking-tight">
             Power. <span className="text-[#94A034]">Simplified.</span>
           </h1>
-          <p className="max-w-2xl mx-auto font-inter text-lg md:text-xl text-gray-300 font-light leading-relaxed">
+          <p className="max-w-2xl font-['Antenna',sans-serif]  mx-auto font-inter text-lg md:text-xl text-gray-300 font-light leading-relaxed">
             Professional tools should be powerful, reliable, and easy to work with. No unnecessary complexity. Just tools designed for real work.
           </p>
         </div>
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2">
-            <div className="w-[1px] h-12 bg-gradient-to-b from-white/0 via-white/50 to-[#94A034] animate-bounce-slow" />
+          <div className="w-[1px] h-12 bg-gradient-to-b from-white/0 via-white/50 to-[#94A034] animate-bounce-slow" />
         </div>
       </section>
 
       {/* The Vision Section */}
       <section className="py-24 bg-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/3 h-full bg-[#f8f8f8] -z-10 skew-x-[-15deg] translate-x-1/4" />
-        
+
         <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative aspect-square lg:aspect-video rounded-2xl overflow-hidden shadow-2xl group">
@@ -84,7 +84,7 @@ export default function AboutPage() {
               <h2 className="font-orbitron text-3xl md:text-4xl font-bold text-black border-l-4 border-[#94A034] pl-6">
                 Created with a Simple Idea
               </h2>
-              <div className="space-y-6 font-inter text-lg text-gray-600 leading-relaxed">
+              <div className="space-y-6 font-['Antenna',sans-serif] text-[15px] md:text-[16px] lg:text-[17px] text-gray-600 leading-relaxed">
                 <p>
                   Stevron was created with a simple idea: professional tools should be powerful, reliable, and easy to work with. No unnecessary complexity. No inflated pricing. Just tools designed for real work.
                 </p>
@@ -94,11 +94,11 @@ export default function AboutPage() {
               </div>
               <div className="flex items-center gap-4 mt-4">
                 <div className="flex -space-x-3">
-                    {[1, 2, 3, 4].map(i => (
-                        <div key={i} className="w-12 h-12 rounded-full border-2 border-white bg-gray-200 overflow-hidden">
-                           <div className="w-full h-full bg-gradient-to-br from-gray-300 to-gray-500" />
-                        </div>
-                    ))}
+                  {[1, 2, 3, 4].map(i => (
+                    <div key={i} className="w-12 h-12 rounded-full border-2 border-white bg-gray-200 overflow-hidden">
+                      <div className="w-full h-full bg-gradient-to-br from-gray-300 to-gray-500" />
+                    </div>
+                  ))}
                 </div>
                 <p className="text-sm font-medium text-gray-500">Trusted by 10,000+ Professionals</p>
               </div>
@@ -119,22 +119,22 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {principles.map((p, idx) => (
-              <div 
-                key={idx} 
+              <div
+                key={idx}
                 className="p-8 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition-all group hover:-translate-y-2"
               >
                 <div className="mb-6 p-4 bg-white/5 w-fit rounded-xl group-hover:bg-[#94A034]/20 transition-colors">
                   {p.icon}
                 </div>
                 <h3 className="font-orbitron text-xl font-bold text-white mb-4 tracking-wider">{p.title}</h3>
-                <p className="text-gray-400 font-light leading-relaxed">
+                <p className="font-['Antenna',sans-serif] text-gray-400 font-light leading-relaxed">
                   {p.description}
                 </p>
               </div>
             ))}
           </div>
         </div>
-        
+
         {/* Background Texture Overlay */}
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/carbon-fibre.png")' }} />
       </section>
@@ -151,7 +151,7 @@ export default function AboutPage() {
               <h2 className="font-orbitron text-3xl md:text-4xl font-bold text-black uppercase">
                 More Than a Product Range
               </h2>
-              <div className="space-y-6 font-inter text-lg text-gray-600 leading-relaxed font-light">
+              <div className="space-y-6 font-['Antenna',sans-serif] text-[15px] md:text-[16px] lg:text-[17px] text-gray-600 leading-relaxed font-light">
                 <p>
                   Stevron is more than a product range. It is a growing network of distributors, professionals, and partners building something strong together. We don’t aim to be everywhere. We focus on building meaningful presence with the right partners in each market.
                 </p>
@@ -159,15 +159,15 @@ export default function AboutPage() {
                   Stevron is built for movement. For professionals who want tools that simply work. For partners who want a brand that grows with them. And for markets ready for something stronger, cleaner, and more focused.
                 </p>
               </div>
-              
+
               <div className="grid grid-cols-2 gap-8 pt-8">
                 <div>
-                   <h4 className="font-orbitron text-3xl font-bold text-black border-b-2 border-[#94A034] w-fit mb-2">50+</h4>
-                   <p className="text-sm text-gray-500 uppercase tracking-wider font-bold">Countries</p>
+                  <h4 className="font-orbitron text-3xl font-bold text-black border-b-2 border-[#94A034] w-fit mb-2">50+</h4>
+                  <p className="text-sm text-gray-500 uppercase tracking-wider font-bold font-['Antenna',sans-serif]">Countries</p>
                 </div>
                 <div>
-                   <h4 className="font-orbitron text-3xl font-bold text-black border-b-2 border-[#94A034] w-fit mb-2">500+</h4>
-                   <p className="text-sm text-gray-500 uppercase tracking-wider font-bold">Retailers</p>
+                  <h4 className="font-orbitron text-3xl font-bold text-black border-b-2 border-[#94A034] w-fit mb-2">500+</h4>
+                  <p className="text-sm font-['Antenna',sans-serif] text-gray-500 uppercase tracking-wider font-bold ">Retailers</p>
                 </div>
               </div>
             </div>
@@ -177,22 +177,22 @@ export default function AboutPage() {
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gray-50 rounded-full -z-10 animate-pulse-slow" />
               <div className="absolute top-0 right-0 w-24 h-24 bg-[#94A034] rounded-full opacity-20 blur-3xl" />
               <div className="absolute bottom-0 left-0 w-32 h-32 bg-[#94A034] rounded-full opacity-20 blur-3xl" />
-              
+
               <div className="relative h-full w-full bg-black rounded-3xl overflow-hidden shadow-2xl flex items-center justify-center p-12">
-                 {/* Stylized Logo centered in a premium box */}
-                 <div className="relative flex flex-col items-center">
-                    <div className="font-orbitron text-6xl md:text-8xl font-black text-white/10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 tracking-[0.2em] whitespace-nowrap">
-                        STEVRON
-                    </div>
-                    <Image
-                      src="/Logo.webp"
-                      alt="STEVRON"
-                      width={400}
-                      height={100}
-                      className="relative z-10 w-full max-w-[300px] h-auto drop-shadow-glow"
-                    />
-                    <div className="mt-8 font-orbitron text-sm tracking-[0.5em] text-[#94A034]/60 relative z-10">EST. 2026</div>
-                 </div>
+                {/* Stylized Logo centered in a premium box */}
+                <div className="relative flex flex-col items-center">
+                  <div className="font-orbitron text-6xl md:text-8xl font-black text-white/10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 tracking-[0.2em] whitespace-nowrap">
+                    STEVRON
+                  </div>
+                  <Image
+                    src="/Logo.webp"
+                    alt="STEVRON"
+                    width={400}
+                    height={100}
+                    className="relative z-10 w-full max-w-[300px] h-auto drop-shadow-glow"
+                  />
+                  <div className="mt-8 font-orbitron text-sm tracking-[0.5em] text-[#94A034]/60 relative z-10">EST. 2026</div>
+                </div>
               </div>
             </div>
           </div>
@@ -202,12 +202,12 @@ export default function AboutPage() {
       {/* Bottom Slogan Section */}
       <section className="py-20 bg-[#f8f8f8]">
         <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-16 text-center">
-            <p className="font-orbitron text-5xl md:text-7xl lg:text-8xl font-black text-black/5 uppercase tracking-tighter mb-[-40px] select-none">
-                SIMPLIFIED
-            </p>
-            <h3 className="font-orbitron text-4xl md:text-5xl font-bold text-black relative z-10">
-                Power. <span className="text-[#94A034]">Simplified.</span>
-            </h3>
+          <p className="font-['Antenna',sans-serif] text-5xl md:text-7xl lg:text-8xl font-black text-black/5 uppercase tracking-tighter mb-[-40px] select-none">
+            SIMPLIFIED
+          </p>
+          <h3 className="font-orbitron text-4xl md:text-5xl font-bold text-black relative z-10">
+            Power. <span className="text-[#94A034]">Simplified.</span>
+          </h3>
         </div>
       </section>
 

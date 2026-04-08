@@ -48,7 +48,7 @@ export default function ACProductDetail() {
 
           <button
             onClick={() => router.back()}
-            className="flex items-center gap-2 px-4 py-2 bg-black text-white rounded-[4px] font-[Antenna] text-[12px] font-bold uppercase hover:bg-[#94A034] transition-all w-fit shadow-md group"
+            className="flex items-center gap-2 px-4 py-2 bg-black text-white rounded-[4px] font-orbitron text-[12px] font-bold uppercase hover:bg-[#94A034] transition-all w-fit shadow-md group"
           >
             <ArrowLeft size={14} className="group-hover:-translate-x-1 transition-transform" />
             Atrás
@@ -166,7 +166,7 @@ export default function ACProductDetail() {
                   <ChevronDown size={16} className={`transition-transform duration-300 ${openSections.warranty ? "rotate-180" : ""}`} />
                 </button>
                 <div className={`overflow-hidden transition-all duration-300 ${openSections.warranty ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}`}>
-                  <div className="p-4 flex flex-row items-center justify-between gap-2.5 font-[Antenna] text-[14px] font-[200] leading-[121%] text-black">
+                  <div className="p-4 flex flex-row items-center justify-between gap-2.5 font-inter text-[14px] font-[200] leading-[121%] text-black">
                     <div className="flex flex-col gap-1.5">
                       <p>&#x2022; Garantía de 2 años asegurada</p>
                       <p>&#x2022; Se ofrecerá 1 año adicional de garantía tras el registro</p>
