@@ -168,11 +168,11 @@ export default function ACProductDetail() {
                 <div className={`overflow-hidden transition-all duration-300 ${openSections.warranty ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}`}>
                   <div className="p-4 flex flex-row items-center justify-between gap-2.5 font-inter text-[14px] font-[200] leading-[121%] text-black">
                     <div className="flex flex-col gap-1.5">
-                      <p>&#x2022; Garantía de 2 años asegurada</p>
+                      <p>&#x2022; Garantía de 1 años asegurada</p>
                       <p>&#x2022; Se ofrecerá 1 año adicional de garantía tras el registro</p>
                     </div>
                     <div className="flex items-center justify-center p-2 rounded border border-[#E5E5E5]">
-                      <span className="text-[20px] font-bold font-orbitron">2+1</span>
+                      <span className="text-[20px] font-bold font-orbitron">1+1</span>
                     </div>
                   </div>
                 </div>
