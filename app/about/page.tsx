@@ -53,7 +53,7 @@ export default function AboutPage() {
           <h1 className="font-orbitron text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 uppercase tracking-tight">
             Power. <span className="text-[#94A034]">Simplified.</span>
           </h1>
-          <p className="max-w-2xl font-['Antenna',sans-serif]  mx-auto font-inter text-lg md:text-xl text-gray-300 font-light leading-relaxed">
+          <p className="max-w-2xl mx-auto font-inter text-lg md:text-xl text-gray-300 font-light leading-relaxed">
             Professional tools should be powerful, reliable, and easy to work with. No unnecessary complexity. Just tools designed for real work.
           </p>
         </div>
@@ -84,12 +84,12 @@ export default function AboutPage() {
               <h2 className="font-orbitron text-3xl md:text-4xl font-bold text-black border-l-4 border-[#94A034] pl-6">
                 Created with a Simple Idea
               </h2>
-              <div className="space-y-6 font-['Antenna',sans-serif] text-[15px] md:text-[16px] lg:text-[17px] text-gray-600 leading-relaxed">
+              <div className="space-y-6 font-inter text-lg text-gray-600 leading-relaxed">
                 <p>
                   Stevron was created with a simple idea: professional tools should be powerful, reliable, and easy to work with. No unnecessary complexity. No inflated pricing. Just tools designed for real work.
                 </p>
                 <p>
-                  Our approach is straightforward: create tools professionals trust, partners build business with, and markets recognize for consistency. Step by step. Market by market. Building a brand known for dependable performance.
+                 Every Stevron product is built around four principles: performance, safety, simplicity, and momentum. Tools that deliver real output, protect the user, stay intuitive to use, and keep work moving forward.
                 </p>
               </div>
               <div className="flex items-center gap-4 mt-4">
@@ -127,7 +127,7 @@ export default function AboutPage() {
                   {p.icon}
                 </div>
                 <h3 className="font-orbitron text-xl font-bold text-white mb-4 tracking-wider">{p.title}</h3>
-                <p className="font-['Antenna',sans-serif] text-gray-400 font-light leading-relaxed">
+                <p className="font-inter text-gray-400 font-light leading-relaxed">
                   {p.description}
                 </p>
               </div>
@@ -151,9 +151,12 @@ export default function AboutPage() {
               <h2 className="font-orbitron text-3xl md:text-4xl font-bold text-black uppercase">
                 More Than a Product Range
               </h2>
-              <div className="space-y-6 font-['Antenna',sans-serif] text-[15px] md:text-[16px] lg:text-[17px] text-gray-600 leading-relaxed font-light">
+              <div className="space-y-6 font-inter text-lg text-gray-600 leading-relaxed font-light">
                 <p>
                   Stevron is more than a product range. It is a growing network of distributors, professionals, and partners building something strong together. We don’t aim to be everywhere. We focus on building meaningful presence with the right partners in each market.
+                </p>
+                <p>
+                 Our approach is straightforward: create tools professionals trust, partners build business with , and markets recognize for consistency. Step by step. Market by market. Building a brand known for dependable performance.
                 </p>
                 <p>
                   Stevron is built for movement. For professionals who want tools that simply work. For partners who want a brand that grows with them. And for markets ready for something stronger, cleaner, and more focused.
@@ -162,12 +165,12 @@ export default function AboutPage() {
 
               <div className="grid grid-cols-2 gap-8 pt-8">
                 <div>
-                  <h4 className="font-orbitron text-3xl font-bold text-black border-b-2 border-[#94A034] w-fit mb-2">50+</h4>
-                  <p className="text-sm text-gray-500 uppercase tracking-wider font-bold font-['Antenna',sans-serif]">Countries</p>
+                   <h4 className="font-orbitron text-3xl font-bold text-black border-b-2 border-[#94A034] w-fit mb-2">22+</h4>
+                   <p className="text-sm text-gray-500 uppercase tracking-wider font-bold">Countries</p>
                 </div>
                 <div>
-                  <h4 className="font-orbitron text-3xl font-bold text-black border-b-2 border-[#94A034] w-fit mb-2">500+</h4>
-                  <p className="text-sm font-['Antenna',sans-serif] text-gray-500 uppercase tracking-wider font-bold ">Retailers</p>
+                   <h4 className="font-orbitron text-3xl font-bold text-black border-b-2 border-[#94A034] w-fit mb-2">5743+</h4>
+                   <p className="text-sm text-gray-500 uppercase tracking-wider font-bold">Distributors</p>
                 </div>
               </div>
             </div>
@@ -202,7 +205,7 @@ export default function AboutPage() {
       {/* Bottom Slogan Section */}
       <section className="py-20 bg-[#f8f8f8]">
         <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-16 text-center">
-          <p className="font-['Antenna',sans-serif] text-5xl md:text-7xl lg:text-8xl font-black text-black/5 uppercase tracking-tighter mb-[-40px] select-none">
+          <p className="font-orbitron text-5xl md:text-7xl lg:text-8xl font-black text-black/5 uppercase tracking-tighter mb-[-40px] select-none">
             SIMPLIFIED
           </p>
           <h3 className="font-orbitron text-4xl md:text-5xl font-bold text-black relative z-10">
