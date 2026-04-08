@@ -98,7 +98,7 @@ export default function Footer() {
                 <Link href="#" className="flex h-8 w-8 items-center justify-center rounded-full bg-white transition-transform hover:scale-110">
                   <Image src="/msg.png" alt="Message" width={20} height={20} className="object-contain" />
                 </Link>
-                <Link href="#" className="flex h-8 w-8 items-center justify-center rounded-full bg-white transition-transform hover:scale-110">
+                <Link href="https://www.instagram.com/stevron__tools/" className="flex h-8 w-8 items-center justify-center rounded-full bg-white transition-transform hover:scale-110">
                   <Image src="/insta.png" alt="Instagram" width={20} height={20} className="object-contain" />
                 </Link>
                 <Link href="#" className="flex h-8 w-8 items-center justify-center rounded-full bg-white transition-transform hover:scale-110">
