@@ -37,9 +37,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <head>
-        <link rel="icon" href="/Logo.webp" />
-      </head>
       <body
         className={`${orbitron.variable} ${inter.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
