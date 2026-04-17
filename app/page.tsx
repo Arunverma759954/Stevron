@@ -189,25 +189,25 @@ export default function Home() {
               {
                 title: "INNOVACIÓN",
                 subtitle: "Diseñando el futuro",
-                description: "En STEVRON, la innovación impulsa todo lo que creamos. Combinamos ingeniería avanzada con un diseño práctico para desarrollar herramientas potentes, precisas y confiables adaptadas a las necesidades cambiantes de los profesionales modernos.",
+                description: "Tools that deliver real output and excel in demanding professional environments.",
                 iconPath: "/innovation.png"
               },
               {
                 title: "CALIDAD",
                 subtitle: "Construidos para durar",
-                description: "Desde materiales cuidadosamente seleccionados hasta una fabricación de precisión, cada detalle garantiza durabilidad y un rendimiento constante. Estrictos controles y pruebas aseguran herramientas confiables para el uso diario.",
+                description: "Engineering that protects the user without compromising on power or efficiency.",
                 iconPath: "/Group.png"
               },
               {
                 title: "CONFIABILIDAD",
                 subtitle: "Confianza en el Rendimiento",
-                description: "Entregamos herramientas con un rendimiento constante en condiciones del mundo real. Cada producto cuenta con componentes duraderos y se somete a rigurosas pruebas, lo que garantiza un funcionamiento confiable y precisión en cada tarea.",
+                description: "Stevron stays intuitive to use, removing unnecessary complexity from professional work.",
                 iconPath: "/Group (1).png"
               },
               {
                 title: "SOSTENIBILIDAD",
                 subtitle: "Un Futuro más Verde",
-                description: "Desarrollamos productos con responsabilidad ambiental. A través de un diseño inteligente, una producción eficiente y un rendimiento duradero, reducimos nuestra huella ecológica ofreciendo soluciones sostenibles.",
+                description: "Designed to keep work moving forward, ensuring maximum uptime and project flow.",
                 iconPath: "/innovation.png"
               },
             ].map((item, index) => (

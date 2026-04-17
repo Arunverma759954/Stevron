@@ -9,7 +9,7 @@ import CTASection from "@/components/CTASection";
 export default function AboutPage() {
   const principles = [
     {
-      title: "PEFORMANCE",
+      title: "PERFORMANCE",
       description: "Tools that deliver real output and excel in demanding professional environments.",
       icon: <Zap className="w-8 h-8 text-[#94A034]" />,
     },
@@ -33,28 +33,23 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative w-full h-[60vh] lg:h-[70vh] flex items-center justify-center overflow-hidden bg-[#050505]">
-        {/* Animated Background Overlay */}
+      <section className="relative w-full h-[65vh] lg:h-[75vh] flex items-center justify-center overflow-hidden bg-[#0A0A0A]">
+        {/* Deep Black Premium Background */}
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80 z-10" />
-          <Image
-            src="/banner/banner-1.webp" // Reusing a known high-quality asset
-            alt="STEVRON Industrial Background"
-            fill
-            priority
-            className="object-cover opacity-60 scale-105 animate-pulse-slow"
-          />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_#94A03420_0%,_transparent_70%)] z-10" />
+          <div className="absolute inset-0 opacity-[0.05] z-10" style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/carbon-fibre.png")' }} />
+          <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black to-transparent z-20" />
         </div>
 
-        <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-16 text-center">
-          <div className="inline-block px-6 py-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full mb-6">
-            <span className="font-orbitron text-[14px] tracking-[0.3em] font-medium text-[#94A034]">ABOUT STEVRON</span>
+        <div className="relative z-30 container mx-auto px-4 sm:px-6 lg:px-16 text-center">
+          <div className="inline-block px-8 py-2 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full mb-8 animate-fade-in">
+            <span className="font-orbitron text-[12px] sm:text-[14px] tracking-[0.5em] font-medium text-[#94A034]">STEVRON INDUSTRIAL</span>
           </div>
-          <h1 className="font-orbitron text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 uppercase tracking-tight">
-            Power. <span className="text-[#94A034]">Simplified.</span>
+          <h1 className="font-orbitron text-5xl md:text-7xl lg:text-8xl font-black text-white mb-8 tracking-tighter">
+            Power. <span className="text-[#94A034] drop-shadow-[0_0_25px_rgba(148,160,52,0.3)]">Simplified.</span>
           </h1>
-          <p className="max-w-2xl mx-auto font-inter text-lg md:text-xl text-gray-300 font-light leading-relaxed">
-            Professional tools should be powerful, reliable, and easy to work with. No unnecessary complexity. Just tools designed for real work.
+          <p className="max-w-3xl mx-auto font-inter text-lg md:text-2xl text-gray-400 font-extralight leading-relaxed">
+            Revolutionizing professional tools through <span className="text-white font-light">clean engineering</span> and <span className="text-white font-light">unmatched reliability.</span>
           </p>
         </div>
 
@@ -89,7 +84,7 @@ export default function AboutPage() {
                   Stevron was created with a simple idea: professional tools should be powerful, reliable, and easy to work with. No unnecessary complexity. No inflated pricing. Just tools designed for real work.
                 </p>
                 <p>
-                 Every Stevron product is built around four principles: performance, safety, simplicity, and momentum. Tools that deliver real output, protect the user, stay intuitive to use, and keep work moving forward.
+                  Every Stevron product is built around four principles: performance, safety, simplicity, and momentum. Tools that deliver real output, protect the user, stay intuitive to use, and keep work moving forward.
                 </p>
               </div>
               <div className="flex items-center gap-4 mt-4">
@@ -156,7 +151,7 @@ export default function AboutPage() {
                   Stevron is more than a product range. It is a growing network of distributors, professionals, and partners building something strong together. We don’t aim to be everywhere. We focus on building meaningful presence with the right partners in each market.
                 </p>
                 <p>
-                 Our approach is straightforward: create tools professionals trust, partners build business with , and markets recognize for consistency. Step by step. Market by market. Building a brand known for dependable performance.
+                  Our approach is straightforward: create tools professionals trust, partners build business with , and markets recognize for consistency. Step by step. Market by market. Building a brand known for dependable performance.
                 </p>
                 <p>
                   Stevron is built for movement. For professionals who want tools that simply work. For partners who want a brand that grows with them. And for markets ready for something stronger, cleaner, and more focused.
@@ -165,12 +160,12 @@ export default function AboutPage() {
 
               <div className="grid grid-cols-2 gap-8 pt-8">
                 <div>
-                   <h4 className="font-orbitron text-3xl font-bold text-black border-b-2 border-[#94A034] w-fit mb-2">22+</h4>
-                   <p className="text-sm text-gray-500 uppercase tracking-wider font-bold">Countries</p>
+                  <h4 className="font-orbitron text-3xl font-bold text-black border-b-2 border-[#94A034] w-fit mb-2">22+</h4>
+                  <p className="text-sm text-gray-500 uppercase tracking-wider font-bold">Countries</p>
                 </div>
                 <div>
-                   <h4 className="font-orbitron text-3xl font-bold text-black border-b-2 border-[#94A034] w-fit mb-2">5743+</h4>
-                   <p className="text-sm text-gray-500 uppercase tracking-wider font-bold">Distributors</p>
+                  <h4 className="font-orbitron text-3xl font-bold text-black border-b-2 border-[#94A034] w-fit mb-2">5743+</h4>
+                  <p className="text-sm text-gray-500 uppercase tracking-wider font-bold">Distributors</p>
                 </div>
               </div>
             </div>
@@ -187,14 +182,8 @@ export default function AboutPage() {
                   <div className="font-orbitron text-6xl md:text-8xl font-black text-white/10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 tracking-[0.2em] whitespace-nowrap">
                     STEVRON
                   </div>
-                  <Image
-                    src="/Logo.webp"
-                    alt="STEVRON"
-                    width={400}
-                    height={100}
-                    className="relative z-10 w-full max-w-[300px] h-auto drop-shadow-glow"
-                  />
-                  <div className="mt-8 font-orbitron text-sm tracking-[0.5em] text-[#94A034]/60 relative z-10">EST. 2026</div>
+
+
                 </div>
               </div>
             </div>
@@ -233,6 +222,13 @@ export default function AboutPage() {
         }
         .animate-bounce-slow {
           animation: bounce-slow 2s infinite ease-in-out;
+        }
+        @keyframes fade-in {
+          from { opacity: 0; transform: translateY(10px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+          animation: fade-in 1s ease-out forwards;
         }
         .drop-shadow-glow {
           filter: drop-shadow(0 0 20px rgba(148, 160, 52, 0.4));
